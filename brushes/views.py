@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Brushes
+from .models import Brush
 
 
 def all_brushes(request):
