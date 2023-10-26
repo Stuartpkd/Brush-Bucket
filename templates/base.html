@@ -6,7 +6,7 @@
 <head>
 
   {% block meta %}
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {% endblock %}
@@ -41,37 +41,61 @@
 </head>
 
 <body>
-  <header class="container-fluid fixed-top">
-    <div class="row">
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-        <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-black my-0"><strong>Brush</strong> Bucket</h2>
-        </a>
-      </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <form method="GET" action="">
-          <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q"
-              placeholder="Find the perfect brush">
-            <div class="input-group-append">
-              <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                <span class="icon">
-                  <i class="fas fa-search"></i>
-                </span>
-              </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <h2 class="logo-font text-black my-0"><strong>Brush</strong> Bucket</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav w-auto mx-auto">
+          <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="brushes-link"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Brushes
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="brushes-link">
+              <a href="" class="dropdown-item">Charcoal</a>
+              <a href="" class "dropdown-item">Watercolor</a>
+              <a href="" class="dropdown-item">Digital Ink</a>
             </div>
-          </div>
-        </form>
+          </li>
+          <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">
+              Bundles
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-          <li class="list-inline-item dropdown">
+
+      <div class="navbar-icons">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <i class="fas fa-shopping-bag fa-lg"></i>
+              <span class="my-0">
+                {% if grand_total %}
+                ${{ grand_total|floatformat:2 }}
+                {% else %}
+                $0.00
+                {% endif %}
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
-              <div class="text-center">
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0">My Account</p>
-              </div>
+              <i class="fas fa-user fa-lg"></i>
+              <p class="my-0">My Account</p>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
@@ -86,24 +110,10 @@
               {% endif %}
             </div>
           </li>
-          <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-              <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                <p class="my-0">
-                  {% if grand_total %}
-                  ${{ grand_total|floatformat:2 }}
-                  {% else %}
-                  $0.00
-                  {% endif %}
-                </p>
-              </div>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
   {% if messages %}
   <div class="message-container"></div>
@@ -117,9 +127,6 @@
 
   {% block postloadjs %}
   {% endblock %}
-
-
 </body>
-
 
 </html>
