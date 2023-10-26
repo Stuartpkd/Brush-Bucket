@@ -2,6 +2,10 @@ from django.db import models
 
 
 class BrushCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Brush Categories'
+
     name = models.CharField(max_length=200)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
 
@@ -13,6 +17,10 @@ class BrushCategory(models.Model):
 
 
 class Brush(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Brushes'
+
     name = models.CharField(max_length=100)
     category = models.ForeignKey(BrushCategory, on_delete=models.CASCADE)
     description = models.TextField()
