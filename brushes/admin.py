@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Brush, BrushCategory
 
-# Register your models here.
+
+admin.site.register(Brush)
+admin.site.register(BrushCategory)
