@@ -18,7 +18,11 @@
                 <h2 class="brush-title">{{ brush.name }}</h2>
                 <div class="brush">
                     <div>
+                        {% if brush.image %}
                         <img src="{{ brush.image.url }}" alt="{{ brush.name }} Image" class="brush-image">
+                        {% else %}
+                        <img src="{% static 'images/placeholder.png' %}" alt="Placeholder Image" class="brush-image">
+                        {% endif %}
                     </div>
                 </div>
                 <p class="brush-rating">Rating: {{ brush.rating }}</p>
