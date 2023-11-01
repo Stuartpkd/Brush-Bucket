@@ -16,15 +16,18 @@
         <div class="mb-4">
             <div class="brush-container">
                 <h2 class="brush-title">{{ brush.name }}</h2>
-                <div class="brush">
-                    <div>
-                        {% if brush.image %}
-                        <img src="{{ brush.image.url }}" alt="{{ brush.name }} Image" class="brush-image">
-                        {% else %}
-                        <img src="{% static 'images/placeholder.png' %}" alt="Placeholder Image" class="brush-image">
-                        {% endif %}
+                <a href="{% url 'brush_detail' brush.id %}">
+                    <div class="brush">
+                        <div>
+                            {% if brush.image %}
+                            <img src="{{ brush.image.url }}" alt="{{ brush.name }} Image" class="brush-image">
+                            {% else %}
+                            <img src="{% static 'images/placeholder.png' %}" alt="Placeholder Image"
+                                class="brush-image">
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
+                </a>
                 <p class="brush-rating">Rating: {{ brush.rating }}</p>
                 <p class="brush-price">Price: ${{ brush.price }}</p>
                 <a href="" class="add-to-cart-button btn btn-primary">
@@ -35,4 +38,5 @@
         {% endfor %}
     </div>
 </div>
+
 {% endblock %}
