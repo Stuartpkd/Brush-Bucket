@@ -59,11 +59,12 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'brushes' %}" id="brushes-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="brushes-link"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Brushes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="brushes-link">
+              <a href="{% url 'brushes' %}" class="dropdown-item">All Brushes</a>
               <a href="" class="dropdown-item">Charcoal</a>
               <a href="" class "dropdown-item">Watercolor</a>
               <a href="" class="dropdown-item">Digital Ink</a>

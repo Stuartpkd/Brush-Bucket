@@ -15,8 +15,9 @@
         {% for brush in brushes %}
         <div class="mb-4">
             <div class="brush-container">
-                <h2 class="brush-title">{{ brush.name }}</h2>
                 <a href="{% url 'brush_detail' brush.id %}">
+                    <h2 class="brush-title">{{ brush.name }}</h2>
+
                     <div class="brush">
                         <div>
                             {% if brush.image %}
