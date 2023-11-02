@@ -12,6 +12,7 @@
 {% block content %}
 <div class="container">
     <div class="row justify-content-center align-items-end">
+        {% if brushes %}
         {% for brush in brushes %}
         <div class="mb-4">
             <div class="brush-container">
@@ -37,7 +38,9 @@
             </div>
         </div>
         {% endfor %}
+        {% else %}
+        <p>No brushes found for your search criteria.</p>
+        {% endif %}
     </div>
 </div>
-
 {% endblock %}
