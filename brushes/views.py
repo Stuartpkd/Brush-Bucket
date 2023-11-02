@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Brush
+from .models import Brush, BrushCategory
 
 
 def all_brushes(request):
@@ -8,8 +8,15 @@ def all_brushes(request):
 
     brushes = Brush.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            brushes = brushes.filter(category__name__in=categories)
+            categories = BrushCategory.objects.filter(name__in=categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -24,6 +31,7 @@ def all_brushes(request):
     context = {
         'brushes': brushes,
         'search_term': query,
+        'categories': categories,
     }
 
     return render(request, 'brushes/brushes.html', context)

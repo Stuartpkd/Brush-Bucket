@@ -65,9 +65,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="brushes-link">
               <a href="{% url 'brushes' %}" class="dropdown-item">All Brushes</a>
-              <a href="" class="dropdown-item">Charcoal</a>
-              <a href="" class="dropdown-item">Watercolor</a>
-              <a href="" class="dropdown-item">Digital Ink</a>
+              <a href="{% url 'brushes' %}?category=charcoal" class="dropdown-item">Charcoal</a>
+              <a href="{% url 'brushes' %}?category=watercolour" class="dropdown-item">Watercolour</a>
+              <a href="{% url 'brushes' %}?category=digital-ink" class="dropdown-item">Digital Ink</a>
             </div>
           </li>
           <li class="nav-item">
