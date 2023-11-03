@@ -9,8 +9,22 @@ def all_brushes(request):
     brushes = Brush.objects.all()
     query = None
     categories = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                brushes = brushes.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            brushes = brushes.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
