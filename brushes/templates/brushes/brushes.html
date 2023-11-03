@@ -10,6 +10,21 @@
 {% endblock %}
 
 {% block content %}
+<li class="nav-item dropdown">
+    <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Sort Brushes
+    </a>
+    <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="all-brushes-link">
+        <a href="{% url 'brushes' %}?sort=price&direction=asc" class="dropdown-item">Price (Low to High)</a>
+        <a href="{% url 'brushes' %}?sort=price&direction=desc" class="dropdown-item">Price (High to Low)</a>
+        <a href="{% url 'brushes' %}?sort=rating&direction=desc" class="dropdown-item">Rating (High to Low)</a>
+        <a href="{% url 'brushes' %}?sort=category&direction=asc" class="dropdown-item">Category (A to Z)</a>
+        <a href="{% url 'brushes' %}?sort=category&direction=desc" class="dropdown-item">Category (Z to A)</a>
+        <a href="{% url 'brushes' %}" class="dropdown-item">All Brushes</a>
+    </div>
+</li>
+
 <div class="container">
     <div class="row justify-content-center align-items-end">
         {% if brushes %}
