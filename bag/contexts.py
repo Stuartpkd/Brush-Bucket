@@ -1,10 +1,25 @@
-
+from brushes.models import brush
 
 def bag_contents(request):
+    bag = request.session.get('bag', {})
     bag_items = []
     total = 0
     product_count = 0
-    grand_total = total
+
+    for brush_id, quantity in bag.items():
+        brush = get_object_or_404(Brush, pk=brush_id)
+        item_total = quantity * brush.price
+        total += item_total
+        product_count += quantity
+
+        bag_items.append({
+            'brush_id': brush_id,
+            'quantity': quantity,
+            'brush': brush,
+            'item_total': item_total,
+        })
+
+    grand_total = total  # No delivery cost for digital products
 
     context = {
         'bag_items': bag_items,
