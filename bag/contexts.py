@@ -19,7 +19,7 @@ def bag_contents(request):
             'item_total': item_total,
         })
 
-    grand_total = total  # No delivery cost for digital products
+    grand_total = total  
 
     context = {
         'bag_items': bag_items,
