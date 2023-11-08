@@ -47,9 +47,13 @@
                 </a>
                 <p class="brush-rating">Rating: {{ brush.rating }}</p>
                 <p class="brush-price">Price: ${{ brush.price }}</p>
-                <a href="" class="add-to-cart-button btn btn-primary">
-                    Add to Cart
-                </a>
+                {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+                <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled value="Already in Cart">
+                    Already in Cart
+                </button>
+                {% else %}
+                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+                {% endif %}
             </div>
         </div>
         {% endfor %}

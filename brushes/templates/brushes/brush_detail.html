@@ -23,7 +23,14 @@
                             </span>
                             <span class="text-uppercase">Back to Brushes</span>
                         </a>
+                        {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+                        <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled
+                            value="Already in Cart">
+                            Already in Cart
+                        </button>
+                        {% else %}
                         <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+                        {% endif %}
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>

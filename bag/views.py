@@ -17,7 +17,7 @@ def add_to_bag(request, brush_id):
 
     if brush_id in bag:
         # The user already has this brush in the bag
-        bag[brush_id] += 1
+        pass
     else:
         # Add the brush to the bag with a quantity of 1
         bag[brush_id] = 1
@@ -25,6 +25,5 @@ def add_to_bag(request, brush_id):
     request.session['bag'] = bag
 
     redirect_url = request.POST.get('redirect_url')
-    print(f"Added brush ID {brush_id} to the bag. Bag contents: {bag}")
     return redirect(redirect_url)
 
