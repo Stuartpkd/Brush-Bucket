@@ -61,6 +61,20 @@ body {
     border: 1px solid #000 !important;
 }
 
+/* Brushes */
+
+.brush-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.brush-container {
+    margin: 20px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
