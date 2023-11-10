@@ -31,6 +31,7 @@
                             <th scope="col">Title</th>
                             <th scope="col">Category</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Actions</th> {# Added Actions column #}
                         </tr>
                     </thead>
                     <tbody>
@@ -41,6 +42,13 @@
                             <td>{{ item.brush.name }}</td>
                             <td>{{ item.brush.category.name }}</td>
                             <td>${{ item.brush.price }}</td>
+                            <td>
+                                <form method="post" action="{% url 'remove_from_bag' item.brush.id %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                                    <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                                </form>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
