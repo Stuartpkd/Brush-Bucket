@@ -56,7 +56,7 @@
                 <p class="grand-total">Grand Total: ${{ grand_total }}</p>
                 <div class="buttons">
                     <a href="{% url 'home' %}" class="btn btn-primary">Continue Shopping</a>
-                    <a href="" class="btn btn-success">Proceed to Checkout</a>
+                    <a href="{% url 'checkout' %}" class="btn btn-success">Proceed to Checkout</a>
                 </div>
             </div>
             {% else %}
