@@ -63,6 +63,13 @@ body {
 
 /* Brushes */
 
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999;
+}
+
 .brush-image {
     width: 300px;
     height: 300px;
@@ -74,6 +81,45 @@ body {
 .brush-container {
     margin: 20px;
 }
+
+/* Toast Message Styling */
+.toast.custom-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    /* Ensures the toast is above other elements */
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow for better visibility */
+}
+
+.toast-header {
+    font-weight: bold;
+}
+
+.toast-body {
+    word-wrap: break-word;
+    /* Ensures long messages don't overflow */
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #28a745;
+    /* Arrow color should match the toast header */
+    position: absolute;
+    top: -10px;
+    right: 20px;
+}
+
+/* Success Toast Specific Styling */
+.toast.custom-toast .toast-capper.bg-success {
+    height: 10px;
+}
+
 
 /* -------------------------------- Media Queries */
 

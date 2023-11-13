@@ -23,6 +23,7 @@ def add_to_bag(request, brush_id):
     else:
         bag[brush_id] = 1
         messages.success(request, f'Added {brush.name} to your bag')
+        print('message success')
 
     request.session['bag'] = bag
 
@@ -32,7 +33,7 @@ def add_to_bag(request, brush_id):
 
 def remove_from_bag(request, brush_id):
     """ Remove a digital brush from the shopping bag """
-    
+
     brush = get_object_or_404(Brush, pk=brush_id)
     bag = request.session.get('bag', {})
 
