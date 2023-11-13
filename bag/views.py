@@ -52,3 +52,6 @@ def remove_from_bag(request, brush_id):
 
 
 
+
+
+

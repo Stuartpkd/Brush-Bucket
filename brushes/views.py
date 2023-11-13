@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Brush, BrushCategory
+from django.shortcuts import redirect
+from .models import Brush, BrushCategory, Rating
+from django.contrib.auth.decorators import login_required
 
 
 def all_brushes(request):
@@ -55,9 +57,42 @@ def brush_detail(request, brush_id):
     """ A view to show brush details """
 
     brush = get_object_or_404(Brush, pk=brush_id)
+    user_rating = None
+    if request.user.is_authenticated:
+        rating_query = Rating.objects.filter(brush=brush, user=request.user).first()
+        if rating_query:
+            user_rating = rating_query.rating
 
     context = {
         'brush': brush,
+        'user_rating': user_rating,
     }
 
     return render(request, 'brushes/brush_detail.html', context)
+
+
+@login_required
+def rate_brush(request, brush_id):
+    if request.method == 'POST':
+        try:
+            rating_value = int(request.POST.get('rating'))
+            brush = Brush.objects.get(id=brush_id)
+
+            rating, created = Rating.objects.get_or_create(
+                brush=brush, 
+                user=request.user, 
+                defaults={'rating': rating_value}
+            )
+
+            if not created:
+                rating.rating = rating_value
+                rating.save()
+
+            brush.update_average_rating()
+
+        except (ValueError, Brush.DoesNotExist):
+            
+            pass
+
+    return redirect('brush_detail', brush_id=brush_id)
+

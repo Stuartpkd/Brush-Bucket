@@ -12,13 +12,23 @@
             <p>Price: ${{ brush.price }}</p>
             <p>Rating: {{ brush.rating }}</p>
             <p>Description: {{ brush.description }}</p>
-
             <a href="{% url 'brushes' %}" class="btn btn-outline-black rounded-0 mt-5">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
                 <span class="text-uppercase">Back to Brushes</span>
             </a>
+            <form method="post" action="{% url 'rate_brush' brush.id %}">
+                {% csrf_token %}
+                <div class="star-rating">
+                    {% for star in "12345" %}
+                    <input id="star-{{ star }}" type="radio" name="rating" value="{{ star }}"
+                        {% if user_rating == star|add:0 %} checked {% endif %}>
+                    <label for="star-{{ star }}" title="{{ star }} stars">&#9733;</label>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn btn-primary">Rate</button>
+            </form>
 
             {% if brush.id|stringformat:"s" in request.session.bag.keys %}
             <form method="post" action="{% url 'remove_from_bag' brush.id %}">
