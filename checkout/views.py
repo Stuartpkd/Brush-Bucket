@@ -7,7 +7,7 @@ def checkout(request):
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
-        return redirect(reverse('brushes'))  # Assuming 'brushes' is the name of your view that shows all brushes
+        return redirect(reverse('brushes'))  
 
     order_form = OrderForm()
     template = 'checkout/checkout.html'
