@@ -31,19 +31,26 @@ def remove_from_bag(request, brush_id):
     """ Remove a digital brush from the shopping bag """
 
     bag = request.session.get('bag', {})
+    source_page = request.POST.get('source_page', 'view_bag')
 
     if str(brush_id) in bag:
         del bag[str(brush_id)]
+        print(f"Removed brush with ID {brush_id}")
     else:
         raise BrushNotFoundError(f"Brush with ID {brush_id} not found in the bag")
-
 
     request.session['bag'] = bag
 
     context = bag_contents(request)
     total = context['total']
 
-    return redirect('view_bag')
+    if source_page == 'view_bag':
+        return redirect('view_bag')
+    elif source_page == 'brushes_page':
+        return redirect('brushes')  # Replace 'brushes' with your actual URL name for the brushes page
+    else:
+        # Handle other source pages if needed
+        return redirect('view_bag')  # Fallback to view_bag if source_page is not recognized
 
 
 

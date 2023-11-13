@@ -33,7 +33,6 @@
             <div class="brush-container">
                 <a href="{% url 'brush_detail' brush.id %}">
                     <h2 class="brush-title">{{ brush.name }}</h2>
-
                     <div class="brush">
                         <div>
                             {% if brush.image %}
@@ -47,15 +46,22 @@
                 </a>
                 <p class="brush-rating">Rating: {{ brush.rating }}</p>
                 <p class="brush-price">Price: ${{ brush.price }}</p>
-                {% if brush.id|stringformat:"s" in request.session.bag.keys %}
-                <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled value="Already in Cart">
-                    Already in Cart
-                </button>
-                {% else %}
-                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
-                {% endif %}
+
+                <form method="post" action="{% url 'add_to_bag' brush.id %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="redirect_url" value="{% url 'brushes' %}">
+
+                    {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+                    <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled>
+                        Already in Cart
+                    </button>
+                    {% else %}
+                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+                    {% endif %}
+                </form>
             </div>
         </div>
+
         {% endfor %}
         {% else %}
         <p>No brushes found for your search criteria.</p>
