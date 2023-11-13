@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from brushes.models import Brush
 from .contexts import bag_contents
+from django.contrib import messages
 
 
 def view_bag(request):
@@ -20,8 +21,8 @@ def add_to_bag(request, brush_id):
     if brush_id in bag:
         pass
     else:
-        
         bag[brush_id] = 1
+        messages.success(request, f'Added {brush.name} to your bag')
 
     request.session['bag'] = bag
 
