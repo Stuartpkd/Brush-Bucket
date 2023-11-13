@@ -22,8 +22,14 @@ def add_to_bag(request, brush_id):
         pass
     else:
         bag[brush_id] = 1
+        request.session['added_brush'] = {
+        'name': brush.name,
+        'price': str(brush.price),
+        'image_url': brush.image.url if brush.image else None,
+        'rating': str(brush.rating) if brush.rating else None
+    }
         messages.success(request, f'Added {brush.name} to your bag')
-        print('message success')
+        
 
     request.session['bag'] = bag
 

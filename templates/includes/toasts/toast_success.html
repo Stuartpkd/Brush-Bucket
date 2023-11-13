@@ -8,6 +8,27 @@
         </button>
     </div>
     <div class="toast-body bg-white">
-        {{ message }}
+        {% if request.session.added_brush %}
+        <p>{{ message }}</p>
+        <div class="table-responsive rounded">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{{ request.session.added_brush.image_url }}"
+                                alt="{{ request.session.added_brush.name }}" class="toast-brush-image">
+                        </td>
+                        <td>{{ request.session.added_brush.name }}</td>
+                        <td>${{ request.session.added_brush.price }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+
+        {% endif %}
+        <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
+            <span class="text-uppercase">View Bag</span>
+        </a>
     </div>
 </div>

@@ -94,6 +94,13 @@ body {
     /* Optional: Adds a shadow for better visibility */
 }
 
+.toast-brush-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .toast-header {
     font-weight: bold;
 }
