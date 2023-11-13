@@ -13,28 +13,26 @@
             <p>Rating: {{ brush.rating }}</p>
             <p>Description: {{ brush.description }}</p>
 
-            <form class="form" action="{% url 'add_to_bag' brush.id %}" method="POST">
+            <a href="{% url 'brushes' %}" class="btn btn-outline-black rounded-0 mt-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Back to Brushes</span>
+            </a>
+
+            {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+            <form method="post" action="{% url 'remove_from_bag' brush.id %}">
                 {% csrf_token %}
-                <div class="form-row">
-                    <div class="col-12">
-                        <a href="{% url 'brushes' %}" class="btn btn-outline-black rounded-0 mt-5">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Back to Brushes</span>
-                        </a>
-                        {% if brush.id|stringformat:"s" in request.session.bag.keys %}
-                        <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled
-                            value="Already in Cart">
-                            Already in Cart
-                        </button>
-                        {% else %}
-                        <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
-                        {% endif %}
-                    </div>
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                </div>
+                <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                <button type="submit" class="btn btn-danger btn-sm">Remove</button>
             </form>
+            {% else %}
+            <form method="post" action="{% url 'add_to_bag' brush.id %}">
+                {% csrf_token %}
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+            </form>
+            {% endif %}
         </div>
     </div>
 </div>

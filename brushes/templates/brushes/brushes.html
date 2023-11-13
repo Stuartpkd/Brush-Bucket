@@ -47,21 +47,23 @@
                 <p class="brush-rating">Rating: {{ brush.rating }}</p>
                 <p class="brush-price">Price: ${{ brush.price }}</p>
 
+                {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+
+                <form method="post" action="{% url 'remove_from_bag' brush.id %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                    <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                </form>
+                {% else %}
+
                 <form method="post" action="{% url 'add_to_bag' brush.id %}">
                     {% csrf_token %}
                     <input type="hidden" name="redirect_url" value="{% url 'brushes' %}">
-
-                    {% if brush.id|stringformat:"s" in request.session.bag.keys %}
-                    <button class="btn btn-secondary rounded-0 text-uppercase mt-5" disabled>
-                        Already in Cart
-                    </button>
-                    {% else %}
                     <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
-                    {% endif %}
                 </form>
+                {% endif %}
             </div>
         </div>
-
         {% endfor %}
         {% else %}
         <p>No brushes found for your search criteria.</p>

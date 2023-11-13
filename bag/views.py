@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from brushes.models import Brush
 from .contexts import bag_contents
-# Create your views here.
+
 
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -31,26 +33,22 @@ def remove_from_bag(request, brush_id):
     """ Remove a digital brush from the shopping bag """
 
     bag = request.session.get('bag', {})
-    source_page = request.POST.get('source_page', 'view_bag')
 
     if str(brush_id) in bag:
         del bag[str(brush_id)]
-        print(f"Removed brush with ID {brush_id}")
     else:
         raise BrushNotFoundError(f"Brush with ID {brush_id} not found in the bag")
 
     request.session['bag'] = bag
 
-    context = bag_contents(request)
-    total = context['total']
+    
+    referer_url = request.META.get('HTTP_REFERER')
 
-    if source_page == 'view_bag':
-        return redirect('view_bag')
-    elif source_page == 'brushes_page':
-        return redirect('brushes')  # Replace 'brushes' with your actual URL name for the brushes page
+    
+    if referer_url:
+        return HttpResponseRedirect(referer_url)
     else:
-        # Handle other source pages if needed
-        return redirect('view_bag')  # Fallback to view_bag if source_page is not recognized
+        return redirect('view_bag')
 
 
 
