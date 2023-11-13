@@ -32,11 +32,13 @@ def add_to_bag(request, brush_id):
 
 def remove_from_bag(request, brush_id):
     """ Remove a digital brush from the shopping bag """
-
+    
+    brush = get_object_or_404(Brush, pk=brush_id)
     bag = request.session.get('bag', {})
 
     if str(brush_id) in bag:
         del bag[str(brush_id)]
+        messages.success(request, f'Removed {brush.name} from your bag')
     else:
         raise BrushNotFoundError(f"Brush with ID {brush_id} not found in the bag")
 
