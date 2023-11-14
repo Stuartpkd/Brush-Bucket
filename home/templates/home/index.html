@@ -30,16 +30,16 @@
         <div class="col-12">
             <h2 class="logo-font text-black">Featured Brushes</h2>
             <div class="featured-brushes">
-
+                {% for brush in featured_brushes %}
                 <div class="featured-brush">
-                    <img src="{% static 'images/featured_brush1.jpg' %}" alt="Featured Brush 1">
-                    <h3>Brush Name 1</h3>
+                    <img src="{{ brush.image.url }}" alt="{{ brush.name }}" class="brush-image">
+                    <h3>{{ brush.name }}</h3>
+                    <h3>{{ brush.price }}</h3>
+                    <h3>{{ brush.rating }}</h3>
                 </div>
-                <div class="featured-brush">
-                    <img src="{% static 'images/featured_brush2.jpg' %}" alt="Featured Brush 2">
-                    <h3>Brush Name 2</h3>
-                </div>
-
+                {% empty %}
+                <p>No featured brushes at the moment.</p>
+                {% endfor %}
             </div>
         </div>
     </div>
