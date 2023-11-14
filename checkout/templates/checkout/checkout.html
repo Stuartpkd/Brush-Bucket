@@ -34,9 +34,9 @@
                 <div class="col-2 mb-1">
                     <!-- Item Image -->
                     {% if item.brush.image %}
-                    <img class="w-100" src="{{ item.brush.image.url }}" alt="{{ item.brush.name }}">
+                    <img class="toast-brush-image" src="{{ item.brush.image.url }}" alt="{{ item.brush.name }}">
                     {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.brush.name }}">
+                    <img class="toast-brush-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.brush.name }}">
                     {% endif %}
                 </div>
                 <div class="col-7">
