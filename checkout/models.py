@@ -1,5 +1,6 @@
 from django.db import models
 from brushes.models import Brush
+import uuid
 
 
 class Order(models.Model):

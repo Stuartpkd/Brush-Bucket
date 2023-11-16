@@ -28,7 +28,7 @@ def checkout(request):
                     brush = Brush.objects.get(id=item_id)
                     order_line_item = OrderLineItem(
                         order=order,
-                        brush=brush,
+                        product=brush,
                         quantity=quantity,
                     )
                     order_line_item.save()
