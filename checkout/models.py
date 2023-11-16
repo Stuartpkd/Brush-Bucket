@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Sum
 from brushes.models import Brush
 import uuid
 
@@ -22,13 +23,30 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
+    def update_total(self):
+        """
+        Update grand total each time a line item is added.
+        """
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total')
+        )['lineitem_total__sum'] or 0
+        self.grand_total = self.order_total
+        self.save()
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
-        if it hasn't been set already.
+        if it hasn't been set already and update the grand total.
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
+        
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total')
+        )['lineitem_total__sum'] or 0
+
+        self.grand_total = self.order_total
+
         super().save(*args, **kwargs)
 
 
