@@ -41,12 +41,23 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            if order_form.is_valid():
-                order = order_form.save(commit=False)
-                pid = request.POST.get('client_secret').split('_secret')[0]
+            order = order_form.save(commit=False)
+
+            client_secret = request.POST.get('client_secret')
+            if client_secret:
+                pid = client_secret.split('_secret')[0]
                 order.stripe_pid = pid
-                order.original_bag = json.dumps(bag)
-                order.save()
+            else:
+                messages.error(request, "There was an error processing your payment. Please try again.")
+
+                # Redirect to a safe page
+                return redirect(reverse('view_bag'))
+
+            order.original_bag = json.dumps(bag)
+            order.save()
+
+    # ... rest of your code for handling order items ...
+
             for item_id, quantity in bag.items():
                 try:
                     brush = Brush.objects.get(id=item_id)
