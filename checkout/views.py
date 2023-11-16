@@ -19,7 +19,6 @@ def checkout(request):
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
-            # Remove other fields that are not needed for digital products
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -35,14 +34,16 @@ def checkout(request):
                     order_line_item.save()
                 except Brush.DoesNotExist:
                     messages.error(request, (
-                        "One of the brushes in your bag wasn't found in our database. "
+                        "One of the brushes in your bag "
+                        "wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -50,7 +51,8 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in your "
+                           "bag at the moment")
             return redirect(reverse('brushes'))
 
         current_bag = bag_contents(request)
