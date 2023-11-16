@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from brushes.models import Brush
-from checkout.models import Order
 
 
 class UserProfile(models.Model):
@@ -22,6 +21,7 @@ class UserProfile(models.Model):
         """
         Returns the user's purchase history.
         """
+        Order = models.ForeignKey('checkout.Order', on_delete=models.CASCADE)
         return Order.objects.filter(user=self.user)
 
 
