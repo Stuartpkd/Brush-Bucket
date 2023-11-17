@@ -23,34 +23,48 @@
             <hr>
             <p>Username: {{ user.username }}</p>
             <p>Email: {{ user.email }}</p>
+            <p>Email: {{ profile.saved_brushes }}</p>
         </div>
     </div>
 
-    <!-- Purchase History Section -->
+    <!-- Toggle Switch -->
     <div class="row">
+        <div class="col text-center">
+            <button class="btn toggle-button" onclick="toggleBrushes('owned')">Owned Brushes</button>
+            <button class="btn toggle-button" onclick="toggleBrushes('favorites')">Favorite Brushes</button>
+        </div>
+    </div>
+
+    <!-- Owned Brushes Section -->
+    <div id="owned-brushes" class="row brush-section">
         <div class="col">
-            <h3>Order History</h3>
+            <h3>Owned Brushes</h3>
             {% for order in orders %}
+            <p>Order Number: {{ order.order_number }}</p>
+            <p>Date: {{ order.date }}</p>
+            <p>Total: ${{ order.grand_total }}</p>
             <div>
-                <p>Order Number: {{ order.order_number }}</p>
-                <p>Date: {{ order.date }}</p>
-                <p>Total: ${{ order.grand_total }}</p>
-                <!-- Add more details as needed -->
+                {% for lineitem in order.lineitems.all %}
+                <p>Brush Name: {{ lineitem.product.name }}</p>
+                <img src="{{ lineitem.product.image.url }}" alt="{{ lineitem.product.name }}" class="brush-image">
+                <p>Quantity: {{ lineitem.quantity }}</p>
+                <p>Item Total: ${{ lineitem.lineitem_total }}</p>
+                {% endfor %}
             </div>
             {% empty %}
-            <p>No past orders.</p>
+            <p>No owned brushes.</p>
             {% endfor %}
         </div>
     </div>
 
     <!-- Favorite Brushes Section -->
-    <div class="row">
+    <div id="favorite-brushes" class="row brush-section" style="display: none;">
         <div class="col">
             <h3 class="logo-font mb-3">Favorite Brushes</h3>
             {% for brush in user.userprofile.saved_brushes.all %}
             <div>
                 <p>Brush Name: {{ brush.name }}</p>
-
+                <img src="{{ brush.image.url }}" alt="{{ brush.name }}" class="brush-image">
             </div>
             {% empty %}
             <p>You have no favorite brushes.</p>
@@ -58,4 +72,21 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function toggleBrushes(section) {
+        var ownedBrushes = document.getElementById('owned-brushes');
+        var favoriteBrushes = document.getElementById('favorite-brushes');
+
+        if (section == 'owned') {
+            ownedBrushes.style.display = 'block';
+            favoriteBrushes.style.display = 'none';
+        } else if (section == 'favorites') {
+            ownedBrushes.style.display = 'none';
+            favoriteBrushes.style.display = 'block';
+        }
+    }
+</script>
 {% endblock %}
