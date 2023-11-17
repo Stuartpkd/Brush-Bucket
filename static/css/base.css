@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #f3bd79;
+    color: #f3bd79 !important;
 }
 
 h1 {
@@ -105,6 +105,46 @@ h6 {
     align-items: center;
     padding: 0.5rem 1rem;
     /* Ensures consistent padding with other nav items */
+}
+
+
+/* Dropdown menus styling */
+
+.dropdown-menu {
+    border: 2px solid #f3bd79 !important;
+    /* Yellow outline */
+    background-color: #4a5c77;
+    /* Background color, adjust if different from the body */
+}
+
+/* Style for dropdown items */
+.dropdown-menu .dropdown-item {
+    color: #f3bd79;
+    /* Yellow text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f3bd79;
+    /* Yellow background on hover */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+/* Style for the Sort Brushes header */
+.nav-link h2 {
+    font-size: 1rem;
+    /* Adjust size as needed */
+    margin-bottom: 0;
+    /* Remove bottom margin */
+    color: inherit;
+    /* Inherit color from parent element */
+}
+
+.fa-icon-style {
+    color: #f3bd79;
+    /* Yellow color for the icon */
 }
 
 
