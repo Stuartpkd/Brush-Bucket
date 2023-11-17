@@ -29,16 +29,16 @@
     <!-- Purchase History Section -->
     <div class="row">
         <div class="col">
-            <h3 class="logo-font mb-3">Purchase History</h3>
-            {% for order in user.userprofile.purchase_history %}
+            <h3>Order History</h3>
+            {% for order in profile.orders.all %}
             <div>
                 <p>Order Number: {{ order.order_number }}</p>
                 <p>Date: {{ order.date }}</p>
                 <p>Total: ${{ order.grand_total }}</p>
-
+                <!-- Add more details as needed -->
             </div>
             {% empty %}
-            <p>You have no purchase history.</p>
+            <p>No past orders.</p>
             {% endfor %}
         </div>
     </div>
