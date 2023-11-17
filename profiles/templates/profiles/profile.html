@@ -30,7 +30,7 @@
     <div class="row">
         <div class="col">
             <h3>Order History</h3>
-            {% for order in profile.orders.all %}
+            {% for order in orders %}
             <div>
                 <p>Order Number: {{ order.order_number }}</p>
                 <p>Date: {{ order.date }}</p>
