@@ -6,10 +6,16 @@ body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #f3bd79;
     font-family: 'Mukta', sans-serif;
-    background-color: #EE4540;
+    background-color: #4a5c77;
     /* Updated background color */
+}
+
+/* Anchor tags */
+
+a {
+    text-decoration: none;
 }
 
 /* H tag font weights*/
@@ -35,6 +41,56 @@ h6 {
     font-weight: 400;
     /* Mukta Regular */
 }
+
+/* Buttons */
+
+/* General Button Style */
+.btn-custom {
+    background-color: #4a5c77;
+    /* Site background color */
+    color: #f3bd79;
+    /* Text color */
+    border: 2px solid #665d77;
+    /* Thin outline - choose between #665d77 or #a37081 */
+    border-radius: 0.25rem;
+    /* Rounded edges */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.btn-custom:hover {
+    background-color: #665d77;
+    /* Darker shade on hover - choose color */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+/* CTA and Checkout Button Style */
+.btn-cta {
+    background-color: #4a5c77;
+    color: #f3bd79;
+    border: 2px solid #a37081;
+    /* Different outline color for emphasis */
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #a37081;
+    color: #ffffff;
+}
+
+/* Ensure custom styles override Bootstrap styles */
+.btn-custom,
+.btn-cta {
+    padding: 0.75rem 1.25rem;
+    /* Adjust padding if necessary */
+    font-size: 1rem;
+    /* Adjust font size if necessary */
+    font-weight: bold;
+    /* Bold text for better visibility */
+}
+
 
 /* from Bulma */
 .icon {
