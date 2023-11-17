@@ -63,6 +63,7 @@ h6 {
     /* Darker shade on hover - choose color */
     color: #ffffff;
     /* White text on hover */
+    text-decoration: none !important;
 }
 
 /* CTA and Checkout Button Style */
@@ -78,6 +79,7 @@ h6 {
 .btn-cta:hover {
     background-color: #a37081;
     color: #ffffff;
+    text-decoration: none !important;
 }
 
 /* Ensure custom styles override Bootstrap styles */
@@ -89,6 +91,7 @@ h6 {
     /* Adjust font size if necessary */
     font-weight: bold;
     /* Bold text for better visibility */
+    text-decoration: none !important;
 }
 
 
