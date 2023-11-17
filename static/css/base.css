@@ -42,6 +42,81 @@ h6 {
     /* Mukta Regular */
 }
 
+/* Nav styling */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3bd79' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom {
+    background-color: #4a5c77;
+    /* Site's background color */
+}
+
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-nav .nav-item,
+.navbar .navbar-icons a .navbar .fa-shopping-bag,
+.navbar .my-account-link {
+    color: #f3bd79 !important;
+    /* Contrast color for better readability */
+}
+
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    /* Adjust padding as needed */
+    margin: 0;
+    /* Adjust or remove margin as needed */
+}
+
+.navbar-icons .nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* Ensures consistent padding with other nav items */
+}
+
+
+/* Search Input */
+.form-control {
+    background-color: #4a5c77;
+    color: #f3bd79;
+    border: 2px solid #f3bd79;
+    /* Or #a37081 */
+    border-radius: 0.25rem;
+}
+
+.search-input::placeholder {
+    color: #f3bd79 !important;
+}
+
+/* Search Button */
+.btn-black {
+    background-color: #4a5c77;
+    border: 2px solid #f3bd79;
+    /* Or #a37081 */
+    border-radius: 0.25rem;
+}
+
+.btn-black:hover {
+    background-color: #665d77;
+    /* Darker shade on hover */
+    color: #ffffff;
+}
+
+
 /* Buttons */
 
 /* General Button Style */
@@ -120,7 +195,7 @@ h6 {
 }
 
 .btn-black {
-    background: #801336;
+    background: #f3bd79;
     /* Updated button background color */
     color: white;
 }
@@ -217,6 +292,19 @@ h6 {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-icons .nav-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-icons .fa-shopping-bag,
+    .navbar-icons .fa-user {
+        margin-right: 10px;
+
     }
 }
 
