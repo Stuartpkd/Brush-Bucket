@@ -170,6 +170,60 @@ h6 {
 }
 
 
+/* Add to Cart Button Style */
+.btn-add-to-cart {
+    background-color: #4a5c77;
+    /* Primary color */
+    color: #f3bd79;
+    /* Text color */
+    border: 2px solid #f3bd79;
+    /* Outline color */
+    border-radius: 0.25rem;
+    /* Rounded edges */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.btn-add-to-cart:hover {
+    background-color: #665d77;
+    /* Darker shade on hover */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+/* Remove from Cart Button Style */
+.btn-remove-from-cart {
+    background-color: #a37081;
+    /* Secondary color, different from Add to Cart */
+    color: #ffffff;
+    /* White text */
+    border: 2px solid #4a5c77;
+    /* Outline color */
+    border-radius: 0.25rem;
+    /* Rounded edges */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.btn-remove-from-cart:hover {
+    background-color: #665d77;
+    /* Darker shade on hover */
+    color: #f3bd79;
+    /* Contrast text color on hover */
+}
+
+/* Common Style Overrides */
+.btn-add-to-cart,
+.btn-remove-from-cart {
+    padding: 0.75rem 1.25rem;
+    /* Adjust padding */
+    font-size: 1rem;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Bold text */
+    text-decoration: none !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -238,6 +292,20 @@ h6 {
 
 .brush-container {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brush-title {
+    max-width: 280px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.brush-container:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
 }
 
 /* Toast Message Styling */
@@ -292,19 +360,6 @@ h6 {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-icons .nav-item {
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-icons .fa-shopping-bag,
-    .navbar-icons .fa-user {
-        margin-right: 10px;
-
     }
 }
 
