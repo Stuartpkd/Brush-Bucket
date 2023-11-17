@@ -6,7 +6,6 @@ body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #f3bd79;
     font-family: 'Mukta', sans-serif;
     background-color: #4a5c77;
     /* Updated background color */
@@ -15,10 +14,24 @@ body {
 /* Anchor tags */
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #f3bd79;
+}
+
+p {
+    color: #f3bd79;
 }
 
 /* H tag font weights*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #f3bd79;
+}
 
 h1 {
     font-weight: 800;
@@ -40,6 +53,12 @@ h5,
 h6 {
     font-weight: 400;
     /* Mukta Regular */
+}
+
+/* icons */
+
+.fa-icon-style {
+    color: #f3bd79;
 }
 
 /* Nav styling */

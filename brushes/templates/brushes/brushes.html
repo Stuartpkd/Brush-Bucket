@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block content %}
-<li class="nav-item dropdown">
+<li class="nnav-item dropdown ml-auto mr-3 mr-md-0 text-center text-md-right">
     <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Sort Brushes
+        <h2>Sort Brushes</h2> <i class="fas fa-sort fa-icon-style"></i>
     </a>
     <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="all-brushes-link">
         <a href="{% url 'brushes' %}?sort=price&direction=asc" class="dropdown-item">Price (Low to High)</a>
@@ -44,8 +44,10 @@
                         </div>
                     </div>
                 </a>
-                <p class="brush-rating">Rating: {{ brush.rating }}</p>
-                <p class="brush-price">Price: ${{ brush.price }}</p>
+                <div class="row">
+                    <p class="brush-rating">Rating: {{ brush.rating }}</p>
+                    <p class="brush-price">Price: ${{ brush.price }}</p>
+                </div>
 
                 {% if brush.id|stringformat:"s" in request.session.bag.keys %}
 
