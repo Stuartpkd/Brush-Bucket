@@ -36,21 +36,27 @@
     </div>
 
     <!-- Owned Brushes Section -->
-    <div id="owned-brushes" class="row brush-section">
-        <div class="col">
-            <h3>Owned Brushes</h3>
+    <div id="owned-brushes" class="container">
+        <div class="row justify-content-center align-items-end">
             {% for order in orders %}
-            <p>Order Number: {{ order.order_number }}</p>
-            <p>Date: {{ order.date }}</p>
-            <p>Total: ${{ order.grand_total }}</p>
-            <div>
-                {% for lineitem in order.lineitems.all %}
-                <p>Brush Name: {{ lineitem.product.name }}</p>
-                <img src="{{ lineitem.product.image.url }}" alt="{{ lineitem.product.name }}" class="brush-image">
-                <p>Quantity: {{ lineitem.quantity }}</p>
-                <p>Item Total: ${{ lineitem.lineitem_total }}</p>
-                {% endfor %}
+            {% for lineitem in order.lineitems.all %}
+            <div class="mb-4">
+                <div class="brush-container">
+                    <a href="{% url 'brush_detail' lineitem.product.id %}">
+                        <h2 class="brush-title">{{ lineitem.product.name }}</h2>
+                        <div class="brush">
+                            {% if lineitem.product.image %}
+                            <img src="{{ lineitem.product.image.url }}" alt="{{ lineitem.product.name }} Image"
+                                class="brush-image">
+                            {% else %}
+                            <img src="{% static 'images/placeholder.png' %}" alt="Placeholder Image"
+                                class="brush-image">
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
             </div>
+            {% endfor %}
             {% empty %}
             <p>No owned brushes.</p>
             {% endfor %}
