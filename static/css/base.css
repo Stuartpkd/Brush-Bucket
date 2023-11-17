@@ -22,6 +22,10 @@ p {
     color: #f3bd79;
 }
 
+td {
+    color: #f3bd79;
+}
+
 /* H tag font weights*/
 
 h1,
@@ -368,22 +372,56 @@ h6 {
 }
 
 /* Toast Message Styling */
-.toast.custom-toast {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1050;
-    /* Ensures the toast is above other elements */
-    min-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a shadow for better visibility */
+
+.custom-toast {
+    border: 2px solid #f3bd79;
+    /* Yellow outline */
+    border-top: none;
+    /* Keeping the top border as none */
+}
+
+.custom-toast .toast-capper {
+    background-color: #4a5c77;
+    /* Background color for the top part of the toast */
+}
+
+.custom-toast .toast-header {
+    background-color: #4a5c77;
+    /* Background color for the header */
+    color: #ffffff;
+    /* White text color for contrast */
+}
+
+.custom-toast .toast-body {
+    background-color: #4a5c77 !important;
+    /* Background color for the body */
+    color: #ffffff;
+    /* White text color for the body */
+}
+
+.custom-toast .btn-black {
+    background-color: #f3bd79;
+    /* Yellow background for the button */
+    color: #4a5c77;
+    /* Text color for the button */
+    border: none;
+    /* Remove border for the button */
+}
+
+.custom-toast .btn-black:hover {
+    background-color: #665d77;
+    /* Darker shade for the button on hover */
+    color: #ffffff;
+    /* White text color on hover */
 }
 
 .toast-brush-image {
     width: 100px;
-    height: auto;
+    height: 100px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px;
+    margin: 20px;
 }
 
 .toast-header {
@@ -393,18 +431,6 @@ h6 {
 .toast-body {
     word-wrap: break-word;
     /* Ensures long messages don't overflow */
-}
-
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #28a745;
-    /* Arrow color should match the toast header */
-    position: absolute;
-    top: -10px;
-    right: 20px;
 }
 
 /* Success Toast Specific Styling */
