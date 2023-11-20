@@ -131,6 +131,7 @@ def add_brush(request):
 def edit_brush(request, brush_id):
     """ Edit a brush in the store """
     brush = get_object_or_404(Brush, pk=brush_id)
+    print("Editing brush with ID:", brush.id)
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES, instance=brush)
         if form.is_valid():
@@ -146,7 +147,7 @@ def edit_brush(request, brush_id):
     template = 'brushes/edit_brush.html'
     context = {
         'form': form,
-        'brush': Brush,
+        'brush': brush,
     }
 
     return render(request, template, context)
