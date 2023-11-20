@@ -45,6 +45,7 @@
                     </div>
                 </a>
                 <a href="{% url 'edit_brush' brush_id=brush.id %}">Edit Brush</a>
+                <a href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
                 <div class="row">
                     {% if user.is_authenticated %}
                     <form method="post" action="{% url 'save_unsave_brush' brush.id %}">

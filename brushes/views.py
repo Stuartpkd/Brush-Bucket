@@ -113,9 +113,9 @@ def add_brush(request):
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_brush'))
+            brush = form.save()
+            messages.success(request, 'Successfully added brush!')
+            return redirect(reverse('brush_detail', args=[brush.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -131,7 +131,6 @@ def add_brush(request):
 def edit_brush(request, brush_id):
     """ Edit a brush in the store """
     brush = get_object_or_404(Brush, pk=brush_id)
-    print("Editing brush with ID:", brush.id)
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES, instance=brush)
         if form.is_valid():
@@ -151,3 +150,11 @@ def edit_brush(request, brush_id):
     }
 
     return render(request, template, context)
+
+
+def delete_brush(request, brush_id):
+    """ Delete a brush from the store """
+    brush = get_object_or_404(Brush, pk=brush_id)
+    brush.delete()
+    messages.success(request, 'Brush deleted!')
+    return redirect(reverse('brushes'))
