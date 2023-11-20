@@ -110,11 +110,19 @@ def rate_brush(request, brush_id):
 
 def add_brush(request):
     """ Add a product to the store """
-    form = BrushForm()
+    if request.method == 'POST':
+        form = BrushForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_brush'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = BrushForm()
     template = 'brushes/add_brush.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
-
