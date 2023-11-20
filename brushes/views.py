@@ -49,7 +49,7 @@ def all_brushes(request):
             if not query:
                 messages.error(request, "You didn't enter any "
                                         "search criteria!")
-                return redirect(reverse('products'))
+                return redirect(reverse('brushes'))
 
             queries = (Q(name__icontains=query) |
                        Q(description__icontains=query))
@@ -123,6 +123,30 @@ def add_brush(request):
     template = 'brushes/add_brush.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_brush(request, brush_id):
+    """ Edit a brush in the store """
+    brush = get_object_or_404(Brush, pk=brush_id)
+    if request.method == 'POST':
+        form = BrushForm(request.POST, request.FILES, instance=brush)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated brush!')
+            return redirect(reverse('brush_detail', args=[brush.id]))
+        else:
+            messages.error(request, 'Failed to update brush. Please ensure the form is valid.')
+    else:
+        form = BrushForm(instance=brush)
+        messages.info(request, f'You are editing {brush.name}')
+
+    template = 'brushes/edit_brush.html'
+    context = {
+        'form': form,
+        'brush': Brush,
     }
 
     return render(request, template, context)
