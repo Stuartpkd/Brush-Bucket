@@ -61,20 +61,25 @@
     </div>
 
     <!-- Favorite Brushes Section -->
-    <div id="favorite-brushes" class="row brush-section" style="display: none;">
-        <div class="col">
-            <h3 class="logo-font mb-3">Favorite Brushes</h3>
+    <div id="favorite-brushes" class="container">
+        <h3 class="logo-font mb-3">Favorite Brushes</h3>
+        <div class="row justify-content-center align-items-end">
             {% for saved_brush in saved_brushes %}
-            <div class="brush-item">
-                <p>Brush Name: {{ saved_brush.brush.name }}</p>
-                {% if saved_brush.brush.image %}
-                <img src="{{ saved_brush.brush.image.url }}" alt="{{ saved_brush.brush.name }}" class="brush-image">
-                {% else %}
-                <img src="{% static 'path/to/default/image.png' %}" alt="Default Image" class="brush-image">
-                {% endif %}
+            <div class="col-md-4 mb-4">
+                <!-- Adjust the column size as needed -->
+                <div class="brush-container">
+                    <p>Brush Name: {{ saved_brush.brush.name }}</p>
+                    {% if saved_brush.brush.image %}
+                    <img src="{{ saved_brush.brush.image.url }}" alt="{{ saved_brush.brush.name }}" class="brush-image">
+                    {% else %}
+                    <img src="{% static 'path/to/default/image.png' %}" alt="Default Image" class="brush-image">
+                    {% endif %}
+                </div>
             </div>
             {% empty %}
-            <p>You have no favorite brushes.</p>
+            <div class="col-12">
+                <p>You have no favorite brushes.</p>
+            </div>
             {% endfor %}
         </div>
     </div>
