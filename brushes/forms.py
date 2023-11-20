@@ -2,7 +2,7 @@ from django import forms
 from .models import Brush, BrushCategory
 
 
-class ProductForm(forms.ModelForm):
+class BrushForm(forms.ModelForm):
 
     class Meta:
         model = Brush

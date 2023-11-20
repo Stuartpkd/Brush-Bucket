@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.db.models import Q
 from django.shortcuts import redirect
 from .models import Brush, BrushCategory, Rating
+from .forms import BrushForm
 from profiles.models import SavedBrush
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -105,4 +106,15 @@ def rate_brush(request, brush_id):
             pass
 
     return redirect('brush_detail', brush_id=brush_id)
+
+
+def add_brush(request):
+    """ Add a product to the store """
+    form = BrushForm()
+    template = 'brushes/add_brush.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
