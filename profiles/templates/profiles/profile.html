@@ -64,16 +64,21 @@
     <div id="favorite-brushes" class="row brush-section" style="display: none;">
         <div class="col">
             <h3 class="logo-font mb-3">Favorite Brushes</h3>
-            {% for brush in user.userprofile.saved_brushes.all %}
-            <div>
-                <p>Brush Name: {{ brush.name }}</p>
-                <img src="{{ brush.image.url }}" alt="{{ brush.name }}" class="brush-image">
+            {% for saved_brush in saved_brushes %}
+            <div class="brush-item">
+                <p>Brush Name: {{ saved_brush.brush.name }}</p>
+                {% if saved_brush.brush.image %}
+                <img src="{{ saved_brush.brush.image.url }}" alt="{{ saved_brush.brush.name }}" class="brush-image">
+                {% else %}
+                <img src="{% static 'path/to/default/image.png' %}" alt="Default Image" class="brush-image">
+                {% endif %}
             </div>
             {% empty %}
             <p>You have no favorite brushes.</p>
             {% endfor %}
         </div>
     </div>
+
 </div>
 {% endblock %}
 

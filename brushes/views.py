@@ -1,7 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.db.models import Q
 from django.shortcuts import redirect
 from .models import Brush, BrushCategory, Rating
+from profiles.models import SavedBrush
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 
@@ -13,6 +15,14 @@ def all_brushes(request):
     categories = None
     sort = None
     direction = None
+
+    if request.user.is_authenticated:
+        saved_brush_ids = SavedBrush.objects.filter(user=request.user).values_list('brush_id', flat=True)
+    else:
+        saved_brush_ids = []
+
+    for brush in brushes:
+        brush.is_saved = brush.id in saved_brush_ids
 
     if request.GET:
         if 'sort' in request.GET:

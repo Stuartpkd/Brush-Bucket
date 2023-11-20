@@ -45,6 +45,17 @@
                     </div>
                 </a>
                 <div class="row">
+                    {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'save_unsave_brush' brush.id %}">
+                        {% csrf_token %}
+                        <div class="brush-detail-btn">
+                            <a href="#" onclick="this.closest('form').submit(); return false;">
+                                <i
+                                    class="{% if brush.is_saved %}fas fa-bookmark{% else %}far fa-bookmark{% endif %} brush-icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                    {% endif %}
                     <p class="brush-rating">Rating: {{ brush.rating }}</p>
                     <p class="brush-price">Price: ${{ brush.price }}</p>
                 </div>
