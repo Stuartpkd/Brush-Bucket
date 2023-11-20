@@ -26,6 +26,23 @@ class UserProfile(models.Model):
         return Order.objects.filter(user_profile=self)
 
 
+class SavedBrush(models.Model):
+    """
+    Represents the relationship between a user and a saved brush.
+
+    Fields:
+        user (ForeignKey): The user who saved the brush.
+        brush (ForeignKey): The saved brush.
+
+    """
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    brush = models.ForeignKey(Brush, on_delete=models.CASCADE,
+                              related_name='savedbrush_set')
+
+    def __str__(self):
+        return f"{self.user.username} - {self.brush.name}"
+
+
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
