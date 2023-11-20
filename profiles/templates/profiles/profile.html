@@ -51,6 +51,9 @@
                             {% endif %}
                         </div>
                     </a>
+                    <a href="{{ lineitem.product.brush_file.url }}" download class="btn btn-primary">
+                        Download Brush
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -66,6 +69,7 @@
         <div class="row justify-content-center align-items-end">
             {% for saved_brush in saved_brushes %}
             <div class="col-md-4 mb-4">
+
                 <!-- Adjust the column size as needed -->
                 <div class="brush-container">
                     <p>Brush Name: {{ saved_brush.brush.name }}</p>
