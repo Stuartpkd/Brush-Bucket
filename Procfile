@@ -1,1 +1,1 @@
-web: gunicorn brush-bucket.wsgi:application
+web: gunicorn brush_bucket.wsgi:application
