@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-g8k^f(_eaj62__d^_=0(fxm35$4dlu3klb9n^_3k(9jywy3fa-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-stuartpkd-brushbucket-8f8zn1pn4qq.ws-eu106.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['8000-stuartpkd-brushbucket-8f8zn1pn4qq.ws-eu106.gitpod.io', 'localhost', 'brush-bucket-2ba4b4f41791.herokuapp.com']
 
 
 # Application definition
