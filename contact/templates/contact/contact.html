@@ -15,10 +15,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
-            <hr>
             <h2 class="logo-font mb-4">Contact Us</h2>
-            <h5 class="text-muted">Send us a message</h5>
-            <hr>
+            <h5 class="">Send us a message</h5>
         </div>
     </div>
 
@@ -28,7 +26,7 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 <div class="text-right">
-                    <button class="btn btn-black rounded-0" type="submit">Send Message</button>
+                    <button class="btn btn-add-to-cart" type="submit">Send Message</button>
                 </div>
             </form>
         </div>
