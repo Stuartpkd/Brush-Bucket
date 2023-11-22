@@ -22,8 +22,42 @@ p {
     color: #f3bd79;
 }
 
+.table thead tr th {
+    border-color: #f3bd79 !important;
+    /* Yellow border color for headers */
+    color: #f3bd79 !important;
+    /* Header text color, adjust as needed */
+}
+
+.table {
+    color: #f3bd79 !important;
+}
+
 td {
-    color: #f3bd79;
+    font-size: 1.3rem;
+    color: #f3bd79 !important;
+}
+
+tr {
+    color: #f3bd79 !important;
+}
+
+th {
+    font-size: 1.5rem;
+    color: #f3bd79 !important;
+}
+
+.table tr td {
+    border-color: #f3bd79 !important;
+    /* Change to your yellow color */
+}
+
+.table .brush-item p {
+    font-size: 1.2rem;
+}
+
+.grand-total {
+    font-size: 2rem;
 }
 
 /* H tag font weights*/
