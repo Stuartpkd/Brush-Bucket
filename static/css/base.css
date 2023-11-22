@@ -377,6 +377,23 @@ h6 {
     transform: scale(1.1);
 }
 
+#all-products-link {
+    display: inline-block;
+    /* or 'inline' depending on layout needs */
+}
+
+
+.nnav-item {
+    list-style-type: none;
+    /* This removes the bullet point */
+}
+
+
+.parent-ul-or-ol-class {
+    list-style-type: none;
+}
+
+
 /* Toast Message Styling */
 
 .custom-toast {
