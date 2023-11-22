@@ -53,15 +53,3 @@ def remove_from_bag(request, brush_id):
 
     
     referer_url = request.META.get('HTTP_REFERER')
-
-    
-    if referer_url:
-        return HttpResponseRedirect(referer_url)
-    else:
-        return redirect('view_bag')
-
-
-
-
-
-

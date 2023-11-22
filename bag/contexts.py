@@ -1,6 +1,7 @@
 from brushes.models import Brush
 from django.shortcuts import get_object_or_404
 
+
 def bag_contents(request):
     bag = request.session.get('bag', {})
     bag_items = []
@@ -30,3 +31,5 @@ def bag_contents(request):
     }
 
     return context
+
+

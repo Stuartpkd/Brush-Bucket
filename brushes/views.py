@@ -158,3 +158,4 @@ def delete_brush(request, brush_id):
     brush.delete()
     messages.success(request, 'Brush deleted!')
     return redirect(reverse('brushes'))
+

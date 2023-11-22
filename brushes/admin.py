@@ -15,5 +15,10 @@ class BrushCategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'friendly_name')
 
 
+# @admin.register(BrushBundle)
+# class BrushBundleAdmin(admin.ModelAdmin):
+#     list_display = ('name', 'price')
+
+
 admin.site.register(Brush, BrushesAdmin)
 admin.site.register(BrushCategory, BrushCategoryAdmin)
