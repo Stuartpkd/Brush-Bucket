@@ -2,48 +2,64 @@
 {% load static %}
 
 {% block content %}
-<div class="container my-5">
+<div class="container-fluid my-5">
     <div class="row">
-        <div class="col-md-6">
+        <!-- Brush Image Section -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
             <img src="{{ brush.image.url }}" alt="{{ brush.name }} Image" class="img-fluid brush-image">
         </div>
-        <div class="col-md-6">
-            <h2>{{ brush.name }}</h2>
-            <p>Price: ${{ brush.price }}</p>
-            <p>Rating: {{ brush.rating }}</p>
-            <p>Description: {{ brush.description }}</p>
-            <a href="{% url 'brushes' %}" class="btn btn-outline-black rounded-0 mt-5">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Back to Brushes</span>
-            </a>
-            <form method="post" action="{% url 'rate_brush' brush.id %}">
-                {% csrf_token %}
-                <div class="star-rating">
-                    {% for star in "12345" %}
-                    <input id="star-{{ star }}" type="radio" name="rating" value="{{ star }}"
-                        {% if user_rating == star|add:0 %} checked {% endif %}>
-                    <label for="star-{{ star }}" title="{{ star }} stars">&#9733;</label>
-                    {% endfor %}
-                </div>
-                <button type="submit" class="btn btn-primary">Rate</button>
-            </form>
 
-            {% if brush.id|stringformat:"s" in request.session.bag.keys %}
-            <form method="post" action="{% url 'remove_from_bag' brush.id %}">
-                {% csrf_token %}
-                <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
-                <button type="submit" class="btn btn-danger btn-sm">Remove</button>
-            </form>
-            {% else %}
-            <form method="post" action="{% url 'add_to_bag' brush.id %}">
-                {% csrf_token %}
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
-            </form>
-            {% endif %}
+        <!-- Brush Details Section -->
+        <div class="col-lg-6">
+            <h2 class="text-center text-lg-left">{{ brush.name }}</h2>
+            <p class="text-center text-lg-left">Price: ${{ brush.price }}</p>
+            <p class="text-center text-lg-left">Rating: {{ brush.rating }}</p>
+            <p class="text-center text-lg-left">Description: {{ brush.description }}</p>
+
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <!-- Rating Section -->
+                <div class="row">
+                    <form method="post" action="{% url 'rate_brush' brush.id %}">
+                        {% csrf_token %}
+                        <div class="star-rating d-flex justify-content-end">
+                            {% for star in "54321" %}
+                            <input id="star-{{ star }}" type="radio" name="rating" value="{{ star }}" class="d-none"
+                                {% if user_rating == star|add:0 %} checked {% endif %}>
+                            <label for="star-{{ star }}" title="{{ star }} stars">
+                                <i class="far fa-star"></i> <!-- Unfilled star icon -->
+                            </label>
+                            {% endfor %}
+                        </div>
+                        <button type="submit" class="btn btn-add-to-cart">Rate</button>
+                    </form>
+
+
+                    <!-- Add/Remove from Cart Section -->
+                    {% if brush.id|stringformat:"s" in request.session.bag.keys %}
+                    <form method="post" action="{% url 'remove_from_bag' brush.id %}" class="mb-3">
+                        {% csrf_token %}
+                        <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                        <button type="submit" class="btn btn-add-to-cart">Remove</button>
+                    </form>
+                    {% else %}
+                    <form method="post" action="{% url 'add_to_bag' brush.id %}" class="mb-3">
+                        {% csrf_token %}
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        <input type="submit" class="btn btn-remove-from-cart" value="Add to Cart">
+                    </form>
+                    {% endif %}
+                </div>
+
+                <!-- Back to Brushes Button -->
+                <a href="{% url 'brushes' %}" class="btn btn-outline-black rounded-0">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Back to Brushes</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
+
 {% endblock %}

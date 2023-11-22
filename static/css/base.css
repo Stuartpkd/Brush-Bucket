@@ -427,6 +427,38 @@ h6 {
     list-style-type: none;
 }
 
+/* Brush Detail */
+
+span {
+    font-size: 1.3rem;
+    color: #f3bd79 !important;
+}
+
+.star-rating {
+    font-size: 1.5rem;
+    /* Adjust the size of the stars */
+    direction: rtl;
+    /* Right to left - reverses the visual order of the flex items */
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+    /* Hide the radio buttons */
+}
+
+.star-rating label {
+    color: #ccc;
+    /* Default star color */
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input[type="radio"]:checked~label {
+    color: #f3bd79;
+    /* Yellow color for selected/hovered stars */
+}
+
 
 
 
