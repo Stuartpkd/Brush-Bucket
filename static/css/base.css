@@ -380,16 +380,22 @@ h6 {
     /* Keeping the top border as none */
 }
 
-.custom-toast .toast-capper {
-    background-color: #4a5c77;
-    /* Background color for the top part of the toast */
+.bg-success {
+    background-color: #f3bd79 !important;
+}
+
+.custom-toast .toast-capper.bg-yellow {
+    background-color: #f3bd79 !important;
+    /* Yellow background color */
+    height: 10px;
 }
 
 .custom-toast .toast-header {
     background-color: #4a5c77;
     /* Background color for the header */
-    color: #ffffff;
-    /* White text color for contrast */
+    color: #f3bd79 !important;
+    border-bottom: 2px solid #f3bd79
+        /* White text color for contrast */
 }
 
 .custom-toast .toast-body {
@@ -402,7 +408,6 @@ h6 {
 .custom-toast .btn-black {
     background-color: #f3bd79;
     /* Yellow background for the button */
-    color: #4a5c77;
     /* Text color for the button */
     border: none;
     /* Remove border for the button */
@@ -411,7 +416,7 @@ h6 {
 .custom-toast .btn-black:hover {
     background-color: #665d77;
     /* Darker shade for the button on hover */
-    color: #ffffff;
+
     /* White text color on hover */
 }
 
@@ -438,6 +443,28 @@ h6 {
     height: 10px;
 }
 
+.custom-toast .toast-header .close {
+    background: transparent;
+    /* Remove any background */
+    border: none;
+    /* Remove any border */
+    color: #f3bd79 !important;
+    /* Set the 'x' color to yellow */
+}
+
+.fas .fa-times {
+    color: #f3bd79 !important;
+}
+
+.custom-toast .toast-header .close i {
+    color: #f3bd79 !important;
+    /* Adjust the size of the 'x' icon as needed */
+}
+
+.custom-toast .toast-header .close:hover {
+    color: #665d77;
+    /* Darker shade on hover, adjust as needed */
+}
 
 /* -------------------------------- Media Queries */
 
