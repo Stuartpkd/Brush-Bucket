@@ -24,37 +24,9 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6 order-lg-last mb-5">
-            <p class="text-muted">Order Summary ({{ product_count }})</p>
-            <!-- Order Summary Section -->
-            {% for item in bag_items %}
-            <div class="row">
-                <div class="col-2 mb-1">
-                    <!-- Item Image -->
-                    {% if item.brush.image %}
-                    <img class="toast-brush-image" src="{{ item.brush.image.url }}" alt="{{ item.brush.name }}">
-                    {% else %}
-                    <img class="toast-brush-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.brush.name }}">
-                    {% endif %}
-                </div>
-                <div class="col-7">
-                    <p class="my-0"><strong>{{ item.brush.name }}</strong></p>
-                    <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                </div>
-                <div class="col-3 text-right">
-                    <p class="my-0 small text-muted">${{ item.brush.price | calc_subtotal:item.quantity }}</p>
-                </div>
-            </div>
-            {% endfor %}
-            <hr class="">
-            <div class="row text-black text-right">
-                <div class="col-9 offset-2">
-                    <p class="my-0"><strong>Order Total:</strong> ${{ grand_total | floatformat:2 }}</p>
-                </div>
-            </div>
-        </div>
+        <!-- Order Form Section -->
         <div class="col-12 col-lg-6">
-            <p class="text-muted">Please fill out the form below to complete your order</p>
+            <p class="">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
@@ -70,14 +42,14 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
                 <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_bag' %}" class="btn btn-adjust-bag rounded-0">
+                    <a href="{% url 'view_bag' %}" class="btn btn-remove-from-cart">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold">Adjust Bag</span>
                     </a>
 
-                    <button id="submit-button" class="btn btn-complete-order rounded-0">
+                    <button id="submit-button" class="btn btn-add-to-cart">
                         <span class="font-weight-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
@@ -86,8 +58,41 @@
                 </div>
             </form>
         </div>
+
+        <!-- Order Summary Section -->
+        <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <p class="">Order Summary ({{ product_count }})</p>
+            <div class="order-summary-container">
+                {% for item in bag_items %}
+                <div class="row mb-1">
+                    <div class="col-3">
+                        <!-- Item Image -->
+                        {% if item.brush.image %}
+                        <img class="toast-brush-image" src="{{ item.brush.image.url }}" alt="{{ item.brush.name }}">
+                        {% else %}
+                        <img class="toast-brush-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.brush.name }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-5">
+                        <p class="my-0"><strong>{{ item.brush.name }}</strong></p>
+                        <p class="my-0">Qty: {{ item.quantity }}</p>
+                    </div>
+                    <div class="col-4 text-right">
+                        <p class="my-0">${{ item.brush.price | calc_subtotal:item.quantity }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <hr class="">
+            <div class="row text-black text-right">
+                <div class="col-12">
+                    <p class="my-0"><strong>Order Total:</strong> ${{ grand_total | floatformat:2 }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">
