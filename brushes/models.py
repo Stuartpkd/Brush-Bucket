@@ -37,8 +37,10 @@ class Brush(models.Model):
         return self.name
     
     def update_average_rating(self):
-        average = self.ratings.aggregate(average_rating=Avg('rating'))['average_rating']
+        ratings = self.ratings.all()
+        average = ratings.aggregate(Avg('rating'))['rating__avg']
         self.rating = average or 0
+        self.rating_count = ratings.count()
         self.save()
 
 
@@ -47,19 +49,12 @@ class Rating(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     rating = models.IntegerField()
 
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)  
+        self.brush.update_average_rating()
+
     class Meta:
         unique_together = ('brush', 'user')  
 
     def __str__(self):
         return f'{self.user.username} rates {self.brush.name} as {self.rating}'
-
-
-# class BrushBundle(models.Model):
-#     name = models.CharField(max_length=100)
-#     description = models.TextField()
-#     brushes = models.ManyToManyField(Brush)
-#     price = models.DecimalField(max_digits=10, decimal_places=2)
-#     created_at = models.DateTimeField(auto_now_add=True)
-
-#     def __str__(self):
-#         return self.name
