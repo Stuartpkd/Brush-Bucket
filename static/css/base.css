@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: none !important;
+    color: #f89e4c !important;
 }
 
 /* -------------------------------- P tags */
@@ -105,6 +105,11 @@ h6 {
 /* -------------------------------- Nav styling */
 
 /* Targeting the nav-link class for the effect */
+a.text-info:focus,
+a.text-info:hover {
+    color: #f89e4c !important;
+}
+
 .navbar-nav .nav-link {
     transition: transform 0.3s ease;
 }
@@ -443,7 +448,7 @@ label {
 
 span {
     font-size: 1.3rem;
-    color: f89e4c !important;
+    color: #f89e4c !important;
 }
 
 .star-rating {
