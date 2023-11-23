@@ -36,22 +36,26 @@
                         </div>
                     </div>
                 </a>
-                <a href="{% url 'edit_brush' brush_id=brush.id %}">Edit Brush</a>
-                <a href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
+                <div class="row">
+                    <a class="brush-content-spacing brush-content" href="{% url 'edit_brush' brush_id=brush.id %}">Edit
+                        Brush</a>
+                    <a class="brush-content-spacing brush-content"
+                        href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
+                </div>
                 <div class="row">
                     {% if user.is_authenticated %}
-                    <form method="post" action="{% url 'save_unsave_brush' brush.id %}">
+                    <form method="post" action="{% url 'save_unsave_brush' brush.id %}" class="save-icon">
                         {% csrf_token %}
-                        <div class="brush-detail-btn">
+                        <div class="brush-detail-btn" class="brush-content-spacing">
                             <a href="#" onclick="this.closest('form').submit(); return false;">
                                 <i
-                                    class="{% if brush.is_saved %}fas fa-bookmark{% else %}far fa-bookmark{% endif %} brush-icon"></i>
+                                    class="{% if brush.is_saved %}fas fa-shopping-bag fa-lg{% else %}far fa-bookmark fa-lg{% endif %} brush-icon"></i>
                             </a>
                         </div>
                     </form>
                     {% endif %}
-                    <p class="brush-rating">Rating: {{ brush.rating }}</p>
-                    <p class="brush-price">Price: ${{ brush.price }}</p>
+                    <p class="brush-rating brush-content-spacing brush-content">Rating: {{ brush.rating }}</p>
+                    <p class="brush-price brush-content-spacing brush-content">Price: ${{ brush.price }}</p>
                 </div>
 
                 {% if brush.id|stringformat:"s" in request.session.bag.keys %}

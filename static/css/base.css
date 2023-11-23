@@ -20,6 +20,10 @@ a {
     color: #f89e4c;
 }
 
+a:hover {
+    color: none !important;
+}
+
 /* -------------------------------- P tags */
 
 p {
@@ -421,6 +425,18 @@ label {
 
 .parent-ul-or-ol-class {
     list-style-type: none;
+}
+
+.brush-content-spacing {
+    padding: 0 10px;
+}
+
+.brush-content {
+    font-size: 1.3rem;
+}
+
+.save-icon {
+    margin-top: 5px;
 }
 
 /* -------------------------------- Brush details page */
