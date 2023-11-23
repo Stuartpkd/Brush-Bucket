@@ -2,6 +2,8 @@ html {
     height: 100%;
 }
 
+/* -------------------------------- Body */
+
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -11,16 +13,20 @@ body {
     /* Updated background color */
 }
 
-/* Anchor tags */
+/* -------------------------------- Anchor tags */
 
 a {
     text-decoration: none !important;
     color: #f3bd79;
 }
 
+/* -------------------------------- P tags */
+
 p {
     color: #f3bd79;
 }
+
+/* -------------------------------- Table styling */
 
 .table thead tr th {
     border-color: #f3bd79 !important;
@@ -60,7 +66,7 @@ th {
     font-size: 2rem;
 }
 
-/* H tag font weights*/
+/* -------------------------------- H tags */
 
 h1,
 h2,
@@ -93,13 +99,13 @@ h6 {
     /* Mukta Regular */
 }
 
-/* icons */
+/* -------------------------------- Icons */
 
 .fa-icon-style {
     color: #f3bd79;
 }
 
-/* Nav styling */
+/* -------------------------------- Nav styling */
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3bd79' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -146,7 +152,7 @@ h6 {
 }
 
 
-/* Dropdown menus styling */
+/* -------------------------------- Dropdown menus */
 
 .dropdown-menu {
     border: 2px solid #f3bd79 !important;
@@ -182,11 +188,10 @@ h6 {
 
 .fa-icon-style {
     color: #f3bd79;
-    /* Yellow color for the icon */
 }
 
 
-/* Search Input */
+/* -------------------------------- Search input */
 .form-control {
     background-color: #4a5c77;
     color: #f3bd79;
@@ -199,7 +204,7 @@ h6 {
     color: #f3bd79 !important;
 }
 
-/* Search Button */
+/* -------------------------------- Search button */
 .btn-black {
     background-color: #4a5c77;
     border: 2px solid #f3bd79;
@@ -213,14 +218,14 @@ h6 {
     color: #ffffff;
 }
 
-/* Index */
+/* -------------------------------- Index */
 
 .hero-section {
     min-height: 100vh;
 }
 
 
-/* Buttons */
+/* -------------------------------- Buttons */
 
 /* General Button Style */
 .btn-custom {
@@ -244,7 +249,7 @@ h6 {
     text-decoration: none !important;
 }
 
-/* CTA and Checkout Button Style */
+/* -------------------------------- Cta and checkout button styles */
 .btn-cta {
     background-color: #4a5c77;
     color: #f3bd79;
@@ -260,7 +265,7 @@ h6 {
     text-decoration: none !important;
 }
 
-/* Ensure custom styles override Bootstrap styles */
+
 .btn-custom,
 .btn-cta {
     padding: 0.75rem 1.25rem;
@@ -273,7 +278,7 @@ h6 {
 }
 
 
-/* Add to Cart Button Style */
+/* -------------------------------- Add to cart button style */
 .btn-add-to-cart {
     background-color: #4a5c77;
     /* Primary color */
@@ -294,7 +299,7 @@ h6 {
     /* White text on hover */
 }
 
-/* Remove from Cart Button Style */
+/* -------------------------------- Remove from cart button */
 .btn-remove-from-cart {
     background-color: #a37081;
     /* Secondary color, different from Add to Cart */
@@ -376,13 +381,13 @@ h6 {
     border: 1px solid #000 !important;
 }
 
-/* Contact */
+/* -------------------------------- Contact page */
 
 label {
     color: #f3bd79 !important;
 }
 
-/* Brushes */
+/* -------------------------------- Brushes styling */
 
 .message-container {
     position: fixed;
@@ -433,7 +438,7 @@ label {
     list-style-type: none;
 }
 
-/* Brush Detail */
+/* -------------------------------- Brush details page */
 
 span {
     font-size: 1.3rem;
@@ -465,10 +470,7 @@ span {
     /* Yellow color for selected/hovered stars */
 }
 
-
-
-
-/* Toast Message Styling */
+/* -------------------------------- Toast styling */
 
 .custom-toast {
     border: 2px solid #f3bd79;
@@ -562,6 +564,8 @@ span {
     color: #665d77;
     /* Darker shade on hover, adjust as needed */
 }
+
+/* -------------------------------- Footer */
 
 .footer-icon {
     padding: 0 10px;
