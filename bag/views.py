@@ -4,8 +4,10 @@ from django.urls import reverse
 from brushes.models import Brush
 from .contexts import bag_contents
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def view_bag(request):
     """ A view that renders the bag contents page """
 
