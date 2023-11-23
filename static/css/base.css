@@ -309,7 +309,7 @@ a.text-info:hover {
 
 .btn-add-to-cart:hover {
     background-color: #f89e4c;
-    color: #582841;
+    color: #582841 !important;
 }
 
 /* -------------------------------- Remove from cart button */
@@ -323,7 +323,7 @@ a.text-info:hover {
 .btn-remove-from-cart:hover {
     background-color: #ef4748;
     border: 2px solid #ef4748;
-    color: #582841;
+    color: #582841 !important;
 }
 
 /* Common Style Overrides */

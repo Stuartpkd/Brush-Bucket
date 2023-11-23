@@ -24,13 +24,13 @@
             {% for item in order.lineitems.all %}
             <div class="row mb-2">
                 <div class="col-6">
-                    <p class="mb-0">{{ item.product.name }}</p> <!-- Changed from item.brush.name -->
+                    <p class="mb-0">{{ item.product.name }}</p>
                 </div>
                 <div class="col-3">
                     <p class="mb-0">Quantity: {{ item.quantity }}</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="mb-0">Price: ${{ item.product.price }}</p> <!-- Changed from item.brush.price -->
+                    <p class="mb-0">Price: ${{ item.product.price }}</p>
                 </div>
             </div>
             {% endfor %}

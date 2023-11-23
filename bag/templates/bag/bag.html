@@ -14,7 +14,7 @@
         <div class="col">
             {% if user.is_authenticated %}
             {% if bag_items %}
-            <div class="">
+            <div class="bag-items-container">
                 <table class="table">
                     <thead>
                         <tr>
@@ -46,9 +46,8 @@
                 </table>
                 <p class="grand-total">Grand Total: ${{ grand_total }}</p>
                 <div class="buttons">
-                    <a href="{% url 'home' %}" class="btn btn-add-to-cart">Continue Shopping</a>
-                    <a href="{% url 'checkout' %}" class="btn btn-remove-from-cart">Proceed to Checkout</a>
-
+                    <a href="{% url 'home' %}" class="btn btn-remove-from-cart ">Continue Shopping</a>
+                    <a href="{% url 'checkout' %}" class="btn btn-add-to-cart">Proceed to Checkout</a>
                 </div>
             </div>
             {% else %}

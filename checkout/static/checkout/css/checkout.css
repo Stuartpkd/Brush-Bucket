@@ -168,3 +168,8 @@ p {
     font-size: 1.5rem;
     color: #f89e4c !important;
 }
+
+.bag-items-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
