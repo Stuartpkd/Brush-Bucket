@@ -307,10 +307,7 @@ a.text-info:hover {
     transition: background-color 0.3s ease;
 }
 
-.btn-add-to-cart:hover {
-    background-color: #f89e4c;
-    color: #582841 !important;
-}
+
 
 /* -------------------------------- Remove from cart button */
 .btn-remove-from-cart {

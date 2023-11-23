@@ -43,7 +43,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 162, 184, .85);
+    background: #582841;
     z-index: 9999;
 }
 
@@ -57,106 +57,33 @@
 
 .order-summary-container {
     max-height: 400px;
-    /* Adjust this value based on your needs */
     overflow-y: auto;
-    /* Enables vertical scrolling */
     border: 2px solid #f89e4c;
-    /* Optional: adds a border around the container */
     padding: 15px;
-    /* Optional: adds some spacing inside the container */
-}
-
-
-.btn-custom {
-    background-color: #582841;
-    /* Site background color */
-    color: #f89e4c;
-    /* Text color */
-    border: 2px solid #665d77;
-    /* Thin outline - choose between #665d77 or #a37081 */
-    border-radius: 0.25rem;
-    /* Rounded edges */
-    transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
-}
-
-.btn-custom:hover {
-    background-color: #665d77;
-    /* Darker shade on hover - choose color */
-    color: #ef4748;
-    /* White text on hover */
-    text-decoration: none !important;
-}
-
-/* CTA and Checkout Button Style */
-.btn-cta {
-    background-color: #582841;
-    color: #f89e4c;
-    border: 2px solid #a37081;
-    /* Different outline color for emphasis */
-    border-radius: 0.25rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-cta:hover {
-    background-color: #a37081;
-    color: #ef4748;
-    text-decoration: none !important;
 }
 
 /* Ensure custom styles override Bootstrap styles */
 .btn-custom,
 .btn-cta {
     padding: 0.75rem 1.25rem;
-    /* Adjust padding if necessary */
     font-size: 1rem;
-    /* Adjust font size if necessary */
     font-weight: bold;
-    /* Bold text for better visibility */
     text-decoration: none !important;
 }
 
 
 /* Add to Cart Button Style */
-.btn-add-to-cart {
+.btn-add-to-cart-success {
     background-color: #582841;
-    /* Primary color */
     color: #f89e4c;
-    /* Text color */
     border: 2px solid #f89e4c;
-    /* Outline color */
     border-radius: 0.25rem;
-    /* Rounded edges */
     transition: background-color 0.3s ease;
-    /* Smooth transition */
 }
 
-.btn-add-to-cart:hover {
-    background-color: #665d77;
-    /* Darker shade on hover */
-    color: #ef4748;
-    /* White text on hover */
-}
-
-/* Remove from Cart Button Style */
-.btn-remove-from-cart {
-    background-color: #a37081;
-    /* Secondary color, different from Add to Cart */
-    color: #ef4748;
-    /* White text */
-    border: 2px solid #582841;
-    /* Outline color */
-    border-radius: 0.25rem;
-    /* Rounded edges */
-    transition: background-color 0.3s ease;
-    /* Smooth transition */
-}
-
-.btn-remove-from-cart:hover {
-    background-color: #665d77;
-    /* Darker shade on hover */
-    color: #f89e4c;
-    /* Contrast text color on hover */
+.btn-add-to-cart-success:hover {
+    background-color: #f89e4c !important;
+    color: #582841;
 }
 
 p {
@@ -172,4 +99,9 @@ p {
 .bag-items-container {
     max-height: 400px;
     overflow-y: auto;
+}
+
+.btn-add-to-cart:hover .icon,
+.btn-add-to-cart:hover .text-uppercase {
+    color: #582841;
 }
