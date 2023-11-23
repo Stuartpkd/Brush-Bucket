@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+.full-screen {
+    min-height: 70vh;
+}
+
 /* -------------------------------- Body */
 
 body {
