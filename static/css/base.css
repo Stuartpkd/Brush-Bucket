@@ -551,6 +551,14 @@ span {
     color: #f89e4c !important;
 }
 
+/* -------------------------------- Bag */
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
 /* -------------------------------- Footer */
 
 .footer-icon {
