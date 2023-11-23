@@ -108,6 +108,7 @@ def rate_brush(request, brush_id):
     return redirect('brush_detail', brush_id=brush_id)
 
 
+@login_required
 def add_brush(request):
     """ Add a product to the store """
     if request.method == 'POST':
@@ -128,6 +129,7 @@ def add_brush(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_brush(request, brush_id):
     """ Edit a brush in the store """
     brush = get_object_or_404(Brush, pk=brush_id)
@@ -152,6 +154,7 @@ def edit_brush(request, brush_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_brush(request, brush_id):
     """ Delete a brush from the store """
     brush = get_object_or_404(Brush, pk=brush_id)
