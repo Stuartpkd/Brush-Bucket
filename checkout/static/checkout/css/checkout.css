@@ -60,7 +60,7 @@
     /* Adjust this value based on your needs */
     overflow-y: auto;
     /* Enables vertical scrolling */
-    border: 2px solid #f3bd79;
+    border: 2px solid #f89e4c;
     /* Optional: adds a border around the container */
     padding: 15px;
     /* Optional: adds some spacing inside the container */
@@ -68,9 +68,9 @@
 
 
 .btn-custom {
-    background-color: #4a5c77;
+    background-color: #582841;
     /* Site background color */
-    color: #f3bd79;
+    color: #f89e4c;
     /* Text color */
     border: 2px solid #665d77;
     /* Thin outline - choose between #665d77 or #a37081 */
@@ -83,15 +83,15 @@
 .btn-custom:hover {
     background-color: #665d77;
     /* Darker shade on hover - choose color */
-    color: #ffffff;
+    color: #ef4748;
     /* White text on hover */
     text-decoration: none !important;
 }
 
 /* CTA and Checkout Button Style */
 .btn-cta {
-    background-color: #4a5c77;
-    color: #f3bd79;
+    background-color: #582841;
+    color: #f89e4c;
     border: 2px solid #a37081;
     /* Different outline color for emphasis */
     border-radius: 0.25rem;
@@ -100,7 +100,7 @@
 
 .btn-cta:hover {
     background-color: #a37081;
-    color: #ffffff;
+    color: #ef4748;
     text-decoration: none !important;
 }
 
@@ -119,11 +119,11 @@
 
 /* Add to Cart Button Style */
 .btn-add-to-cart {
-    background-color: #4a5c77;
+    background-color: #582841;
     /* Primary color */
-    color: #f3bd79;
+    color: #f89e4c;
     /* Text color */
-    border: 2px solid #f3bd79;
+    border: 2px solid #f89e4c;
     /* Outline color */
     border-radius: 0.25rem;
     /* Rounded edges */
@@ -134,7 +134,7 @@
 .btn-add-to-cart:hover {
     background-color: #665d77;
     /* Darker shade on hover */
-    color: #ffffff;
+    color: #ef4748;
     /* White text on hover */
 }
 
@@ -142,9 +142,9 @@
 .btn-remove-from-cart {
     background-color: #a37081;
     /* Secondary color, different from Add to Cart */
-    color: #ffffff;
+    color: #ef4748;
     /* White text */
-    border: 2px solid #4a5c77;
+    border: 2px solid #582841;
     /* Outline color */
     border-radius: 0.25rem;
     /* Rounded edges */
@@ -155,16 +155,16 @@
 .btn-remove-from-cart:hover {
     background-color: #665d77;
     /* Darker shade on hover */
-    color: #f3bd79;
+    color: #f89e4c;
     /* Contrast text color on hover */
 }
 
 p {
     font-size: 1.5rem;
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 .fieldset-label {
     font-size: 1.5rem;
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }

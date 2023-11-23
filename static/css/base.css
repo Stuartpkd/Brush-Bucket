@@ -9,7 +9,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     font-family: 'Mukta', sans-serif;
-    background-color: #4a5c77;
+    background-color: #582841;
     /* Updated background color */
 }
 
@@ -17,45 +17,42 @@ body {
 
 a {
     text-decoration: none !important;
-    color: #f3bd79;
+    color: #f89e4c;
 }
 
 /* -------------------------------- P tags */
 
 p {
-    color: #f3bd79;
+    color: #f89e4c;
 }
 
 /* -------------------------------- Table styling */
 
 .table thead tr th {
-    border-color: #f3bd79 !important;
-    /* Yellow border color for headers */
-    color: #f3bd79 !important;
-    /* Header text color, adjust as needed */
+    border-color: #f89e4c !important;
+    color: #f89e4c !important;
 }
 
 .table {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 td {
     font-size: 1.3rem;
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 tr {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 th {
     font-size: 1.5rem;
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 .table tr td {
-    border-color: #f3bd79 !important;
-    /* Change to your yellow color */
+    border-color: #f89e4c !important;
 }
 
 .table .brush-item p {
@@ -74,46 +71,50 @@ h3,
 h4,
 h5,
 h6 {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 h1 {
     font-weight: 800;
-    /* Mukta Extra Bold */
 }
 
 h2 {
     font-weight: 700;
-    /* Mukta Bold */
 }
 
 h3 {
     font-weight: 600;
-    /* Mukta Semi-Bold */
 }
 
 h4,
 h5,
 h6 {
     font-weight: 400;
-    /* Mukta Regular */
 }
 
 /* -------------------------------- Icons */
 
 .fa-icon-style {
-    color: #f3bd79;
+    color: #f89e4c;
 }
 
 /* -------------------------------- Nav styling */
 
+/* Targeting the nav-link class for the effect */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+}
+
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3bd79' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f89e4c' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-custom {
-    background-color: #4a5c77;
-    /* Site's background color */
+    background-color: #582841;
 }
 
 
@@ -122,8 +123,7 @@ h6 {
 .navbar .navbar-nav .nav-item,
 .navbar .navbar-icons a .navbar .fa-shopping-bag,
 .navbar .my-account-link {
-    color: #f3bd79 !important;
-    /* Contrast color for better readability */
+    color: #f89e4c !important;
 }
 
 
@@ -139,129 +139,120 @@ h6 {
 
 .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
-    /* Adjust padding as needed */
     margin: 0;
-    /* Adjust or remove margin as needed */
 }
 
 .navbar-icons .nav-item a {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    /* Ensures consistent padding with other nav items */
 }
 
 
 /* -------------------------------- Dropdown menus */
 
 .dropdown-menu {
-    border: 2px solid #f3bd79 !important;
-    /* Yellow outline */
-    background-color: #4a5c77;
-    /* Background color, adjust if different from the body */
+    border: 2px solid #f89e4c !important;
+    background-color: #582841;
 }
 
 /* Style for dropdown items */
 .dropdown-menu .dropdown-item {
-    color: #f3bd79;
-    /* Yellow text */
+    color: #f89e4c;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #f3bd79;
-    /* Yellow background on hover */
-    color: #ffffff;
-    /* White text on hover */
+    background-color: #f89e4c;
+    color: #582841;
 }
 
 /* Style for the Sort Brushes header */
 .nav-link h2 {
     font-size: 1rem;
-    /* Adjust size as needed */
     margin-bottom: 0;
-    /* Remove bottom margin */
     color: inherit;
-    /* Inherit color from parent element */
 }
 
 .fa-icon-style {
-    color: #f3bd79;
+    color: #f89e4c;
 }
 
 
 /* -------------------------------- Search input */
 .form-control {
-    background-color: #4a5c77;
-    color: #f3bd79;
-    border: 2px solid #f3bd79;
-    /* Or #a37081 */
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #f89e4c;
     border-radius: 0.25rem;
 }
 
 .search-input::placeholder {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 /* -------------------------------- Search button */
 .btn-black {
-    background-color: #4a5c77;
-    border: 2px solid #f3bd79;
-    /* Or #a37081 */
+    background-color: #582841;
+    border: 2px solid #f89e4c;
     border-radius: 0.25rem;
 }
 
 .btn-black:hover {
-    background-color: #665d77;
-    /* Darker shade on hover */
-    color: #ffffff;
+    background-color: #582841;
+    color: #ef4748;
 }
 
 /* -------------------------------- Index */
 
 .hero-section {
+    background: url(/media/hero_image/hero-image.svg) center center no-repeat;
     min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
 }
 
+.header-container {
+    position: relative;
+    z-index: 10;
+}
+
+.fa-search {
+    font-size: 1.3rem;
+    color: #ef4748 !important;
+}
 
 /* -------------------------------- Buttons */
 
 /* General Button Style */
 .btn-custom {
-    background-color: #4a5c77;
-    /* Site background color */
-    color: #f3bd79;
-    /* Text color */
-    border: 2px solid #665d77;
-    /* Thin outline - choose between #665d77 or #a37081 */
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #582841;
     border-radius: 0.25rem;
-    /* Rounded edges */
     transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .btn-custom:hover {
-    background-color: #665d77;
-    /* Darker shade on hover - choose color */
-    color: #ffffff;
-    /* White text on hover */
+    background-color: #582841;
+    color: #ef4748;
     text-decoration: none !important;
 }
 
 /* -------------------------------- Cta and checkout button styles */
 .btn-cta {
-    background-color: #4a5c77;
-    color: #f3bd79;
-    border: 2px solid #a37081;
-    /* Different outline color for emphasis */
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #f89e4c;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
 }
 
 .btn-cta:hover {
-    background-color: #a37081;
-    color: #ffffff;
+    background-color: #582841;
+    border: 2px solid #ef4748;
+    color: #f89e4c;
     text-decoration: none !important;
 }
 
@@ -269,66 +260,46 @@ h6 {
 .btn-custom,
 .btn-cta {
     padding: 0.75rem 1.25rem;
-    /* Adjust padding if necessary */
     font-size: 1rem;
-    /* Adjust font size if necessary */
     font-weight: bold;
-    /* Bold text for better visibility */
     text-decoration: none !important;
 }
 
 
 /* -------------------------------- Add to cart button style */
 .btn-add-to-cart {
-    background-color: #4a5c77;
-    /* Primary color */
-    color: #f3bd79;
-    /* Text color */
-    border: 2px solid #f3bd79;
-    /* Outline color */
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #f89e4c;
     border-radius: 0.25rem;
-    /* Rounded edges */
     transition: background-color 0.3s ease;
-    /* Smooth transition */
 }
 
 .btn-add-to-cart:hover {
-    background-color: #665d77;
-    /* Darker shade on hover */
-    color: #ffffff;
-    /* White text on hover */
+    background-color: #f89e4c;
+    color: #582841;
 }
 
 /* -------------------------------- Remove from cart button */
 .btn-remove-from-cart {
-    background-color: #a37081;
-    /* Secondary color, different from Add to Cart */
-    color: #ffffff;
-    /* White text */
-    border: 2px solid #4a5c77;
-    /* Outline color */
-    border-radius: 0.25rem;
-    /* Rounded edges */
+    background-color: #582841;
+    color: #ef4748;
+    border: 2px solid #ef4748;
     transition: background-color 0.3s ease;
-    /* Smooth transition */
 }
 
 .btn-remove-from-cart:hover {
-    background-color: #665d77;
-    /* Darker shade on hover */
-    color: #f3bd79;
-    /* Contrast text color on hover */
+    background-color: #ef4748;
+    border: 2px solid #ef4748;
+    color: #582841;
 }
 
 /* Common Style Overrides */
 .btn-add-to-cart,
 .btn-remove-from-cart {
     padding: 0.75rem 1.25rem;
-    /* Adjust padding */
     font-size: 1rem;
-    /* Adjust font size */
     font-weight: bold;
-    /* Bold text */
     text-decoration: none !important;
 }
 
@@ -351,14 +322,12 @@ h6 {
 
 .shop-now-button {
     background: #C72C41;
-    /* Updated button background color */
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: #f3bd79;
-    /* Updated button background color */
+    background: #f89e4c;
     color: white;
 }
 
@@ -369,7 +338,6 @@ h6 {
 .btn-black:active,
 .btn-black:focus {
     background: #2D142C;
-    /* Updated button hover color */
     color: white;
 }
 
@@ -384,7 +352,7 @@ h6 {
 /* -------------------------------- Contact page */
 
 label {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 /* -------------------------------- Brushes styling */
@@ -424,13 +392,11 @@ label {
 
 #all-products-link {
     display: inline-block;
-    /* or 'inline' depending on layout needs */
 }
 
 
 .nnav-item {
     list-style-type: none;
-    /* This removes the bullet point */
 }
 
 
@@ -442,81 +408,63 @@ label {
 
 span {
     font-size: 1.3rem;
-    color: #f3bd79 !important;
+    color: f89e4c !important;
 }
 
 .star-rating {
     font-size: 1.5rem;
-    /* Adjust the size of the stars */
     direction: rtl;
-    /* Right to left - reverses the visual order of the flex items */
 }
 
 .star-rating input[type="radio"] {
     display: none;
-    /* Hide the radio buttons */
 }
 
 .star-rating label {
     color: #ccc;
-    /* Default star color */
     cursor: pointer;
 }
 
 .star-rating label:hover,
 .star-rating label:hover~label,
 .star-rating input[type="radio"]:checked~label {
-    color: #f3bd79;
-    /* Yellow color for selected/hovered stars */
+    color: #f89e4c;
 }
 
 /* -------------------------------- Toast styling */
 
 .custom-toast {
-    border: 2px solid #f3bd79;
-    /* Yellow outline */
+    border: 2px solid #f89e4c;
     border-top: none;
-    /* Keeping the top border as none */
 }
 
 .bg-success {
-    background-color: #f3bd79 !important;
+    background-color: #f89e4c !important;
 }
 
 .custom-toast .toast-capper.bg-yellow {
-    background-color: #f3bd79 !important;
-    /* Yellow background color */
+    background-color: #f89e4c !important;
     height: 10px;
 }
 
 .custom-toast .toast-header {
-    background-color: #4a5c77;
-    /* Background color for the header */
-    color: #f3bd79 !important;
-    border-bottom: 2px solid #f3bd79
-        /* White text color for contrast */
+    background-color: #582841;
+    color: #f89e4c !important;
+    border-bottom: 2px solid #f89e4c
 }
 
 .custom-toast .toast-body {
-    background-color: #4a5c77 !important;
-    /* Background color for the body */
-    color: #ffffff;
-    /* White text color for the body */
+    background-color: #582841 !important;
+    color: #ef4748;
 }
 
 .custom-toast .btn-black {
-    background-color: #f3bd79;
-    /* Yellow background for the button */
-    /* Text color for the button */
+    background-color: #f89e4c;
     border: none;
-    /* Remove border for the button */
 }
 
 .custom-toast .btn-black:hover {
     background-color: #665d77;
-    /* Darker shade for the button on hover */
-
-    /* White text color on hover */
 }
 
 .toast-brush-image {
@@ -534,7 +482,6 @@ span {
 
 .toast-body {
     word-wrap: break-word;
-    /* Ensures long messages don't overflow */
 }
 
 /* Success Toast Specific Styling */
@@ -544,25 +491,20 @@ span {
 
 .custom-toast .toast-header .close {
     background: transparent;
-    /* Remove any background */
     border: none;
-    /* Remove any border */
-    color: #f3bd79 !important;
-    /* Set the 'x' color to yellow */
+    color: #f89e4c !important;
 }
 
 .fas .fa-times {
-    color: #f3bd79 !important;
+    color: #f89e4c !important;
 }
 
 .custom-toast .toast-header .close i {
-    color: #f3bd79 !important;
-    /* Adjust the size of the 'x' icon as needed */
+    color: #f89e4c !important;
 }
 
 .custom-toast .toast-header .close:hover {
     color: #665d77;
-    /* Darker shade on hover, adjust as needed */
 }
 
 /* -------------------------------- Footer */
