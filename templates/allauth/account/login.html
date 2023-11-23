@@ -28,7 +28,7 @@
 
   {% else %}
   <p class="mx-auto" style="max-width: 600px;">{% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}" class="text-decoration-none">sign up</a> first.{% endblocktrans %}</p>
+    <a href="{{ signup_url }}" class="text-decoration-none"><strong>sign up</strong></a> first.{% endblocktrans %}</p>
   {% endif %}
 
   <form class="login d-inline-block mx-auto" method="POST" action="{% url 'account_login' %}">
