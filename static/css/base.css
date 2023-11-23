@@ -454,7 +454,7 @@ span {
 
 .custom-toast {
     border: 2px solid #f89e4c;
-    border-top: none;
+    border-radius: 0.25rem !important;
 }
 
 .bg-success {
@@ -478,12 +478,16 @@ span {
 }
 
 .custom-toast .btn-black {
-    background-color: #f89e4c;
-    border: none;
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #f89e4c;
+    border-radius: 0.25rem !important;
+    transition: background-color 0.3s ease;
 }
 
 .custom-toast .btn-black:hover {
-    background-color: #665d77;
+    background-color: #f89e4c;
+    color: #582841;
 }
 
 .toast-brush-image {
@@ -520,10 +524,6 @@ span {
 
 .custom-toast .toast-header .close i {
     color: #f89e4c !important;
-}
-
-.custom-toast .toast-header .close:hover {
-    color: #665d77;
 }
 
 /* -------------------------------- Footer */
