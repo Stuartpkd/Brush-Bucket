@@ -240,6 +240,19 @@ Additionally, the models leverage Django signals to automate the creation or upd
 \
 &nbsp;
 
+### Responsive Screens
+The website's construction will commence with a focus on a compact 350px-width mobile screen, after which it will be adapted to fulfill the specifications for medium/tablet, large, and extra-large screens, as illustrated in the following table.
+
+| Screen Size   | Breakpoint |
+| -----------   | ---------- |
+| small/mobile  |    350px   |
+| medium/tablet |    768px   |
+| large         |   992px    |
+| extra-large   |   1400+px  |
+
+\
+&nbsp;
+
 
 
 
