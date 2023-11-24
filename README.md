@@ -504,7 +504,70 @@ No issues arose, due to the simple layout of the site.
 
 Parts of artwork exported from illustrator would be coloured black unless I exported them in a vert particular way. Some of Adobes finest work.
 
+# Deployment
 
+## Create Application
+
+1. If you don't have a Heroku account, start by signing up and logging in.
+2. To establish a new application, click the "new" button located at the top right corner of the dashboard, then select "Create new app."
+3. Pick a distinct name for the application, indicate your residing region, and proceed by clicking "Create App."
+
+## ElephantSQL
+1. Visit elephantsql.com, log in using GitHub, and establish a fresh instance.
+2. Once your project instance is set up, copy the URL. You can store this value as an environment variable to match the DATABASES variable in settings.py.
+3. Utilize pip3 install dj_database_url==0.5.0 to install the dj-database-url package version 0.5.0. This will format the URL into a Django-compatible format and necessitate an update to the requirements.txt file.
+
+## Cloudinary
+
+1. Set up a Cloudinary account.
+2. Upload relevant project images to the "Media Library."
+3. Retrieve the Cloudinary API URL from your dashboard.
+
+## Final Repo Preparations
+1. Execute necessary project migrations by entering python3 manage.py makemigrations followed by python3 manage.py migrate in the terminal.
+2. Integrate a Procfile into the project, including the line web: gunicorn [project_name].wsgi:application.
+
+## Heroku Deploy
+1. Return to Heroku and navigate to the Project’s page. Open the "Settings" tab and locate the "Config Vars" section.
+2. Within "Config Vars," input the following key-value pairs:
+   Key = PORT : Value = 8000
+   Key = SECRET_KEY : Value = Your Django Secret Key from settings.py
+   Key = DATABASE_URL : Value = ElephantSQL URL (from step 5)
+   Key = CLOUDINARY_URL : Value = Cloudinary API URL (from step 9)
+3. Proceed to the "Deploy" tab and scroll to the GitHub deployment method.
+4. Search and connect to the appropriate repository by selecting the "Connect" button.
+5. Continue scrolling to the bottom of the "Deploy" Page and choose your desired deployment method. Opt for "Automatically Deploy" to 
+   trigger deployment with each new code push, or manually deploy by selecting the button at the page's bottom.
+
+Your application is now successfully deployed!
+
+# Credits
+
+## For Code Help and Advice
+* [Harry Dhillon](https://github.com/Harry-Leepz)
+* [Harry Dhillon](https://github.com/Daisy-McG)
+
+## Helpful Resources
+* [Stack overflow helped a lot with problem solving.](https://stackoverflow.com/)
+* [MDM also contained a lot of helpful resources when building the project.](https://developer.mozilla.org/en-US/)
+* [W3 schools always has very helpful threads on anything to do with coding.](https://www.w3schools.com/)
+* [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
+* [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
+
+
+## For Content and Code
+
+* [Building the base of the project with the I think therefore I blog.](https://github.com/Grawnya/I-think-therefore-I-blog)
+* [Lottie files webplayer creator.](https://lottiefiles.com/web-player)
+* [How to create a django view.](https://www.geeksforgeeks.org/views-in-django-python/)
+* [Best practice for data models.](https://cloud.google.com/appengine/docs/legacy/standard/python/datastore/datamodeling)
+* [How to use django tags.](https://www.w3schools.com/django/django_template_tags.php#:~:text=In%20Django%20templates%2C%20you%20can,them%20in%20%7B%25%20%25%7D%20brackets.)
+* [Checking file types with.](https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file)
+
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 
 
