@@ -380,6 +380,116 @@ Handles server errors by providing an informative notification and easy navigati
 * [ElephantSQL](https://www.elephantsql.com/ "ElephantSQL") – The final database used for the deployed project.
 * [AWS](https://aws.amazon.com/ "Amazon Web Services") – AWS was chosen as the primary cloud service provider for the final deployment of our project. It offered robust, scalable, and secure hosting solutions for our website's databases and static files, including the digital brush files.
 
+# Testing
+
+## Manual testing
+
+![Home Page](docs/pages/Home-page.png)
+
+
+## Profile Page
+
+![Profile Page](docs/pages/Profile.png)
+
+
+## Brushes Page
+
+![Brushes Page](docs/pages/Brushes.png)
+
+
+## Brush Detail Page
+
+![Brush Detail Page](docs/pages/Brush-detail.png)
+
+
+## Admin Product Management Page
+
+![Admin Product Management Page](docs/pages/Admin-product-management.png)
+
+
+## Checkout Page
+
+![Checkout Page](docs/pages/Checkout.png)
+
+
+## Checkout Success Page
+
+![Checkout Success Page](docs/pages/Checkout-success.png)
+
+
+## Bag Page
+
+![Bag Page](docs/pages/Bag.png)
+
+
+## Contact Page
+
+![Contact Page](docs/pages/Contact.png)
+
+
+## Error 404 Page
+
+![Error 404 Page](docs/pages/Error-404.png)
+
+
+## Error 500 Page
+
+
+![Error 500 Page](docs/pages/Error-500.png)
+\
+&nbsp;
+
+### W3C CSS Validator
+
+My css passed as well when it came to testing as I was frequently testing it in the validator.
+
+![Css code validation](docs/code-testing/css.png)
+\
+&nbsp;
+
+### JS Hint
+
+Each of my javascript code blocks passed the validator without any major issues.
+
+#### Confirm delete functions
+
+![Javascript validation](docs/code-testing/confirm-js.png)
+\
+&nbsp;
+
+### CI Python checker
+
+![Python](docs/code-testing/python.png)
+
+I checked all of my python files with the Code Institute python checker and recieved no issues with any of the files. The NOQA tag was used in the settings.py file as when I tried to rearrange some of the code to avoid the character limit, python would get upset.
+
+### Lighthouse
+
+![Lighthouse](docs/code-testing/lighthouse.png)
+
+The website performed very well when it came to the lighthouse review.
+
+## Responsiveness 
+The responsiveness of the design was manually checked using the Chrome Developer Tools for various screens.
+
+This included:
+* iPhone SE
+* Pixel 5
+* Samsung Galaxy S8, S20 Ultra
+* iPad Air and Mini
+* Galaxy Fold
+* Nest Hub and Hub Max
+
+I also opted to use the responsiveness option and checked the screens at the following width sizes:
+* 350px
+* 768px
+* 992px
+* 1400px
+
+No issues arose, due to the simple layout of the site.
+\
+&nbsp;
+
 
 
 
