@@ -136,4 +136,101 @@ Each application serves a distinct purpose, contributing to the cohesive functio
 \
 &nbsp;
 
+### Brushes Models:
+
+#### BrushCategory Model
+The BrushCategory model categorizes the various types of digital brushes available on the platform. It has been designed with simplicity and user-friendliness in mind, consisting of the following fields:
+- `name`: A CharField with a maximum length of 200 characters, representing the technical name of the category.
+- `friendly_name`: An optional CharField, also with a 200-character limit, designed to store a more user-friendly version of the category's name. This field can be blank or null.
+
+These fields together enable clear categorization and easy retrieval of different types of digital brushes, enhancing the user experience in brush selection.
+
+#### Brush Model
+The Brush model lies at the heart of the platform, representing the digital brushes made available to users. This model includes a variety of fields to comprehensively describe each brush:
+- `name`: A CharField limited to 100 characters for the brush's name.
+- `category`: A ForeignKey linking to the BrushCategory model, specifying the category of the brush.
+- `description`: A TextField for a detailed description of the brush.
+- `price`: A DecimalField to represent the brush's price.
+- `rating`: A DecimalField for the average rating of the brush, with a default value of 0.
+- `rating_count`: An IntegerField tracking the number of ratings received.
+- `image`: An ImageField for an image of the brush.
+- `brush_file`: A FileField for uploading the actual digital brush file.
+- `created_at`: A DateTimeField that automatically records the creation time of the brush entry.
+
+Additionally, the Brush model includes an `update_average_rating` method to calculate and update the average rating based on user feedback.
+
+#### Rating Model
+The Rating model facilitates user ratings for each digital brush. It is structured to ensure each user can only rate a brush once:
+- `brush`: A ForeignKey that links to the Brush model.
+- `user`: A ForeignKey connected to the user model, identifying the user who provided the rating.
+- `rating`: An IntegerField that stores the user's rating for the brush.
+
+The Rating model includes an overridden save method to update the brush's average rating every time a new rating is saved. It uses a unique_together Meta option to prevent multiple ratings for the same brush from the same user, ensuring the integrity of the rating system.
+\
+&nbsp;
+
+### Checkout Models:
+
+#### Order Model
+The Order model captures and manages the details of purchases made on the platform. Each order's attributes ensure a comprehensive record of the transaction, including user information and total amounts:
+- `order_number`: A CharField with a unique order number generated using UUID.
+- `user_profile`: A ForeignKey to the UserProfile model, linking the order to the user's profile. It's set to null on user profile deletion.
+- `full_name`, `email`: CharFields to store the customer's name and email.
+- `date`: A DateTimeField to automatically record the date and time of the order.
+- `order_total`, `grand_total`: DecimalFields to store the total order amount and the grand total, respectively.
+- `original_bag`: A TextField to store a snapshot of the user's shopping bag at the time of the order.
+- `stripe_pid`: A CharField to store the Stripe payment intent ID.
+- Methods `_generate_order_number` and `update_total` are included to handle order number generation and total amount calculation.
+
+#### OrderLineItem Model
+The OrderLineItem model is crucial in breaking down each order into its constituent items:
+- `order`: A ForeignKey linking to the Order model.
+- `product`: A ForeignKey linking to the Brush model, representing the purchased brush.
+- `quantity`: An IntegerField to store the quantity of each brush in the order.
+- `lineitem_total`: A DecimalField to store the total cost for each line item, calculated as the product's price times the quantity.
+- The save method is overridden to calculate `lineitem_total` automatically.
+
+Together, these models facilitate the management of orders and their details, providing a robust system for handling transactions and maintaining accurate records of purchases on the platform.
+\
+&nbsp;
+
+### Contact Models:
+
+#### ContactMessage Model
+The ContactMessage model serves as the backbone for the contact feature of the site, enabling users to send messages to the website administrators. This model is structured to capture essential communication details, offering a straightforward yet effective way for users to engage with the site operators:
+- `name`: A CharField to store the name of the user sending the message, with a maximum length of 100 characters.
+- `email`: An EmailField to record the user's email address, facilitating follow-up communication.
+- `subject`: A CharField to capture the subject of the message, allowing for a clear understanding of the message's intent.
+- `message`: A TextField to store the user's message, providing ample space for detailed communication.
+- `created_at`: A DateTimeField that automatically records the date and time when the message was created.
+- The `__str__` method is customized to return a string representation of the message, including the sender's name and the subject, enhancing the readability and management of contact messages in the admin interface.
+
+This model efficiently organizes user inquiries and feedback, ensuring that user voices are heard and addressed in a timely and organized manner.
+\
+&nbsp;
+
+### Home Models:
+
+#### UserProfile Model
+The UserProfile model acts as a central hub for user-specific data, ensuring seamless management of individual preferences and historical records on the platform. Its key features include:
+- `user`: A OneToOneField linking to the Django's standard User model, establishing a unique relationship with each user.
+- `saved_brushes`: A ManyToManyField connected to the Brush model, allowing users to save their favorite digital brushes for easy access and future reference.
+- A `__str__` method returning the username, making user profile identification straightforward in the admin interface.
+- A `purchase_history` property method, efficiently retrieving the user's past orders from the 'Order' model, thus providing a convenient view of their transaction history.
+
+#### SavedBrush Model
+The SavedBrush model encapsulates the relationship between users and their saved digital brushes, enhancing the user experience by allowing for a personalized collection of preferred brushes. It includes:
+- `user`: A ForeignKey to the User model, identifying the user who saved the brush.
+- `brush`: A ForeignKey to the Brush model, indicating the specific saved brush. It features a 'related_name' for easy querying of all saved brushes associated with a particular brush.
+- A `__str__` method that combines the user's username and brush name, offering a clear and concise representation of each saved brush entry.
+
+Additionally, the models leverage Django signals to automate the creation or updating of user profiles upon user account creation or modification. This feature ensures that every user account is consistently linked with a corresponding user profile, streamlining the management of user-related data.
+\
+&nbsp;
+
+
+
+
+
+
 
