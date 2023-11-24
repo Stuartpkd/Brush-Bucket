@@ -364,6 +364,10 @@ Handles server errors by providing an informative notification and easy navigati
 * [CSSgradient](https://cssgradient.io/ "CSSgradient") – For the visualisation of gradients for the sites styling.
 * [LottieFiles](https://lottiefiles.com/ "LottieFiles") – This hosts the animated logo at the top of the screen.
 
+## Styling
+* [Bootstrap](https://getbootstrap.com/ "Bootstrap") – To provide extra styling and out-of-the-box elements e.g. burger menu.
+* [Google Fonts](https://fontawesome.com/ "Google Fonts") – For font used in the site.
+
 
 
 
