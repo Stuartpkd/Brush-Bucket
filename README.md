@@ -375,6 +375,10 @@ Handles server errors by providing an informative notification and easy navigati
 * [Python Syntax Checker PEP8](https://www.pythonchecker.com/ "Python Syntax Checker PEP8") – To validate all the Python files, making sure they align with PEP8.
 * [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en "Lighthouse") – To check the website’s performance and accessibility, making sure the best practices are used.
 
+## Databases
+* [SQLite](https://sqlite.org/index.html "SQLite") - The default database on Django, utilised for unittesting.
+* [ElephantSQL](https://www.elephantsql.com/ "ElephantSQL") – The final database used for the deployed project.
+* [AWS](https://aws.amazon.com/ "Amazon Web Services") – AWS was chosen as the primary cloud service provider for the final deployment of our project. It offered robust, scalable, and secure hosting solutions for our website's databases and static files, including the digital brush files.
 
 
 
