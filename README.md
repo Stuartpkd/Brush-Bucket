@@ -51,3 +51,14 @@ After thinking about the strategy for my site, I came up with a target audience 
 | id  |  Content | Label |
 | ------ | ------ | ------ |
 | [1](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42174609) | As a buyer, I can browse a selection of digital brushes so that I can find the perfect brushes for my digital art projects. | Needed |
+| [2](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42174609) | As a buyer, I can view detailed information about a digital brush, including its description, price, and user ratings, so that I can make an informed purchasing decision. | Needed |
+| [3](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42174758) | As a buyer, I can add digital brushes to my shopping cart so that I can review and purchase them later. | Needed |
+| [4](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42174837) | As a buyer, I can complete the purchase of selected digital brushes so that I can have access to the downloaded files for my art projects. | Needed |
+| [5](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42174915) | As a buyer, I can access my purchase history and download links in my profile so that I can easily retrieve brushes I've purchased in the past. | Needed |
+| [6](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42175047) | As a buyer, I can leave ratings for digital brushes I've purchased so that I can share my feedback and help others make choices. | Needed |
+| [7](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42175176) | As a buyer, I can save my favorite digital brushes to a favorites list so that I can quickly access and consider them for future purchases. | Needed |
+| [8](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42175359) | As a seller/admin, I can upload digital brushes to the marketplace so that I can offer my creations to a broader audience. | Needed |
+| [9](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42175448) | As a seller/admin, I can manage and edit the product listings of the digital brushes I've added to the site so that I can keep them up to date. | Needed |
+| [11](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42175990) | As an admin, I can manage user accounts and activities to ensure the safety and integrity of the platform. | Needed |
+| [19](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42176934) | As a new user, I can click on the "Sign Up" button on the homepage so that I can create a new account. | Needed |
+| [20](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42177096) | As a new user, I should receive an email with a verification link after registering. | Needed |
