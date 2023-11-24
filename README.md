@@ -240,6 +240,41 @@ Additionally, the models leverage Django signals to automate the creation or upd
 \
 &nbsp;
 
+## Skeleton
+The skeleton provides a broad initial idea that is further refined and built on. 
+\
+&nbsp;
+
+### Wireframes
+I began by crafting a mobile rendition to align with my mobile-first strategy, subsequently crafting versions for medium and large screens. It's crucial to maintain a straightforward layout that doesn't overshadow the artwork posts while ensuring the website's responsiveness across different screen sizes. The brushes still feature in the wire frames, but their structure and layout was still used in the final designs for the website.
+
+Basic wireframes can be found below (Note that these vary slightly from the final website design):
+
+* [Home Page](docs/wireframes/Home_Desktop.pdf "Home Page")
+* [Profile](docs/wireframes/Profile.pdf "Profile")
+* [Brushes](docs/wireframes/Brushes.pdf "Brushes")
+* [Brush Detail](docs/wireframes/Brush%20detail.pdf "Brush details")
+* [Checkout](docs/wireframes/Checkout.pdf "Checkout")
+* [Bag](docs/wireframes/Bag.pdf "Bag")
+\
+&nbsp;
+
+## Surface
+The surface plane primarily pertains to aesthetics and the interface, emphasizing the selection of an appropriate color palette, font, and icons that enhance the website's allure without detracting from the artwork's focal point.
+\
+&nbsp;
+
+### Font
+The font used is called Mukta, it has good readability and had a lot of weights to use for easier heirarchy. They were sourced from [here](https://fonts.google.com/specimen/Mukta?query=mukta) and were used in suitable sections.
+
+### Colours
+
+![Colours](docs/colours/colours.png)
+
+I've designed the site's colour scheme to be minimalist yet visually intriguing. The subtle palette ensures that the artwork remains the focus, without any distractions. These careful colour choices add to the user experience without overshadowing the brushes.
+\
+&nbsp;
+
 ### Responsive Screens
 The website's construction will commence with a focus on a compact 350px-width mobile screen, after which it will be adapted to fulfill the specifications for medium/tablet, large, and extra-large screens, as illustrated in the following table.
 
@@ -253,6 +288,7 @@ The website's construction will commence with a focus on a compact 350px-width m
 \
 &nbsp;
 
+# Features
 
 ### Index Page
 
