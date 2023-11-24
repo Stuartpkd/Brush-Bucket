@@ -65,11 +65,14 @@ After thinking about the strategy for my site, I came up with a target audience 
 | [13](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42176934) | As a new user, I can click on the "Sign Up" button on the homepage so that I can create a new account. | Needed |
 | [14](https://github.com/users/Stuartpkd/projects/3/views/1?pane=issue&itemId=42177096) | As a new user, I should receive an email with a verification link after registering. | Needed |
 | [15](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=45623755) | As a user I can leave feedback or ask for assistance via a contact page so that I can provide helpful suggestions and have any issues I have addressed. | Needed |
+\
+&nbsp;
 
-
-#### Future Sprint User Stories for Canvas Brush Testing
+## Scope
 
 In the development of BrushBucket, I explored the ambitious idea of integrating an interactive canvas feature, allowing users to test out digital brushes directly on the website. This feature aimed to provide a hands-on experience, enabling users to truly feel the essence of each brush before making a purchase. However, during the testing phase, it became apparent that the canvas was quite resource-intensive, leading to significant browser performance issues. Given my commitment to ensuring a seamless and efficient user experience on BrushBucket, I decided to shelf this feature for the time being. It remains a key area of interest for future development, and I'm actively seeking more optimized solutions. For reference, I'm including a link to a similar canvas implementation that inspired my initial tests, showcasing the potential direction for this feature's future integration.
+\
+&nbsp;
 
 | id  |  Content | Label |
 | ------ | ------ | ------ |
@@ -77,3 +80,40 @@ In the development of BrushBucket, I explored the ambitious idea of integrating 
 | [2](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176221) | As a user, I can select different brushes from the collection to experiment with different styles and effects. | Nice to have |
 | [3](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176281) | As a user, I can choose different colors for my brushstrokes to create colorful and expressive digital art. | Nice to have |
 | [4](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176336) | As a user, I can undo and redo my actions to correct mistakes and experiment with different ideas. | Nice to have |
+\
+&nbsp;
+
+## Development Sprints
+
+### Sprint 1: Core Functionality and Basic Features
+**Milestone:** Establishing the foundational platform.
+- Enable buyers to browse a selection of digital brushes. (User Story 1)
+- Allow buyers to view detailed information about each digital brush. (User Story 2)
+- Implement a shopping cart for buyers. (User Story 3)
+- Create a sign-up process for new users. (User Story 13)
+- Implement email verification for new accounts. (User Story 14)
+
+### Sprint 2: Enhancing User Experience and Seller/Admin Capabilities
+**Milestone:** Enriching the platform with advanced features.
+- Set up the checkout process for brush purchases. (User Story 4)
+- Enable access to purchase history and downloads in user profiles. (User Story 5)
+- Implement a feature for buyers to leave ratings. (User Story 6)
+- Develop admin capabilities for user account management. (User Story 12)
+
+### Sprint 3: Advanced Features and User Interactions
+**Milestone:** Adding interactive and user engagement features.
+- Implement a favorites list for buyers. (User Story 7)
+- Enable sellers/admins to upload new brushes. (User Story 8)
+- Allow sellers/admins to manage and edit product listings. (User Story 9 & 10)
+- Create a contact page for user feedback and assistance. (User Story 15)
+
+### Future Sprints: Further Development and Expansion
+**Milestone:** Expansion and continuous improvement.
+- Improve sales statistics for sellers/admins. (User Story 11)
+- Explore integrating an interactive canvas for brush testing.
+- Enhancements in UI/UX for easier navigation and accessibility.
+- Additional security features and user account management options.
+
+
+
+
