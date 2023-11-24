@@ -378,6 +378,36 @@ Handles server errors by providing an informative notification and easy navigati
 \
 &nbsp;
 
+# SEO and Marketing
+
+## Meta Tag Keywords
+
+When selecting keywords and descriptions for the meta tags of BrushBucket, I delved deeply into the unique aspects and target audience of the platform. The site is an e-commerce platform for selling digital brushes, primarily focusing on Procreate brushes. The target audience includes digital artists and enthusiasts, aged between 18 to 45, who are keen on purchasing and collecting digital brushes. Recognizing these characteristics, I crafted meta tags that encapsulate the essence of BrushBucket. Keywords like 'digital brushes', 'Procreate brushes', 'artist tools online', and 'digital brush marketplace' were chosen to align with the search behavior of potential users. The description was meticulously written to be concise yet comprehensive, highlighting the site's capability to allow users to purchase, download, and rate brushes, and emphasizing its user-friendly nature for inquiries and suggestions.
+
+## SEO Implementation
+
+### robots.txt
+
+The `robots.txt` file is a critical aspect of SEO, guiding search engine crawlers on how to interact with the website's pages. This file specifies which areas of the site should or shouldn't be crawled to optimize the indexing process.
+
+### sitemap.xml
+
+The `sitemap.xml` is essential for search engine optimization. It lists the URLs available for crawling and includes additional information about each URL (like its importance and how frequently it changes). This sitemap helps search engines to more intelligently crawl the site.
+
+## Marketing
+
+### Social Media Presence
+
+My marketing strategy heavily involves a strong social media presence. We have created a Facebook page to engage with our community, share updates, and showcase our digital brushes. Our Facebook mockup outlines how we present our brand and interact with users.
+
+### Email Marketing with Mailchimp
+
+I use Mailchimp for email marketing campaigns to keep our users informed and engaged. Regular newsletters, product updates, and special offers are sent out to our subscribers. This approach helps in keeping the community aware of the latest additions and promotions, driving both engagement and sales.
+
+You can view the mockups and outlines of these marketing strategies in the corresponding sections below.
+
+
+
 # Technologies Used
 
 ## Languages
