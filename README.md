@@ -490,6 +490,20 @@ No issues arose, due to the simple layout of the site.
 \
 &nbsp;
 
+# Bugs
+
+## Bug 1: SVG glitches
+
+![Lighthouse](docs/bugs/Bug_1.png)
+\
+&nbsp;
+
+![Lighthouse](docs/bugs/Bug_1.1.png)
+\
+&nbsp;
+
+Parts of artwork exported from illustrator would be coloured black unless I exported them in a vert particular way. Some of Adobes finest work.
+
 
 
 
