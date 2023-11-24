@@ -71,3 +71,19 @@ This page handles 404 errors, guiding users back to the main content when they e
 The Error 500 page is designed to handle server errors, informing users of the issue while maintaining a consistent and professional site experience.
 \
 &nbsp;
+
+## Epic 2: Secondary features (Nice to haves)
+
+# Base template
+
+## Navbar Testing
+
+---
+
+## Main Content Testing
+
+---
+
+## Footer Testing
+
+## General Testing
