@@ -113,7 +113,27 @@ In the development of BrushBucket, I explored the ambitious idea of integrating 
 - Explore integrating an interactive canvas for brush testing.
 - Enhancements in UI/UX for easier navigation and accessibility.
 - Additional security features and user account management options.
+\
+&nbsp;
 
+## Structure
 
+The project's structure is meticulously planned to ensure an organized approach to development, facilitating adherence to sprint steps and project goals. The project content is segmented into applications, each dedicated to handling different aspects of the platform. The data collected from users is structured into database tables for efficient organization and storage.
+\
+&nbsp;
+
+### Project Applications
+For BrushBucket, 6 applications were created, each with a specific focus:
+
+1. **Home App** – Manages the landing page and general navigation across the site.
+2. **Profile** – Handles profile management, purchase history and brush favourites.
+3. **Brushes App** – Central to the project, this app allows users to browse, view, and rate digital brushes. It also includes functionalities for brush details and categorization.
+4. **Bag App** – Manages the shopping cart functionality, enabling users to add brushes to their cart and review them before purchase.
+5. **Checkout App** – Facilitates the checkout process, including payment handling and order confirmation.
+6. **Contact App** – Allows users to send messages or inquiries through a contact form, facilitating communication between users and site administrators.
+
+Each application serves a distinct purpose, contributing to the cohesive functionality of BrushBucket. This modular approach allows for efficient development and future scalability of the platform.
+\
+&nbsp;
 
 
