@@ -23,3 +23,15 @@ The Scope Plane
 The Structure Plane
 The Skeleton Plane
 The Surface Plane
+
+## Strategy 
+
+After thinking about the strategy for my site, I came up with a target audience which would influence the features included.
+
+### Target Users:
+
+1. Age Range: Primarily individuals aged 18-40 who are actively engaged in or interested in digital art creation and exploration.
+2. Digital Art Enthusiasts: Users who are passionate about digital art, either as creators, learners, or appreciators.
+3. Digital Brush Collectors: Those interested in expanding their toolkit with diverse digital brushes, enhancing their digital artwork.
+4. Emerging Digital Artists: Individuals looking to discover and experiment with new digital brushes to refine their art style and techniques.
+5. Art Community Members: Users who value the sense of community in the digital art world and enjoy connecting with fellow artists and art enthusiasts.
