@@ -11,3 +11,15 @@ This is my coding repository dedicated to the BrushBucket website. It is an e-co
 [Link to the projects board](https://github.com/users/Stuartpkd/projects/3)
 
 ![Image of site on different platforms]()
+
+# User experience
+
+The UX or User Experience centers on the website's accessibility and its level of user-friendliness, both of which play a critical role in determining the website's overall success.
+
+These can be made up of 5 layers:
+
+The Strategy Plane
+The Scope Plane
+The Structure Plane
+The Skeleton Plane
+The Surface Plane
