@@ -32,7 +32,6 @@ def add_to_bag(request, brush_id):
     }
         messages.success(request, f'Added {brush.name} to your bag')
         
-
     request.session['bag'] = bag
 
     redirect_url = request.POST.get('redirect_url')
