@@ -136,6 +136,18 @@ Each application serves a distinct purpose, contributing to the cohesive functio
 \
 &nbsp;
 
+### Project Databases
+In the development of the "BrushBucket" application, my project employs a sophisticated database structure to support the intricate functionalities envisioned in the user stories. Initially, the project began with an ambitious database design, as illustrated in the initial SQL map. However, as the project evolved, driven by practical considerations of scope and time, the databases underwent several transformations, leading to the current and more refined structure.
+\
+&nbsp;
+
+> ![Database Table 1](docs/database_schema/sql-map-1.png)
+\
+&nbsp;
+> ![Database Table 1](docs/database_schema/sql-map-2.png)
+\
+&nbsp;
+
 ### Brushes Models:
 
 #### BrushCategory Model
@@ -227,6 +239,7 @@ The SavedBrush model encapsulates the relationship between users and their saved
 Additionally, the models leverage Django signals to automate the creation or updating of user profiles upon user account creation or modification. This feature ensures that every user account is consistently linked with a corresponding user profile, streamlining the management of user-related data.
 \
 &nbsp;
+
 
 
 
