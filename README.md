@@ -342,6 +342,16 @@ Handles server errors by providing an informative notification and easy navigati
 \
 &nbsp;
 
+# Technologies Used
+
+## Languages
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML") - To create the Django templates for the associated views and models in the project applications.
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS") - To style the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") - To create interactive animations for the site.
+* [Python]( https://en.wikipedia.org/wiki/Python_(programming_language) "Python") – Is the primary language of Django and used to create all forms, models and views.
+\
+&nbsp;
+
 
 
 
