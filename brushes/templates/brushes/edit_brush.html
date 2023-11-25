@@ -3,25 +3,18 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
-    <div class="row">
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
         <div class="col-12 col-md-6">
-            <hr>
             <h2 class="logo-font mb-4">Brush Management</h2>
-            <h5 class="text-muted">Edit a Product</h5>
-            <hr>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6">
+            <h5>Edit a Brush</h5>
             <form method="POST" action="{% url 'edit_brush' brush.id %}" class="form mb-2"
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'brushes' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Update brush</button>
+                <div class="mt-4 text-right">
+                    <a class="btn btn-remove-from-cart" href="{% url 'brushes' %}">Cancel</a>
+                    <button class="btn btn-add-to-cart" type="submit">Update Brush</button>
                 </div>
             </form>
         </div>
