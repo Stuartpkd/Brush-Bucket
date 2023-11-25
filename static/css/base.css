@@ -27,6 +27,13 @@ a:hover {
     color: #f89e4c !important;
 }
 
+input {
+    background-color: #582841;
+    border: 2px solid #f89e4c !important;
+    border-radius: 0.25rem;
+    color: #f89e4c;
+}
+
 ::placeholder {
     color: #f89e4c !important;
 }
