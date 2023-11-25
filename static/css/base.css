@@ -111,7 +111,10 @@ h6 {
 
 /* -------------------------------- Nav styling */
 
-/* Targeting the nav-link class for the effect */
+.lottie-container {
+    padding-right: 10px;
+}
+
 a.text-info:focus,
 a.text-info:hover {
     color: #f89e4c !important;
