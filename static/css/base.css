@@ -179,7 +179,7 @@ a.text-info:hover {
 
 .dropdown-menu .dropdown-item:hover {
     background-color: #f89e4c;
-    color: #582841;
+    color: #582841 !important;
 }
 
 /* Style for the Sort Brushes header */
@@ -283,7 +283,7 @@ a.text-info:hover {
 .btn-cta:hover {
     background-color: #f89e4c;
     border: 2px solid #f89e4c;
-    color: #582841;
+    color: #582841 !important;
     text-decoration: none !important;
 }
 
@@ -304,6 +304,11 @@ a.text-info:hover {
     border: 2px solid #f89e4c;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #f89e4c;
+    color: #582841 !important;
 }
 
 
@@ -508,7 +513,7 @@ span {
 
 .custom-toast .btn-black:hover {
     background-color: #f89e4c;
-    color: #582841;
+    color: #582841 !important;
 }
 
 .toast-brush-image {

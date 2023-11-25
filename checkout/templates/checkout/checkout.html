@@ -35,17 +35,13 @@
                 </fieldset>
                 <div class="submit-button text-right mt-5 mb-2">
                     <a href="{% url 'view_bag' %}" class="btn btn-remove-from-cart">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="font-weight-bold">Adjust Bag</span>
+                        <i class="fas fa-chevron-left icon"></i>
+                        Adjust Bag
                     </a>
 
                     <button id="submit-button" class="btn btn-add-to-cart">
-                        <span class="font-weight-bold">Complete Order</span>
-                        <span class="icon">
-                            <i class="fas fa-lock"></i>
-                        </span>
+                        Complete Order
+                        <i class="fas fa-lock icon"></i>
                     </button>
                 </div>
             </form>
@@ -75,7 +71,6 @@
                 </div>
                 {% endfor %}
             </div>
-            <hr class="">
             <div class="row text-black text-right">
                 <div class="col-12">
                     <p class="my-0"><strong>Order Total:</strong> ${{ grand_total | floatformat:2 }}</p>

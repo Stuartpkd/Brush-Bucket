@@ -83,7 +83,7 @@
 
 .btn-add-to-cart-success:hover {
     background-color: #f89e4c !important;
-    color: #582841;
+    color: #582841 !important;
 }
 
 p {
@@ -104,4 +104,8 @@ p {
 .btn-add-to-cart:hover .icon,
 .btn-add-to-cart:hover .text-uppercase {
     color: #582841;
+}
+
+hr {
+    background-color: #f89e4c;
 }
