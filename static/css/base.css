@@ -27,6 +27,10 @@ a:hover {
     color: #f89e4c !important;
 }
 
+::placeholder {
+    color: #f89e4c !important;
+}
+
 /* -------------------------------- P tags */
 
 p {
