@@ -30,8 +30,12 @@ a:hover {
 input {
     background-color: #582841;
     border: 2px solid #f89e4c !important;
-    border-radius: 0.25rem;
+    border-radius: 0.25rem !important;
     color: #f89e4c;
+}
+
+.rounded-0 {
+    border-radius: 0.25rem !important;
 }
 
 ::placeholder {
