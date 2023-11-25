@@ -42,6 +42,7 @@ input {
 
 p {
     color: #f89e4c;
+    margin: none;
 }
 
 /* -------------------------------- Table styling */
@@ -378,29 +379,32 @@ a.text-info:hover {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #2D142C;
-    color: white;
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid #000 !important;
-}
 
 /* -------------------------------- Contact page */
 
 label {
     color: #f89e4c !important;
 }
+
+/* -------------------------------- Profile */
+
+.profile-switches {
+    padding: 20px;
+}
+
+.profile-text {
+    font-size: 1.5rem;
+}
+
+#favorite-brushes {
+    display: none;
+}
+
+.toggle-button.active {
+    background-color: #f89e4c;
+    color: #582841;
+}
+
 
 /* -------------------------------- Brushes styling */
 
