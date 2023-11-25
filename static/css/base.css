@@ -386,6 +386,12 @@ label {
     color: #f89e4c !important;
 }
 
+.form-control:focus {
+    background-color: #582841;
+    color: #f89e4c;
+    box-shadow: none;
+}
+
 /* -------------------------------- Profile */
 
 .profile-switches {
