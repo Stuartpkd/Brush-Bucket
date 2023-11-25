@@ -8,9 +8,15 @@
             <h1 class="">
                 Discover the Perfect Digital Brushes
             </h1>
+            {% if request.user.is_authenticated %}
             <div class="my-5">
                 <a href="{% url 'brushes' %}" class="btn-cta text-uppercase py-3">Explore Brushes</a>
             </div>
+            {% else %}
+            <div class="my-5">
+                <a href="{% url 'account_signup' %}" class="btn-cta text-uppercase py-3">Sign up now</a>
+            </div>
+            {% endif %}
         </div>
     </div>
 
