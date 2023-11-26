@@ -161,6 +161,9 @@ a.text-info:hover {
     color: #f89e4c !important;
 }
 
+.nav-item {
+    position: relative;
+}
 
 .navbar-icons {
     display: flex;
@@ -188,6 +191,7 @@ a.text-info:hover {
 .dropdown-menu {
     border: 2px solid #f89e4c !important;
     background-color: #582841;
+    position: absolute;
 }
 
 /* Style for dropdown items */
@@ -626,6 +630,10 @@ span {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .row.justify-content-center {
+        justify-content: center;
     }
 }
 
