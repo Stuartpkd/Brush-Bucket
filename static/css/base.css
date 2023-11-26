@@ -629,3 +629,31 @@ span {
         padding-top: 164px;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .table thead tr {
+        display: none;
+    }
+
+    .table td {
+        display: block;
+        position: relative;
+        padding-left: 40%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .table td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+    }
+
+    .table tr {
+        border-bottom: 1px solid #ccc;
+    }
+}

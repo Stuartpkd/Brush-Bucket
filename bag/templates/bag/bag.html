@@ -18,22 +18,22 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Image</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Actions</th> {# Added Actions column #}
+                            <th data-title="Image">Image</th>
+                            <th data-title="Title">Title</th>
+                            <th data-title="Category">Category</th>
+                            <th data-title="Price">Price</th>
+                            <th data-title="Actions">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for item in bag_items %}
                         <tr>
-                            <td><img src="{{ item.brush.image.url }}" alt="{{ item.brush.name }} Image"
-                                    class="brush-image"></td>
-                            <td>{{ item.brush.name }}</td>
-                            <td>{{ item.brush.category.name }}</td>
-                            <td>${{ item.brush.price }}</td>
-                            <td>
+                            <td data-title="Image"><img src="{{ item.brush.image.url }}"
+                                    alt="{{ item.brush.name }} Image" class="brush-image"></td>
+                            <td data-title="Title">{{ item.brush.name }}</td>
+                            <td data-title="Category">{{ item.brush.category.name }}</td>
+                            <td data-title="Price">${{ item.brush.price }}</td>
+                            <td data-title="Actions">
                                 <form method="post" action="{% url 'remove_from_bag' item.brush.id %}">
                                     {% csrf_token %}
                                     <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
