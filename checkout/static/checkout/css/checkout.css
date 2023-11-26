@@ -30,10 +30,11 @@
     right: .5rem;
 }
 
-#payment-form .form-control,
-#card-element {
-    color: #000;
-    border: 1px solid #000;
+.form-control {
+    background-color: #582841;
+    color: #f89e4c;
+    border: 2px solid #f89e4c;
+    border-radius: 0.25rem;
 }
 
 #loading-overlay {
@@ -108,4 +109,14 @@ p {
 
 hr {
     background-color: #f89e4c;
+}
+
+.checkout-btn {
+    padding: 20px;
+}
+
+@media (max-width: 576px) {
+    .responsive-btn {
+        font-size: 0.6rem;
+    }
 }

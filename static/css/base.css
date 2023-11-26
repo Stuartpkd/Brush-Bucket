@@ -242,7 +242,6 @@ a.text-info:hover {
 .hero-section {
     background: url(/media/hero_image/hero-image.svg) center center no-repeat;
     min-height: 100vh;
-    z-index: 1;
 }
 
 .header-container {
