@@ -112,9 +112,23 @@ def rate_brush(request, brush_id):
 
 @login_required
 def add_brush(request):
-    """ Add a product to the store """
+    """ Add a brush to the store """
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES)
+        brush_file = request.FILES.get('brush_file', None)
+
+        if brush_file:
+            allowed_file_types = ['.brush']
+            max_file_size = 3 * 1024 * 1024  # 3MB in bytes
+
+            if not any(brush_file.name.endswith(ext) for ext in allowed_file_types):
+                messages.error(request, 'Please upload a valid brush file (.brush).')
+                return render(request, 'brushes/add_brush.html', {'form': form})
+
+            if brush_file.size > max_file_size:
+                messages.error(request, 'The uploaded file is too large. Please upload a file under 3MB.')
+                return render(request, 'brushes/add_brush.html', {'form': form})
+
         if form.is_valid():
             brush = form.save()
             messages.success(request, 'Successfully added brush!')
@@ -123,6 +137,7 @@ def add_brush(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = BrushForm()
+
     template = 'brushes/add_brush.html'
     context = {
         'form': form,
@@ -137,6 +152,20 @@ def edit_brush(request, brush_id):
     brush = get_object_or_404(Brush, pk=brush_id)
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES, instance=brush)
+        brush_file = request.FILES.get('brush_file', None)
+
+        if brush_file:
+            allowed_file_types = ['.brush']
+            max_file_size = 3 * 1024 * 1024  # 3MB in bytes
+
+            if not any(brush_file.name.endswith(ext) for ext in allowed_file_types):
+                messages.error(request, 'Please upload a valid brush file (.brush).')
+                return render(request, 'brushes/edit_brush.html', {'form': form, 'brush': brush})
+
+            if brush_file.size > max_file_size:
+                messages.error(request, 'The uploaded file is too large. Please upload a file under 3MB.')
+                return render(request, 'brushes/edit_brush.html', {'form': form, 'brush': brush})
+
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated brush!')
