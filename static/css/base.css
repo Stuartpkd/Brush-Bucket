@@ -531,7 +531,7 @@ span {
 
 .custom-toast .toast-body {
     background-color: #582841 !important;
-    color: #ef4748;
+    color: #f89e4c !important;
 }
 
 .custom-toast .btn-black {
@@ -545,6 +545,14 @@ span {
 .custom-toast .btn-black:hover {
     background-color: #f89e4c;
     color: #582841 !important;
+}
+
+.toast-capper {
+    background-color: #f89e4c !important;
+}
+
+.bg-white {
+    background-color: #582841 !important;
 }
 
 .toast-brush-image {
