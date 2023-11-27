@@ -6,11 +6,11 @@
 <div class="row justify-content-center">
     <div class="col-12 col-md-auto">
         <div class="nav-item dropdown text-center my-2">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-link"
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="sort-brushes-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <h2>Sort Brushes</h2> <i class="fas fa-sort fa-icon-style"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="all-brushes-link">
+            <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="sort-brushes-link">
                 <a href="{% url 'brushes' %}?sort=price&direction=asc" class="dropdown-item">Price (Low to High)</a>
                 <a href="{% url 'brushes' %}?sort=price&direction=desc" class="dropdown-item">Price (High to Low)</a>
                 <a href="{% url 'brushes' %}?sort=rating&direction=desc" class="dropdown-item">Rating (High to Low)</a>
@@ -21,6 +21,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Brushes content block -->
 <div class="container">
