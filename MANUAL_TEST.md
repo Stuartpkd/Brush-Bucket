@@ -635,6 +635,47 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Home Page
+
+## Hero Section Testing
+
+1. **Hero Section Layout and Design**:
+    - Confirm that the hero section is prominently displayed with the text "Discover the Perfect Digital Brushes."
+    - Check the styling and positioning of the hero text container.
+
+2. **Call-to-Action Button**:
+    - For authenticated users, verify that the 'Explore Brushes' button is displayed and redirects to the brushes page.
+    - For unauthenticated users, ensure the 'Sign up now' button is shown and leads to the signup page.
+
+## Featured Brushes Section Testing
+
+1. **Featured Brushes Display**:
+    - Confirm the display of the 'Featured Brushes' section with an appropriate heading.
+    - Verify that featured brushes are displayed correctly, with each brush's name and image.
+
+2. **Brush Image and Details**:
+    - Check that each brush image is correctly displayed and the `alt` text is accurate.
+    - For brushes without images, confirm the display of a placeholder image.
+
+3. **Navigation to Brush Details**:
+    - Test the links on each featured brush to ensure they lead to the respective brush detail page.
+
+4. **No Featured Brushes Scenario**:
+    - If no featured brushes are available, verify that the message "No featured brushes at the moment." is displayed.
+
+## Overall Layout and Responsiveness
+
+1. **Responsive Design**:
+    - Check the responsiveness of the entire home page across different screen sizes.
+    - Ensure that all elements adjust correctly for a seamless user experience.
+
+2. **Consistency and Aesthetics**:
+    - Verify that the home page's design is consistent with the overall website theme.
+    - Confirm that the layout, fonts, and color scheme are visually appealing and user-friendly.
+
+---
+
+
 
 
 
