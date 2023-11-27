@@ -1,3 +1,28 @@
+# Table of Contents
+
+1. [Epic 1: Core Website Functionality (Needed features)](#epic-1-core-website-functionality-needed-features)
+2. [Epic 2: Seller and Admin Management (Needed features)](#epic-2-seller-and-admin-management-needed-features)
+3. [Epic 3: User Account Management and Feedback (Needed features)](#epic-3-user-account-management-and-feedback-needed-features)
+4. [Epic 2: Secondary features (Nice to haves)](#epic-2-secondary-features-nice-to-haves)
+5. [Base Template](#base-template)
+6. [Main Content Testing](#main-content-testing)
+7. [General Testing](#general-testing)
+8. [Authenticated User View](#authenticated-user-view)
+9. [Unauthenticated User View](#unauthenticated-user-view)
+10. [Add a Brush Page](#add-a-brush-page)
+11. [Brush Detail Page](#brush-detail-page)
+12. [Brushes Page](#brushes-page)
+13. [Edit Brush Page](#edit-brush-page)
+14. [Brush Bag Page](#brush-bag-page)
+15. [Purchase Confirmation Page](#purchase-confirmation-page)
+16. [Checkout Page](#checkout-page)
+17. [Contact Us Page](#contact-us-page)
+18. [Home Page](#home-page)
+19. [My Profile Page](#my-profile-page)
+20. [Button Functionality Testing Documentation Across the Site](#button-functionality-testing-documentation-across-the-site)
+21. [Additional Testing Considerations](#additional-testing-considerations)
+
+
 # Manual Tests
 
 [Go Back to README.md](https://github.com/Stuartpkd/Brush-Bucket)
@@ -788,6 +813,22 @@ The comprehensive testing of all buttons is crucial for ensuring a smooth and in
 
 ---
 
+# Additional Testing Considerations
+
+## File Upload Validation in 'Add/Edit Brush' Feature
+
+1. **File Type Check**:
+    - Test the brush file upload feature by attempting to upload various file types.
+    - Confirm that only the allowed file types (e.g., .abr, .brush, etc.) are accepted.
+    - Verify that an error message or alert is displayed when an unsupported file type is uploaded.
+
+2. **File Size Limitation**:
+    - Test the upload functionality with files of varying sizes.
+    - Ensure that files exceeding the set size limit are not uploaded and that a clear error message is provided.
+
+3. **User Feedback on Upload**:
+    - Upon successful upload of a brush file, check for a confirmation message or visual indicator that the file has been uploaded correctly.
+    - In case of an error during the upload process, ensure that the user is adequately informed with an appropriate error message.
 
 
 
