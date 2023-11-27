@@ -1,7 +1,5 @@
 # BrushBucket - A digital brush Ecommerce site.
 
-# BrushBucket - A Digital Brush E-Commerce Site
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [User Experience](#user-experience)
