@@ -524,11 +524,25 @@ I had two separate css files in this project. One for the base html and one for 
 
 Each of my javascript code blocks passed the validator without any major issues.
 
-#### Confirm delete functions
+#### Show messages function
 
-![Javascript validation](docs/code-testing/confirm-js.png)
+![Javascript validation](docs/js-testing/base-js.png)
 \
 &nbsp;
+
+#### Profile switch function
+
+![Javascript validation](docs/js-testing/profile-js.png)
+\
+&nbsp;
+
+#### Stripe Javascript. 
+
+![Javascript validation](docs/js-testing/profile-js.png)
+\
+&nbsp;
+
+The stripe function showed an issue saying that stripe was not defined. This is because the stripe script link is separate and in the base template. JS hint was obviously not able to know this.
 
 ### CI Python checker
 
