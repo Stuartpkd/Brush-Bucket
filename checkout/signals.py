@@ -20,13 +20,3 @@ def update_on_delete(sender, instance, **kwargs):
     Update order total on lineitem delete
     """
     instance.order.update_total()
-
-
-@receiver(user_logged_in)
-def user_logged_in_receiver(sender, request, user, **kwargs):
-    messages.info(request, f'Welcome back, {user.username}! You have successfully signed in.')
-
-
-@receiver(user_logged_out)
-def user_logged_out_receiver(sender, request, user, **kwargs):
-    messages.info(request, 'You have successfully signed out.')

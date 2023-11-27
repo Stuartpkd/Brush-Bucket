@@ -10,6 +10,8 @@
         </button>
     </div>
     <div class="toast-body bg-white">
+        {% for message in messages %}
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
         {% if request.session.added_brush %}
         <p>{{ message }}</p>
         <div class="table-responsive rounded">
@@ -26,12 +28,11 @@
                 </tbody>
             </table>
         </div>
-        <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
-            View Bag
-        </a>
+        <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">View Bag</a>
         {% else %}
-
+        {{ message }}
         {% endif %}
-
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
