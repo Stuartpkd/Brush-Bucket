@@ -506,6 +506,98 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Purchase Confirmation Page 
+
+## Confirmation Message Testing
+
+1. **Success Message and Order Details**:
+    - Confirm that the success message "Thank You For Your Purchase!" is prominently displayed.
+    - Verify the order number and customer email are correctly displayed in the message.
+    - Check for clarity and correctness of the additional information provided about the order and next steps.
+
+## Order Summary Section Testing
+
+1. **Display of Ordered Items**:
+    - Ensure each ordered item is listed with its name, quantity, and price.
+    - Verify the accuracy of the details displayed for each item.
+
+2. **Grand Total Verification**:
+    - Confirm that the grand total reflects the correct sum of the items purchased.
+    - Check the positioning and visibility of the grand total within the order summary.
+
+## Continue Shopping Link Testing
+
+1. **Navigation Functionality**:
+    - Test the 'Continue Shopping' button to ensure it redirects to the brushes page.
+    - Verify the button’s visibility and accessibility on the page.
+
+## Overall Layout and Design Testing
+
+1. **Responsive Design**:
+    - Check the responsiveness of the layout on various screen sizes.
+    - Ensure that all elements align correctly and remain visually appealing across devices.
+
+2. **Text and Imagery**:
+    - Verify the legibility of the text and the appropriateness of any imagery or icons used.
+    - Confirm that the overall design aligns with the website's aesthetic and branding.
+
+---
+
+# Checkout Page 
+
+## Order Form Section Testing
+
+1. **Form Layout and Display**:
+    - Ensure the order form is properly displayed and centered.
+    - Check the responsiveness of the form layout on different screen sizes.
+
+2. **Form Fields and Functionality**:
+    - Verify the correct rendering and alignment of each field in the form.
+    - Test all form fields to ensure they accept and validate inputs as expected.
+
+3. **CSRF Token Integration**:
+    - Confirm the presence and functionality of the CSRF token in the form for security.
+
+4. **Stripe Payment Integration**:
+    - Test the Stripe card element for inputting payment details.
+    - Ensure that the card element is interacting correctly with the Stripe API.
+    - Verify error handling, such as displaying messages in `#card-errors` when payment details are incorrect.
+
+5. **Form Submission and Payment Processing**:
+    - Test the submission of the form with valid and invalid inputs.
+    - Confirm that the payment is processed correctly and the user receives appropriate feedback upon submission.
+
+6. **Navigation Buttons**:
+    - Verify the functionality of the 'Adjust Bag' button, ensuring it redirects to the bag view page.
+    - Test the 'Complete Order' button for form submission and navigation to the next step.
+
+## Order Summary Section Testing
+
+1. **Display of Order Items**:
+    - Confirm that each item in the user's bag is listed with its image, name, quantity, and price.
+    - Check the accuracy and formatting of the displayed information.
+
+2. **Grand Total Calculation**:
+    - Verify that the grand total reflects the correct sum of the items in the order.
+    - Confirm that the total is displayed clearly and is consistent with the user's bag.
+
+## Loading Overlay Testing
+
+1. **Loading Overlay Functionality**:
+    - Ensure that the loading overlay appears during processing times, such as when the form is submitted.
+    - Check that the overlay disappears once the processing is complete.
+
+## JavaScript and External Scripts Testing
+
+1. **Stripe and JavaScript Integration**:
+    - Confirm that the Stripe public key and client secret are correctly loaded into the page.
+    - Test the `stripe_elements.js` script to ensure it functions correctly with the form and Stripe API.
+
+---
+
+
+
+
 
 
 
