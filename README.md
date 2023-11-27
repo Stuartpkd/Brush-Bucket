@@ -1,5 +1,46 @@
 # BrushBucket - A digital brush Ecommerce site.
 
+# BrushBucket - A Digital Brush E-Commerce Site
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [User Experience](#user-experience)
+   - [Strategy](#strategy)
+   - [User Stories](#user-stories)
+   - [Scope](#scope)
+   - [Structure](#structure)
+   - [Skeleton](#skeleton)
+   - [Surface](#surface)
+3. [Features](#features)
+   - [Index Page](#index-page)
+   - [Profile Page](#profile-page)
+   - [Brushes Page](#brushes-page)
+   - [Brush Detail Page](#brush-detail-page)
+   - [Admin Product Management Page](#admin-product-management-page)
+   - [Checkout Page](#checkout-page)
+   - [Checkout Success Page](#checkout-success-page)
+   - [Bag Page](#bag-page)
+   - [Contact Page](#contact-page)
+   - [Error 404 Page](#error-404-page)
+   - [Error 500 Page](#error-500-page)
+4. [SEO and Marketing](#seo-and-marketing)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+   - [Manual Testing](#manual-testing)
+   - [Code Validation](#code-validation)
+   - [Responsiveness](#responsiveness)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
+   - [Create Application](#create-application)
+   - [ElephantSQL](#elephantsql)
+   - [Final Repo Preparations](#final-repo-preparations)
+   - [Heroku Deployment Guide](#heroku-deployment-guide)
+   - [Detailed AWS Storage Deployment Guide](#detailed-aws-storage-deployment-guide)
+9. [Credits](#credits)
+
+[Back to Top](#brushbucket---a-digital-brush-e-commerce-site)
+
+
 ## Introduction
 
 This is my coding repository dedicated to the BrushBucket website. It is an e-commerce platform designed for digital artists and enthusiasts, focusing on the sale of Procreate brushes. BrushBucket began as an idea for a community-driven site where users could share and explore digital brushes. Due to project scope and technical considerations, it has evolved into a marketplace for purchasing, downloading, and rating a diverse range of digital brushes. One of the key features of the project is utilizing AWS for secure and efficient storage of the digital brush files, which ensures a smooth user experience in accessing and using these creative tools. This platform not only enhances the digital art experience for its users but also stands as a testament to the integration of artistic creativity with cutting-edge web technology.
@@ -753,7 +794,6 @@ Your application is now successfully deployed!
 
 ## For Code Help and Advice
 * [Harry Dhillon](https://github.com/Harry-Leepz)
-* [Harry Dhillon](https://github.com/Daisy-McG)
 
 ## Helpful Resources
 * [Stack overflow helped a lot with problem solving.](https://stackoverflow.com/)
