@@ -406,8 +406,6 @@ I use Mailchimp for email marketing campaigns to keep our users informed and eng
 
 You can view the mockups and outlines of these marketing strategies in the corresponding sections below.
 
-
-
 # Technologies Used
 
 ## Languages

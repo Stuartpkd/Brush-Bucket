@@ -6,7 +6,7 @@
 <head>
 
   {% block meta %}
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Meta Description -->
@@ -70,7 +70,6 @@
           <dotlottie-player src="https://lottie.host/b2db5cd5-bdd9-4b09-9cc6-e629e06c3203/r67gPETMd7.json"
             background="transparent" speed="1" style="width: 50px; height: 50px" direction="1" mode="normal" loop hover>
           </dotlottie-player>
-          </dotlottie-player>
         </div>
         <a class="navbar-brand" href="{% url 'home' %}">
           <h2 class="logo-font my-0"><strong>Brush</strong> Bucket</h2>
@@ -128,7 +127,7 @@
               <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <i class="fas fa-user fa-lg nav-icon-spacing"></i>
-                <p class="my-0"></p>Account</p>
+                <p class="my-0">Account</p>
               </a>
               <!-- Account dropdown -->
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -210,7 +209,7 @@
 
   {% block postloadjs %}
 
-  <script type="text/javascript">
+  <script>
     $('.toast').toast('show');
   </script>
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
