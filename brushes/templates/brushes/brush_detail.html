@@ -24,7 +24,7 @@
                     <input id="star-{{ star }}" type="radio" name="rating" value="{{ star }}" class="d-none"
                         {% if user_rating == star|add:0 %} checked {% endif %}>
                     <label for="star-{{ star }}" title="{{ star }} stars">
-                        <i class="far fa-star"></i> <!-- Unfilled star icon -->
+                        <i class="far fa-star"></i>
                     </label>
                     {% endfor %}
                 </div>

@@ -493,7 +493,7 @@ span {
 }
 
 .star-rating input[type="radio"] {
-    display: none;
+    display: none !important;
 }
 
 .star-rating label {
@@ -504,7 +504,7 @@ span {
 .star-rating label:hover,
 .star-rating label:hover~label,
 .star-rating input[type="radio"]:checked~label {
-    color: #f89e4c;
+    color: #f89e4c !important;
 }
 
 /* -------------------------------- Toast styling */
