@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?category=Ink</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?category=Organic</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?category=Painting</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?category=Calligraphy</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/contact/contact/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/bag/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/63</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/37</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/66</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/60</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/54</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/31</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/57</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/47</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/55</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/65</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/59</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/45</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?sort=price&amp;direction=desc</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/?sort=category&amp;direction=desc</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/33</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/33/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/33/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/34</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/34/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/34/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/35</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/35/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/35/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/36</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/36/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/36/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/37/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/37/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/38</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/38/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/38/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/39</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/39/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/39/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/40</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/40/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/40/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/41</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/41/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/41/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/42</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/42/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/42/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/43</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/43/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/43/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/44</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/44/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/44/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/45/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/45/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/46</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/46/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/46/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/47/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/47/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/29</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/29/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/29/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/28</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/28/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/28/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/27</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/27/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/27/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/26</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/26/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/26/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/25</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/25/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/25/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/23</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/23/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/23/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/30</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/30/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/30/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/31/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/31/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/48</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/48/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/48/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/49</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/49/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/49/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/50</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/50/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/50/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/51</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/51/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/51/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/52</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/52/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/52/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/53</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/53/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/53/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/54/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/54/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/55/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/55/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/56</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/56/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/56/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/57/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/57/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/58</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/58/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/58/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/59/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/59/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/60/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/60/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/61</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/61/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/61/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/62</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/62/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/62/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/63/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/63/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/64</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/64/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/64/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/65/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/65/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/brushes/32</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/32/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/32/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/edit/66/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=/brushes/delete/66/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fcontact%2Fcontact%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbag%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F33%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F33%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F34%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F34%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F35%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F35%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F36%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F36%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F37%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F37%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F38%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F38%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F39%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F39%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F40%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F40%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F41%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F41%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F42%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F42%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F43%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F43%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F44%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F44%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F45%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F45%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F46%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F46%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F47%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F47%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F29%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F29%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F28%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F28%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F27%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F27%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F26%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F26%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F25%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F25%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F23%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F23%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F30%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F30%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F31%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F31%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F48%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F48%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F49%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F49%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F50%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F50%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F51%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F51%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F52%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F52%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F53%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F53%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F54%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F54%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F55%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F55%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F56%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F56%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F57%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F57%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F58%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F58%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F59%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F59%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F60%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F60%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F61%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F61%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F62%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F62%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F63%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F63%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F64%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F64%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F65%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F65%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F32%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F32%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fedit%2F66%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/signup/?next=%2Fbrushes%2Fdelete%2F66%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fcontact%2Fcontact%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbag%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F33%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F33%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F34%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F34%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F35%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F35%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F36%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F36%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F37%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F37%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F38%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F38%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F39%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F39%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F40%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F40%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F41%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F41%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F42%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F42%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F43%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F43%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F44%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F44%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F45%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F45%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F46%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F46%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F47%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F47%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F29%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F29%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F28%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F28%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F27%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F27%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F26%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F26%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F25%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F25%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F23%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F23%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F30%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F30%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F31%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F31%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F48%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F48%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F49%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F49%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F50%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F50%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F51%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F51%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F52%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F52%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F53%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F53%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F54%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F54%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F55%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F55%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F56%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F56%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F57%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F57%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F58%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F58%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F59%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F59%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F60%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F60%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F61%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F61%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F62%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F62%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F63%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F63%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F64%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F64%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F65%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F65%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F32%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F32%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fedit%2F66%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://brush-bucket-2ba4b4f41791.herokuapp.com/accounts/login/?next=%2Fbrushes%2Fdelete%2F66%2F</loc>
+  <lastmod>2023-11-27T23:57:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
