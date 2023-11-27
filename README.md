@@ -619,27 +619,133 @@ No issues arose, due to the simple layout of the site.
 2. Once your project instance is set up, copy the URL. You can store this value as an environment variable to match the DATABASES variable in settings.py.
 3. Utilize pip3 install dj_database_url==0.5.0 to install the dj-database-url package version 0.5.0. This will format the URL into a Django-compatible format and necessitate an update to the requirements.txt file.
 
-## Cloudinary
-
-1. Set up a Cloudinary account.
-2. Upload relevant project images to the "Media Library."
-3. Retrieve the Cloudinary API URL from your dashboard.
-
 ## Final Repo Preparations
 1. Execute necessary project migrations by entering python3 manage.py makemigrations followed by python3 manage.py migrate in the terminal.
 2. Integrate a Procfile into the project, including the line web: gunicorn [project_name].wsgi:application.
 
-## Heroku Deploy
-1. Return to Heroku and navigate to the Project’s page. Open the "Settings" tab and locate the "Config Vars" section.
-2. Within "Config Vars," input the following key-value pairs:
-   Key = PORT : Value = 8000
-   Key = SECRET_KEY : Value = Your Django Secret Key from settings.py
-   Key = DATABASE_URL : Value = ElephantSQL URL (from step 5)
-   Key = CLOUDINARY_URL : Value = Cloudinary API URL (from step 9)
-3. Proceed to the "Deploy" tab and scroll to the GitHub deployment method.
-4. Search and connect to the appropriate repository by selecting the "Connect" button.
-5. Continue scrolling to the bottom of the "Deploy" Page and choose your desired deployment method. Opt for "Automatically Deploy" to 
-   trigger deployment with each new code push, or manually deploy by selecting the button at the page's bottom.
+## Heroku Deployment Guide
+
+### Step 1: Project Setup on Heroku
+- Navigate to your project's page on Heroku.
+- Open the "Settings" tab to access the configuration settings.
+
+### Step 2: Setting Up Config Vars
+- In the "Settings" tab, find the "Config Vars" section.
+- You need to set several configuration variables (Config Vars) for your project to function correctly. These include:
+
+  1. `PORT`: Set this to `8000` for the web process to bind to this port.
+  2. `SECRET_KEY`: This is your Django application's secret key. Use the one from your `settings.py`.
+  3. `DATABASE_URL`: This should be your database's URL, like the one provided by ElephantSQL.
+  4. `AWS_ACCESS_KEY_ID`: Your AWS access key for S3 bucket services.
+  5. `AWS_SECRET_ACCESS_KEY`: Your AWS secret access key for secure communication with AWS services.
+  6. `EMAIL_HOST_PASS`: This is the password for your email host, used in sending emails through your application.
+  7. `EMAIL_HOST_USER`: The email address used as the host for sending emails.
+  8. `HEROKU_POSTGRESQL_PINK_URL`: The URL for the Heroku Postgres database (if you're using Heroku's Postgres service).
+  9. `STRIPE_PUBLIC_KEY`: Your Stripe public key for handling payments.
+  10. `STRIPE_SECRET_KEY`: Your Stripe secret key for secure payment transactions.
+  11. `STRIPE_WH_SECRET`: Webhook secret for Stripe to communicate with your application.
+  12. `USE_AWS`: Set to `True` if you're using AWS S3 for static and media file storage.
+  13. `KEY`: Any other keys required by your application.
+
+### Step 3: Deployment Method
+- Move to the "Deploy" tab in your Heroku project dashboard.
+- Connect your GitHub repository to Heroku for deployment:
+  1. Use the search bar to find your GitHub repository.
+  2. Click "Connect" next to the correct repository.
+
+### Step 4: Automatic or Manual Deployment
+- Choose your preferred deployment method at the bottom of the "Deploy" page.
+  - **Automatic Deployment**: Automatically deploy your application to Heroku each time you push changes to the linked GitHub repository.
+  - **Manual Deployment**: Manually deploy your application by clicking the "Deploy Branch" button.
+
+### Step 5: Final Steps and Verification
+- After setting up Config Vars and choosing your deployment method, initiate a deployment.
+- Once deployment is complete, open your application from the Heroku dashboard to verify it's running correctly.
+
+### Important Notes:
+- Ensure all sensitive keys and credentials are kept secure and not exposed in your public code repository.
+- Regularly update and maintain your configuration variables to keep your application functional and secure.
+- Monitor your application's logs and performance through Heroku's dashboard for any post-deployment issues.
+
+## Detailed AWS Storage Deployment Guide
+
+### Introduction
+This guide outlines the steps for setting up AWS storage using S3 Buckets, reflecting the latest AWS system and UI updates.
+
+### Step 1: Creating an S3 Bucket
+- **Open AWS Management Console**: Go to S3 service.
+- **Create Bucket**: Click on "Create bucket", provide a unique name, and select your region.
+- **Object Ownership**: Choose "ACLs enabled" and select "Bucket owner preferred".
+
+### Step 2: Bucket Settings Configuration
+- **Properties Tab**: Find 'Static website hosting' and enable if needed.
+- **Permissions Tab**:
+  - **CORS Configuration**:
+    ```json
+    [
+      {
+        "AllowedHeaders": ["Authorization"],
+        "AllowedMethods": ["GET"],
+        "AllowedOrigins": ["*"],
+        "ExposeHeaders": []
+      }
+    ]
+    ```
+  - **Bucket Policy**: Configure as needed.
+  - **Access Control List**: Enable 'List' for 'Everyone (public access)'.
+
+### Step 3: IAM Setup
+- **Navigate to IAM**: In the AWS Console.
+- **Create Group**: Under 'User Groups', create a new group.
+- **Create Policy**: In 'Policies', create a new policy for S3 access.
+- **Attach Policy**: Attach the new policy to your group.
+
+### Step 4: Generating Access Keys
+- **Access Keys**: In IAM, select your user and go to 'Security Credentials'.
+- **Create Access Key**: Click 'Create access key', follow the steps, and download the '.csv' file.
+
+### Step 5: Update Project Settings
+- Update your project settings with AWS S3 configurations and the keys from the downloaded CSV file.
+
+### Conclusion
+- Keep sensitive information secure.
+- Regularly update AWS configurations for security.
+
+### Note
+- Refer to the latest AWS documentation for updates as AWS services evolve.
+
+## Additional Steps for AWS S3 Setup
+
+### Creating a Media Folder in Your S3 Bucket
+After setting up your S3 bucket, it's important to organize your files, especially if your site handles media files like images.
+
+1. **Navigate to Your S3 Bucket**: 
+   - Log in to your AWS Management Console.
+   - Open the S3 service and go to your newly created bucket.
+
+2. **Create a Media Folder**: 
+   - Inside your bucket, create a new folder named `media`.
+   - This folder will hold all the media files (like images) that your site will use.
+
+### Moving Site Images to the Media Folder
+If your site already uses images stored locally, you'll need to transfer them to this `media` folder in S3.
+
+1. **Prepare Your Images**:
+   - Collect all the images currently used by your site.
+   - It's a good idea to optimize these images for web use (resize, compress) before uploading to reduce loading times.
+
+2. **Upload Images to the Media Folder**:
+   - In the AWS S3 console, open your bucket and then the `media` folder.
+   - Upload your images here. You can drag and drop files or use the upload button in the S3 interface.
+
+### Configuring Your Project
+Ensure your web application is configured to use the `media` folder in your S3 bucket for storing and retrieving media files.
+
+- **Update Settings**: Modify your project's settings to point media URLs to the `media` folder in your S3 bucket.
+- **Test Access**: After uploading, test to ensure that your application can access and display these images correctly.
+
+### Conclusion
+Organizing your media files in a dedicated folder within your S3 bucket helps maintain a clean structure and ensures efficient management of your site's media assets.
 
 Your application is now successfully deployed!
 
