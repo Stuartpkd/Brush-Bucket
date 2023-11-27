@@ -675,6 +675,59 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# My Profile Page 
+
+## User Information Section Testing
+
+1. **Display of User Details**:
+    - Verify that the user's username and email are correctly displayed.
+    - Check the formatting and visibility of the text to ensure it's clear and readable.
+
+## Toggle Switch Functionality Testing
+
+1. **Toggle Button Functionality**:
+    - Confirm that the toggle buttons for 'Owned Brushes' and 'Favorite Brushes' work correctly.
+    - Test the JavaScript function `toggleBrushes` to ensure it correctly displays the respective sections.
+
+## Owned Brushes Section Testing
+
+1. **Display of Owned Brushes**:
+    - Verify that all brushes owned by the user are displayed in this section.
+    - Check each brush item for correct details: name, image, and a working download link.
+
+2. **Placeholder Image for Missing Brush Images**:
+    - Confirm that a placeholder image is displayed for brushes without an image.
+
+3. **Download Functionality**:
+    - Test the download button for each brush to ensure the correct file is downloadable.
+
+4. **No Owned Brushes Scenario**:
+    - Verify that the message "No owned brushes." is displayed when the user has no owned brushes.
+
+## Favorite Brushes Section Testing
+
+1. **Display of Favorite Brushes**:
+    - Confirm that the favorite brushes are correctly displayed when this section is active.
+    - Check for the accuracy of brush details including name and image.
+
+2. **Placeholder Image for Missing Brush Images**:
+    - Ensure a default image is displayed for brushes without an image.
+
+3. **No Favorite Brushes Scenario**:
+    - Check that the message "You have no favorite brushes." is displayed when there are no brushes in the favorites.
+
+## JavaScript Functionality Testing
+
+1. **Initial Load Functionality**:
+    - On page load, ensure the 'Owned Brushes' section is displayed by default.
+    - Confirm the initial active state of the toggle buttons is correctly set.
+
+2. **Responsive Design Testing**:
+    - Test the responsiveness of the entire profile page on different devices and screen sizes.
+
+---
+
+
 
 
 
