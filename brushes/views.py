@@ -114,7 +114,7 @@ def rate_brush(request, brush_id):
                 rating.save()
 
             brush.update_average_rating()
-            messages.success(request, "Your rating has been submitted.")
+            messages.alert(request, "Your rating has been submitted.")
 
         except ValueError:
             messages.error(request, "Invalid rating value.")
