@@ -237,8 +237,8 @@ a.text-info:hover {
 }
 
 .btn-black:hover {
-    background-color: #582841;
-    color: #f89e4c;
+    background-color: #582841 !important;
+    color: #f89e4c !important;
 }
 
 /* -------------------------------- Index */
