@@ -30,7 +30,6 @@ def add_to_bag(request, brush_id):
 
     request.session['bag'] = bag
 
-    # Redirect to the provided URL or some default page
     redirect_url = request.POST.get('redirect_url')
     return redirect(redirect_url)
 
