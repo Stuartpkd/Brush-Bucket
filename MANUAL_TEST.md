@@ -595,6 +595,47 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Contact Us Page
+
+## Authentication and Access Testing
+
+1. **User Authentication Check**:
+    - Confirm that the contact form is only displayed to authenticated users.
+    - For unauthenticated users, verify the display of a prompt to sign in.
+
+## Contact Form Functionality Testing
+
+1. **Form Layout and Display**:
+    - Ensure the contact form is properly displayed and centered on the page.
+    - Check the responsiveness of the form on different screen sizes.
+
+2. **Form Fields and Validation**:
+    - Verify each field in the form (rendered by `{{ form | crispy }}`) for correct rendering and alignment.
+    - Test all form fields to ensure they accept and validate inputs as expected.
+
+3. **CSRF Token Integration**:
+    - Confirm the presence and functionality of the CSRF token for form security.
+
+4. **Form Submission Process**:
+    - Test submitting the form with various inputs to check appropriate data handling and validation.
+    - Ensure that the form data is correctly sent to the specified action URL (`{% url 'contact' %}`).
+
+5. **Submit Button Functionality**:
+    - Verify that the 'Send Message' button properly submits the form.
+    - Check for user feedback upon successful or unsuccessful form submission.
+
+## User Experience and Interaction Testing
+
+1. **Navigation to Sign In for Unauthenticated Users**:
+    - Confirm that unauthenticated users are prompted to sign in and the provided link redirects to the login page.
+
+2. **Error Handling and User Feedback**:
+    - Introduce deliberate errors to check if the form correctly handles and displays validation errors.
+    - Confirm that appropriate success or error messages are displayed post-submission.
+
+---
+
+
 
 
 
