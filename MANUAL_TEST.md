@@ -276,3 +276,18 @@ Here is a link to a canvas I was looking to emulate.
     - This will depend on what the content should be for each specific page.
 
 ---
+
+## General Testing
+
+1. **Responsiveness**:  
+    - Test the entire webpage on various device sizes to ensure that it's fully responsive.
+
+2. **Browser Compatibility**:  
+    - Test the page on multiple browsers (Chrome, Firefox, Safari, Edge, etc.) to ensure cross-browser compatibility.
+
+3. **Page Load Time**:  
+    - Measure how long it takes for the page to load fully.
+    - It should load within a reasonable time frame, typically under 2-3 seconds for most broadband connections.
+
+4. **Script Functionality**:  
+    - Ensure that all scripts linked at the bottom of the HTML file function as expected.
