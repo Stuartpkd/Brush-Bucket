@@ -83,14 +83,6 @@ def all_brushes(request):
         'categories': categories,
     }
 
-    for brush in brushes:
-        print(brush.is_saved)
-        print(brush.is_purchased)
-
-    print(purchased_brush_ids)
-
-    print(OrderLineItem.objects.filter(order__user_profile__user=request.user))
-
     return render(request, 'brushes/brushes.html', context)
 
 
