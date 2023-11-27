@@ -316,3 +316,44 @@ Here is a link to a canvas I was looking to emulate.
 
 2. **Sign Up Button**
     - Verify that the "Sign Up" button is visible and redirects to the Sign Up page when clicked.
+
+# Add a Brush Page
+
+### Interface and Layout Testing
+
+1. **Page Layout and Styling**:
+    - Verify that the "Add a Brush" section aligns correctly in the center of the page.
+    - Check the responsiveness of the layout on different screen sizes.
+    - Ensure that the overlay div is functioning and styled correctly.
+
+### Form Functionality Testing
+
+1. **Form Fields**:
+    - Check each field in the form (rendered by `{{ form | crispy }}`) for correct rendering and alignment.
+    - Ensure that all form fields accept and validate inputs as expected.
+2. **CSRF Token**:
+    - Ensure that the CSRF token is included in the form for security purposes.
+3. **File Upload**:
+    - Test the file upload functionality for adding brush images or data files.
+    - Verify that the form accepts only the intended file types and sizes.
+4. **Form Submission**:
+    - Attempt to submit the form with various inputs to check for appropriate handling of data.
+    - Confirm that the form data is correctly sent to the specified action URL (`{% url 'add_brush' %}`).
+
+### Button Functionality Testing
+
+1. **Cancel Button**:
+    - Verify that the "Cancel" button redirects to the brushes page (`{% url 'brushes' %}`).
+2. **Add Brush Button**:
+    - Test the "Add Brush" button to ensure it triggers form submission.
+    - Check for any feedback or redirection after submission.
+
+### Accessibility and Usability
+
+1. **Keyboard Navigation**:
+    - Test the accessibility of the form using keyboard navigation.
+2. **Screen Reader Compatibility**:
+    - Ensure that form fields and buttons are properly labeled for screen reader accessibility.
+
+---
+
