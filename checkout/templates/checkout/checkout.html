@@ -33,6 +33,23 @@
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
+                <div class="text-center mt-5 mb-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="checkout-btn mr-2">
+                            <a href="{% url 'view_bag' %}" class="btn btn-remove-from-cart responsive-btn">
+                                <i class="fas fa-chevron-left icon"></i>
+                                Adjust Bag
+                            </a>
+                        </div>
+
+                        <div class="checkout-btn">
+                            <button id="submit-button" class="btn btn-add-to-cart responsive-btn" type="submit">
+                                Complete Order
+                                <i class="fas fa-lock icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
 
@@ -69,23 +86,7 @@
     </div>
 </div>
 
-<div class="text-center mt-5 mb-2">
-    <div class="d-flex justify-content-center">
-        <div class="checkout-btn mr-2">
-            <a href="{% url 'view_bag' %}" class="btn btn-remove-from-cart responsive-btn">
-                <i class="fas fa-chevron-left icon"></i>
-                Adjust Bag
-            </a>
-        </div>
 
-        <div class="checkout-btn">
-            <button id="submit-button" class="btn btn-add-to-cart responsive-btn">
-                Complete Order
-                <i class="fas fa-lock icon"></i>
-            </button>
-        </div>
-    </div>
-</div>
 
 
 <div id="loading-overlay">

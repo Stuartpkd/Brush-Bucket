@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from profiles.models import UserProfile
 from bag.contexts import bag_contents
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -57,9 +58,9 @@ def checkout(request):
                 return redirect(reverse('view_bag'))
 
             order.original_bag = json.dumps(bag)
+            profile = UserProfile.objects.get(user=request.user)
+            order.user_profile = profile
             order.save()
-
-    # ... rest of your code for handling order items ...
 
             for item_id, quantity in bag.items():
                 try:

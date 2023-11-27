@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from .models import Brush, BrushCategory, Rating
 from .forms import BrushForm
 from profiles.models import SavedBrush
+from checkout.models import OrderLineItem
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -19,11 +20,16 @@ def all_brushes(request):
 
     if request.user.is_authenticated:
         saved_brush_ids = SavedBrush.objects.filter(user=request.user).values_list('brush_id', flat=True)
+        purchased_brush_ids = OrderLineItem.objects.filter(
+            order__user_profile__user=request.user
+        ).values_list('product_id', flat=True)
     else:
         saved_brush_ids = []
+        purchased_brush_ids = []
 
     for brush in brushes:
         brush.is_saved = brush.id in saved_brush_ids
+        brush.is_purchased = brush.id in purchased_brush_ids
 
     if request.GET:
         if 'sort' in request.GET:
@@ -60,6 +66,14 @@ def all_brushes(request):
         'search_term': query,
         'categories': categories,
     }
+
+    for brush in brushes:
+        print(brush.is_saved)
+        print(brush.is_purchased)
+
+    print(purchased_brush_ids)
+
+    print(OrderLineItem.objects.filter(order__user_profile__user=request.user))
 
     return render(request, 'brushes/brushes.html', context)
 
