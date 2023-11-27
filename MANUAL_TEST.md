@@ -224,14 +224,46 @@ Here is a link to a canvas I was looking to emulate.
 
 # Base template
 
-## Navbar Testing
+## Template Testing Documentation
 
----
+### Navbar Testing
 
-## Main Content Testing
+1. **Lottie-Player Animation**:
+    - Ensure the dotLottie player animation next to the logo loads and plays smoothly.
+2. **Responsive Navbar Collapse**:
+    - Resize the browser window to simulate a mobile view.
+    - Click on the navbar toggler (hamburger icon) and verify that the navbar expands and collapses as expected.
+3. **Navigation Links**:
+    - Test each navigation link (Home, Brushes, Contact) to ensure they redirect to the correct pages.
+4. **Dropdown Menus in Navbar**:
+    - Click on the "Brushes" dropdown in the navbar.
+    - Verify that each dropdown item links to the correct category page.
+5. **User Account Access**:
+    - Check the user account icon for proper dropdown functionality.
+    - Verify that the appropriate options (Profile, Logout, Register, Login) are displayed based on user authentication status.
 
----
+### Search Functionality
 
-## Footer Testing
+1. **Search Bar**:
+    - Test the search bar functionality by entering various queries.
+    - Confirm that clicking the search button leads to the appropriate search results page.
 
-## General Testing
+### Message Display Testing
+
+1. **Message Notifications**:
+    - Trigger different types of messages (error, warning, success, info).
+    - Verify that each message type is displayed correctly and is dismissible.
+
+### Footer Testing
+
+1. **Social Media Links**:
+    - Check each social media icon in the footer (Twitter, Facebook, Instagram).
+    - Ensure they link to the respective social media pages.
+
+### General Page Layout
+
+1. **Overall Layout Consistency**:
+    - Review the entire page to ensure consistency in layout, font styles, and color scheme.
+2. **Responsive Design Check**:
+    - Resize the browser across different screen sizes to ensure the layout adjusts appropriately for a responsive design.
+
