@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponseRedirect
-from django.urls import reverse
 from brushes.models import Brush
-from .contexts import bag_contents
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -20,20 +18,19 @@ def add_to_bag(request, brush_id):
     brush = get_object_or_404(Brush, pk=brush_id)
     bag = request.session.get('bag', {})
 
-    if brush_id in bag:
-        pass
-    else:
+    if brush_id not in bag:
         bag[brush_id] = 1
         request.session['added_brush'] = {
-        'name': brush.name,
-        'price': str(brush.price),
-        'image_url': brush.image.url if brush.image else None,
-        'rating': str(brush.rating) if brush.rating else None
-    }
+            'name': brush.name,
+            'price': str(brush.price),
+            'image_url': brush.image.url if brush.image else None,
+            'rating': str(brush.rating) if brush.rating else None
+        }
         messages.success(request, f'Added {brush.name} to your bag')
-        
+
     request.session['bag'] = bag
 
+    # Redirect to the provided URL or some default page
     redirect_url = request.POST.get('redirect_url')
     return redirect(redirect_url)
 
@@ -48,14 +45,12 @@ def remove_from_bag(request, brush_id):
         del bag[str(brush_id)]
         messages.success(request, f'Removed {brush.name} from your bag')
     else:
-        raise BrushNotFoundError(f"Brush with ID {brush_id} not found in the bag")
+        raise messages.error(f"Brush with ID {brush_id} not found in the bag")
 
     request.session['bag'] = bag
 
-    
     referer_url = request.META.get('HTTP_REFERER')
 
-    
     if referer_url:
         return HttpResponseRedirect(referer_url)
     else:
