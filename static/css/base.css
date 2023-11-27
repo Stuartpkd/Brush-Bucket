@@ -237,8 +237,8 @@ a.text-info:hover {
 }
 
 .btn-black:hover {
-    background-color: #582841 !important;
-    color: #f89e4c !important;
+    background-color: #f89e4c !important;
+    color: #582841 !important;
 }
 
 /* -------------------------------- Index */
@@ -255,11 +255,12 @@ a.text-info:hover {
 
 .fa-search {
     font-size: 1.3rem;
-    color: #582841 !important;
+    transition: transform 0.3s ease;
 }
 
 .fa-search:hover {
     color: #f89e4c !important;
+    transform: scale(1.1);
 }
 
 .hero-text-container {
@@ -554,7 +555,7 @@ span {
     transition: background-color 0.3s ease;
 }
 
-.custom-toast .btn-black:hover {
+.custom-toast {
     background-color: #f89e4c;
     color: #582841 !important;
 }
