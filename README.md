@@ -510,9 +510,13 @@ All HTML code passed easily when it came to testing at the end of the project. I
 
 ### W3C CSS Validator
 
-My css passed as well when it came to testing as I was frequently testing it in the validator.
+I had two separate css files in this project. One for the base html and one for the checkout page. Both passed without any issues.
 
-![Css code validation](docs/code-testing/css.png)
+![Css code validation](docs/css-testing/base-css.png)
+\
+&nbsp;
+
+![Css code validation](docs/css-testing/checkout-css.png)
 \
 &nbsp;
 
