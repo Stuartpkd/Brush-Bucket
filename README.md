@@ -546,7 +546,7 @@ The stripe function showed an issue saying that stripe was not defined. This is 
 
 ### CI Python checker
 
-![Python](docs/code-testing/python.png)
+![Python](docs/python-testing/python-test.png)
 
 I checked all of my python files with the Code Institute python checker and recieved no issues with any of the files. The NOQA tag was used in the settings.py file as when I tried to rearrange some of the code to avoid the character limit, python would get upset.
 
