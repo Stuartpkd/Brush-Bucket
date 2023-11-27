@@ -114,7 +114,7 @@ def rate_brush(request, brush_id):
                 rating.save()
 
             brush.update_average_rating()
-            messages.alert(request, "Your rating has been submitted.")
+            messages.info(request, "Your rating has been submitted.")
 
         except ValueError:
             messages.error(request, "Invalid rating value.")
@@ -182,7 +182,7 @@ def edit_brush(request, brush_id):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated brush!')
+            messages.info(request, 'Successfully updated brush!')
             return redirect(reverse('brush_detail', args=[brush.id]))
         else:
             messages.error(request, 'Failed to update brush. Please ensure the form is valid.')
@@ -204,6 +204,6 @@ def delete_brush(request, brush_id):
     """ Delete a brush from the store """
     brush = get_object_or_404(Brush, pk=brush_id)
     brush.delete()
-    messages.success(request, 'Brush deleted!')
+    messages.info(request, 'Brush deleted!')
     return redirect(reverse('brushes'))
 
