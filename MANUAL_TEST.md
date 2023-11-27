@@ -727,6 +727,68 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Button Functionality Testing Documentation Across the Site
+
+## Overview
+This document outlines the testing process for all buttons across the website. The goal is to ensure that every button functions as intended, leading to the correct actions and pages, and enhances the overall user experience.
+
+## General Button Testing Criteria
+
+1. **Visibility and Design**:
+    - Ensure each button is clearly visible and its design is consistent with the website's theme.
+    - Check the text on each button for readability and accuracy.
+
+2. **Hover and Active States**:
+    - Test the hover and active states of buttons for visual feedback.
+    - Confirm that the button changes appearance when hovered over or clicked.
+
+3. **Responsive Design**:
+    - Verify that buttons are responsive and easily clickable on various devices and screen sizes.
+
+## Specific Button Testing
+
+1. **Navigation Buttons**:
+    - Test all navigation-related buttons like 'Home', 'Brushes', 'Contact', etc., to ensure they redirect to the correct pages.
+
+2. **Authentication Buttons**:
+    - Verify the functionality of 'Sign In', 'Sign Up', 'Logout', and other authentication-related buttons.
+    - Confirm that they lead to the appropriate authentication flows.
+
+3. **Call-to-Action Buttons**:
+    - Test all CTA buttons such as 'Explore Brushes', 'Sign Up Now', 'Complete Order', ensuring they lead to the intended actions or pages.
+
+4. **Form Submission Buttons**:
+    - Check the functionality of form submission buttons like 'Send Message', 'Update Brush', 'Add to Cart', etc.
+    - Ensure they submit data correctly and provide user feedback upon submission.
+
+5. **Toggle Buttons on Profile Page**:
+    - Test the toggle buttons like 'Owned Brushes' and 'Favorite Brushes' for switching between different content sections.
+
+6. **Download and Add/Remove Buttons**:
+    - Confirm the working of 'Download Brush' buttons for owned brushes.
+    - Verify 'Add to Cart' and 'Remove' buttons in shopping bag and brushes pages.
+
+7. **Checkout and Payment Buttons**:
+    - Test 'Proceed to Checkout', 'Adjust Bag', and Stripe integration buttons to ensure correct payment and order processing.
+
+8. **Back to Brushes/Continue Shopping Buttons**:
+    - Verify these buttons redirect users back to browsing or shopping sections.
+
+## Error Handling and Feedback
+
+1. **Error Messages**:
+    - Simulate scenarios where errors might occur (e.g., form submission errors) and check if appropriate error messages are displayed.
+
+2. **Successful Action Confirmation**:
+    - Confirm that successful actions (e.g., form submissions, additions/removals from cart) are followed by appropriate success messages or page redirects.
+
+## Conclusion
+
+The comprehensive testing of all buttons is crucial for ensuring a smooth and intuitive user experience across the website. Document any irregularities or issues for further refinement.
+
+---
+
+
 
 
 
