@@ -291,3 +291,18 @@ Here is a link to a canvas I was looking to emulate.
 
 4. **Script Functionality**:  
     - Ensure that all scripts linked at the bottom of the HTML file function as expected.
+
+---
+
+### Authenticated User View
+
+1. **Form Rendering**
+    - Verify that the Edit Comment form is displayed correctly for authenticated users.
+    - Check for form fields, labels, and buttons.
+
+2. **Update Comment Button**
+    - Fill in the form with valid and invalid data, then click the "Update Comment" button.
+    - Verify that the comment is updated with valid data, and an error message is displayed for invalid data.
+
+3. **CSRF Token**
+    - Ensure that the CSRF token is generated for each session to protect against CSRF attacks.
