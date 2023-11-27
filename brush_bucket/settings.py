@@ -29,8 +29,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
-ALLOWED_HOSTS = ['8000-stuartpkd-brushbucket-8f8zn1pn4qq.ws-eu106.gitpod.io', 'localhost', 'brush-bucket-2ba4b4f41791.herokuapp.com']
+DEBUG = False
+ALLOWED_HOSTS = ['8000-stuartpkd-brushbucket-8f8zn1pn4qq.ws-eu106.gitpod.io',
+                 'localhost', 'brush-bucket-2ba4b4f41791.herokuapp.com']
 
 
 # Application definition

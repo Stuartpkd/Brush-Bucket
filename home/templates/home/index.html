@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Hero section -->
 <div class="container-fluid">
     <div class="hero-section">
         <div class="hero-text-container bottom-left">
@@ -19,7 +20,7 @@
             {% endif %}
         </div>
     </div>
-
+    <!-- Featured brushes section -->
     <div class="container">
         <h2 class="text-center my-4">Featured Brushes</h2>
         <div class="row justify-content-center align-items-end">
@@ -38,22 +39,6 @@
                             {% endif %}
                         </div>
                     </a>
-                    <p class="brush-rating">Rating: {{ brush.rating }}</p>
-                    <p class="brush-price">Price: ${{ brush.price }}</p>
-
-                    {% if brush.id|stringformat:"s" in request.session.bag.keys %}
-                    <form method="post" action="{% url 'remove_from_bag' brush.id %}">
-                        {% csrf_token %}
-                        <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
-                        <button type="submit" class="btn btn-remove-from-cart">Remove</button>
-                    </form>
-                    {% else %}
-                    <form method="post" action="{% url 'add_to_bag' brush.id %}">
-                        {% csrf_token %}
-                        <input type="hidden" name="redirect_url" value="{% url 'brushes' %}">
-                        <input type="submit" class="btn btn-add-to-cart" value="Add to Cart">
-                    </form>
-                    {% endif %}
                 </div>
             </div>
             {% endfor %}

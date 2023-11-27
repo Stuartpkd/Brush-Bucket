@@ -8,7 +8,20 @@ from checkout.models import Order
 
 @login_required
 def profile(request):
-    """ Display the user's profile. """
+    """
+    Display the user's profile including their order history and saved brushes.
+
+    Retrieves the user's profile, their orders,
+    and the brushes they have saved,
+    then renders these details on the profile page.
+
+    Args:
+        request: HttpRequest object.
+
+    Returns:
+        HttpResponse: Rendered profile page with user details, orders,
+        and saved brushes.
+    """
     user_profile = get_object_or_404(UserProfile, user=request.user)
     orders = Order.objects.filter(user_profile=user_profile).order_by('-date')
 
@@ -29,18 +42,32 @@ def profile(request):
 @login_required
 def save_unsave_brush(request, brush_id):
     """
-    View to toggle a brush as saved/unsaved for the user.
+    Toggle a brush as saved or unsaved in the user's profile.
+
+    This view handles the functionality to save or unsave a brush.
+    If the brush is
+    already saved, it gets removed from saved brushes; otherwise, it's added.
+
+    Args:
+        request: HttpRequest object.
+        brush_id (int): The primary key of the brush to be saved/unsaved.
+
+    Returns:
+        HttpResponse: Redirects to the previous page after processing.
     """
     brush = get_object_or_404(Brush, pk=brush_id)
-    
-    saved_brush, created = SavedBrush.objects.get_or_create(user=request.user, brush=brush)
+
+    saved_brush, created = SavedBrush.objects.get_or_create(user=request.user,
+                                                            brush=brush)
 
     if created:
-        
-        messages.success(request, f"You have saved {brush.name} to your favorites.")
+
+        messages.success(request, f"You have saved {brush.name} "
+                         "to your favorites.")
     else:
-        
+
         saved_brush.delete()
-        messages.success(request, f"You have removed {brush.name} from your favorites.")
+        messages.success(request, f"You have removed {brush.name} "
+                         " from your favorites.")
 
     return redirect(request.META.get('HTTP_REFERER', 'brush_list'))

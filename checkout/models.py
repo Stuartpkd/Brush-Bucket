@@ -6,6 +6,26 @@ import uuid
 
 
 class Order(models.Model):
+    """
+    Represents a customer's complete order, including all necessary details
+    like order number, user profile, contact info, and total cost.
+
+    Attributes:
+        order_number (CharField): A unique identifier for the order,
+        generated using UUID.
+        user_profile (ForeignKey): Links to a user's profile,
+        if they are logged in.
+        full_name (CharField): The full name provided for the order.
+        email (EmailField): The email address provided for the order.
+        date (DateTimeField): The date and time when the order was created.
+        order_total (DecimalField): The total cost of the order
+        excluding any additional fees.
+        grand_total (DecimalField): The final total cost of the order,
+        including any additional fees.
+        original_bag (TextField): A text representation of the user's
+        bag at the time of the order.
+        stripe_pid (CharField): Stripe payment ID for the transaction.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
@@ -26,13 +46,14 @@ class Order(models.Model):
 
     def _generate_order_number(self):
         """
-        Generate a random, unique order number using UUID
+        Generate a random, unique order number using UUID.
         """
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
         """
-        Update grand total each time a line item is added.
+        Update grand total each time a line item is added,
+        recalculating the order total.
         """
         self.order_total = self.lineitems.aggregate(
             Sum('lineitem_total')
@@ -47,7 +68,7 @@ class Order(models.Model):
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
-        
+
         self.order_total = self.lineitems.aggregate(
             Sum('lineitem_total')
         )['lineitem_total__sum'] or 0
@@ -58,6 +79,16 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Represents a single line item within an order.
+
+    Attributes:
+        order (ForeignKey): The order to which this line item belongs.
+        product (ForeignKey): The specific brush being ordered.
+        quantity (IntegerField): The quantity of the product ordered.
+        lineitem_total (DecimalField): The total cost of the,
+        line item (price * quantity).
+    """
     order = models.ForeignKey(Order, null=False, blank=False,
                               on_delete=models.CASCADE,
                               related_name='lineitems')
@@ -69,8 +100,16 @@ class OrderLineItem(models.Model):
                                          editable=False)
 
     def save(self, *args, **kwargs):
+        """
+        Override the original save method to calculate the line item total
+        based on product price and quantity.
+        """
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
+        """
+        Return a string representation of the line item,
+        showing its product ID and associated order number.
+        """
         return f'SKU {self.product.id} on order {self.order.order_number}'

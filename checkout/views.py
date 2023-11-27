@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -16,6 +18,14 @@ import json
 @login_required
 @require_POST
 def cache_checkout_data(request):
+    """
+    Process and cache checkout data including the payment intent ID,
+    bag contents, and user information for a logged-in user initiating
+    a payment process.
+
+    Args:
+        request: HttpRequest object containing POST data with client_secret.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +43,14 @@ def cache_checkout_data(request):
 
 @login_required
 def checkout(request):
+    """
+    Render the checkout page for a logged-in user, process the form data
+    to create an Order, and handle Stripe payment intent. Redirects to
+    checkout success on successful payment or back to bag on error.
+
+    Args:
+        request: HttpRequest object.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -52,9 +70,9 @@ def checkout(request):
                 pid = client_secret.split('_secret')[0]
                 order.stripe_pid = pid
             else:
-                messages.error(request, "There was an error processing your payment. Please try again.")
+                messages.error(request, "There was an error processing "
+                               "your payment. Please try again.")
 
-                # Redirect to a safe page
                 return redirect(reverse('view_bag'))
 
             order.original_bag = json.dumps(bag)
@@ -122,13 +140,20 @@ def checkout(request):
 @login_required
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts for digital brush store orders
+    Handle successful checkouts, displaying a success message with the
+    order details, and clearing the shopping bag from the session.
+
+    Args:
+        request: HttpRequest object.
+        order_number: The unique order number of the successfully,
+        processed order.
     """
-    save_info = request.session.get('save_info')
+    save_info = request.session.get('save_info')  # NOQA - Needed for caching checkout data
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, f'Order successfully processed! \
-        Your order number is {order_number}. Access to your digital brushes will be available immediately, \
+        Your order number is {order_number}. Access to your digital \
+        brushes will be available immediately, \
         and a confirmation email will be sent to {order.email}.')
 
     if 'bag' in request.session:

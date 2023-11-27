@@ -2,6 +2,19 @@ from django.db import models
 
 
 class ContactMessage(models.Model):
+    """
+    Model representing a contact message sent by a user.
+
+    Attributes:
+        name (models.CharField): The name of the person sending the message.
+        email (models.EmailField): The email address of the sender.
+        subject (models.CharField): The subject of the message.
+        message (models.TextField): The content of the contact message.
+        created_at (models.DateTimeField): The date and time when the message
+                                           was created. Automatically set to
+                                           the current date and time when the
+                                           message is created.
+    """
     name = models.CharField(max_length=100)
     email = models.EmailField()
     subject = models.CharField(max_length=200)

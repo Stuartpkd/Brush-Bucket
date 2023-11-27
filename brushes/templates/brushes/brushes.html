@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Sort brushes input -->
 <div class="row justify-content-center">
     <div class="col-12 col-md-auto">
         <div class="nav-item dropdown text-center my-2">
@@ -21,6 +22,7 @@
     </div>
 </div>
 
+<!-- Brushes content block -->
 <div class="container">
     <div class="row justify-content-center align-items-end">
         {% if brushes %}
@@ -40,6 +42,7 @@
                         </div>
                     </div>
                 </a>
+                <!-- edit and delete brushes -->
                 <div class="row">
                     <a class="brush-content-spacing brush-content" href="{% url 'edit_brush' brush_id=brush.id %}">Edit
                         Brush</a>
@@ -47,6 +50,7 @@
                         href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
                 </div>
                 <div class="row">
+                    <!-- Saved unsave brush -->
                     {% if user.is_authenticated %}
                     <form method="post" action="{% url 'save_unsave_brush' brush.id %}" class="save-icon">
                         {% csrf_token %}
@@ -61,7 +65,7 @@
                     <p class="brush-rating brush-content-spacing brush-content">Rating: {{ brush.rating }}</p>
                     <p class="brush-price brush-content-spacing brush-content">Price: ${{ brush.price }}</p>
                 </div>
-
+                <!-- Brush Buttons -->
                 {% if brush.is_purchased %}
                 <button class="btn btn-secondary" disabled>Purchased</button>
                 {% elif brush.id|stringformat:"s" in request.session.bag.keys %}

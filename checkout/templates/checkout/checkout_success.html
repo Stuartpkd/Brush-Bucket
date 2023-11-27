@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
@@ -17,7 +18,7 @@
                 order, please contact us.</p>
         </div>
     </div>
-
+    <!-- Order Summary -->
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <h3 class="logo-font mb-3 text-center">Order Summary</h3>
@@ -39,6 +40,7 @@
         </div>
     </div>
 
+    <!-- Continue shopping link -->
     <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
             <a href="{% url 'brushes' %}" class="btn btn-add-to-cart-success">

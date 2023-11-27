@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.db.models.functions import Lower
 from django.db.models import Q
 from django.shortcuts import redirect
 from .models import Brush, BrushCategory, Rating
@@ -10,16 +11,32 @@ from django.contrib.auth.decorators import login_required
 
 
 def all_brushes(request):
-    """ A view to show all brushes, including sorting and search queries """
+    """
+    Display all brushes with options for sorting and searching.
+
+    Allows users to view all available brushes.
+    Users can filter brushes by category,
+    sort them in various orders,
+    and search for brushes using specific keywords.
+    Authenticated users will also see their saved and,
+    purchased brushes marked accordingly.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered template for displaying all brushes.
+    """
 
     brushes = Brush.objects.all()
     query = None
     categories = None
-    sort = None
     direction = None
 
     if request.user.is_authenticated:
-        saved_brush_ids = SavedBrush.objects.filter(user=request.user).values_list('brush_id', flat=True)
+        saved_brush_ids = SavedBrush.objects.filter(
+            user=request.user
+            ).values_list('brush_id', flat=True)
         purchased_brush_ids = OrderLineItem.objects.filter(
             order__user_profile__user=request.user
         ).values_list('product_id', flat=True)
@@ -34,7 +51,6 @@ def all_brushes(request):
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
-            sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 brushes = brushes.annotate(lower_name=Lower('name'))
@@ -79,12 +95,26 @@ def all_brushes(request):
 
 
 def brush_detail(request, brush_id):
-    """ A view to show brush details """
+    """
+    Display the details of a specific brush.
+
+    Shows detailed information about a brush, including its rating,
+    price, and category.
+    Authenticated users can also view and submit ratings for brushes.
+
+    Args:
+        request: The HTTP request object.
+        brush_id (int): The unique identifier for a brush.
+
+    Returns:
+        HttpResponse: The rendered template for the brush detail view.
+    """
 
     brush = get_object_or_404(Brush, pk=brush_id)
     user_rating = None
     if request.user.is_authenticated:
-        rating_query = Rating.objects.filter(brush=brush, user=request.user).first()
+        rating_query = Rating.objects.filter(brush=brush,
+                                             user=request.user).first()
         if rating_query:
             user_rating = rating_query.rating
 
@@ -98,14 +128,28 @@ def brush_detail(request, brush_id):
 
 @login_required
 def rate_brush(request, brush_id):
+    """
+    Allow authenticated users to rate a brush.
+
+    Users can submit a rating for a brush. If a user has already,
+    rated the brush,
+    the existing rating is updated.
+
+    Args:
+        request: The HTTP request object.
+        brush_id (int): The unique identifier for the brush being rated.
+
+    Returns:
+        HttpResponseRedirect: Redirect to the brush detail view.
+    """
     if request.method == 'POST':
         try:
             rating_value = int(request.POST.get('rating'))
             brush = Brush.objects.get(id=brush_id)
 
             rating, created = Rating.objects.get_or_create(
-                brush=brush, 
-                user=request.user, 
+                brush=brush,
+                user=request.user,
                 defaults={'rating': rating_value}
             )
 
@@ -126,7 +170,19 @@ def rate_brush(request, brush_id):
 
 @login_required
 def add_brush(request):
-    """ Add a brush to the store """
+    """
+    Allows admins to add a new brush to the store.
+
+    Admins can use this view to submit a form and add a new brush.
+    The form includes
+    validation for the brush file format and size.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered template for adding a brush.
+    """
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES)
         brush_file = request.FILES.get('brush_file', None)
@@ -135,20 +191,28 @@ def add_brush(request):
             allowed_file_types = ['.brush']
             max_file_size = 3 * 1024 * 1024  # 3MB in bytes
 
-            if not any(brush_file.name.endswith(ext) for ext in allowed_file_types):
-                messages.error(request, 'Please upload a valid brush file (.brush).')
-                return render(request, 'brushes/add_brush.html', {'form': form})
+            if not any(brush_file.name.endswith(ext)
+                       for ext in allowed_file_types):
+                messages.error(request,
+                               'Please upload a valid brush file (.brush).')
+                return render(request,
+                              'brushes/add_brush.html', {'form': form})
 
             if brush_file.size > max_file_size:
-                messages.error(request, 'The uploaded file is too large. Please upload a file under 3MB.')
-                return render(request, 'brushes/add_brush.html', {'form': form})
+                messages.error(request,
+                               'The uploaded file is too large. '
+                               'Please upload a file under 3MB.')
+                return render(request,
+                              'brushes/add_brush.html', {'form': form})
 
         if form.is_valid():
             brush = form.save()
             messages.success(request, 'Successfully added brush!')
             return redirect(reverse('brush_detail', args=[brush.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add product. '
+                           'Please ensure the form is valid.')
     else:
         form = BrushForm()
 
@@ -162,7 +226,20 @@ def add_brush(request):
 
 @login_required
 def edit_brush(request, brush_id):
-    """ Edit a brush in the store """
+    """
+    Allows admins to edit an existing brush.
+
+    Admins can update brush details using a form.
+    The form includes validation for
+    the brush file format and size.
+
+    Args:
+        request: The HTTP request object.
+        brush_id (int): The unique identifier for the brush being edited.
+
+    Returns:
+        HttpResponse: The rendered template for editing a brush.
+    """
     brush = get_object_or_404(Brush, pk=brush_id)
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES, instance=brush)
@@ -172,20 +249,28 @@ def edit_brush(request, brush_id):
             allowed_file_types = ['.brush']
             max_file_size = 3 * 1024 * 1024  # 3MB in bytes
 
-            if not any(brush_file.name.endswith(ext) for ext in allowed_file_types):
-                messages.error(request, 'Please upload a valid brush file (.brush).')
-                return render(request, 'brushes/edit_brush.html', {'form': form, 'brush': brush})
+            if not any(brush_file.name.endswith(ext)
+                       for ext in allowed_file_types):
+                messages.error(request,
+                               'Please upload a valid brush file (.brush).')
+                return render(request, 'brushes/edit_brush.html',
+                              {'form': form, 'brush': brush})
 
             if brush_file.size > max_file_size:
-                messages.error(request, 'The uploaded file is too large. Please upload a file under 3MB.')
-                return render(request, 'brushes/edit_brush.html', {'form': form, 'brush': brush})
+                messages.error(request, 'The uploaded file is too large. '
+                               'Please upload a file under 3MB.')
+                return render(request,
+                              'brushes/edit_brush.html',
+                              {'form': form, 'brush': brush})
 
         if form.is_valid():
             form.save()
             messages.info(request, 'Successfully updated brush!')
             return redirect(reverse('brush_detail', args=[brush.id]))
         else:
-            messages.error(request, 'Failed to update brush. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update brush. '
+                           'Please ensure the form is valid.')
     else:
         form = BrushForm(instance=brush)
         messages.info(request, f'You are editing {brush.name}')
@@ -201,9 +286,19 @@ def edit_brush(request, brush_id):
 
 @login_required
 def delete_brush(request, brush_id):
-    """ Delete a brush from the store """
+    """
+    Allows admins to delete a brush from the store.
+
+    Admins can remove a brush from the store. This action is irreversible.
+
+    Args:
+        request: The HTTP request object.
+        brush_id (int): The unique identifier for the brush being deleted.
+
+    Returns:
+        HttpResponseRedirect: Redirect to the all brushes view.
+    """
     brush = get_object_or_404(Brush, pk=brush_id)
     brush.delete()
     messages.info(request, 'Brush deleted!')
     return redirect(reverse('brushes'))
-
