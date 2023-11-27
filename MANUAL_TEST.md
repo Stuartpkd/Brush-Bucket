@@ -357,3 +357,86 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Brush Detail Page 
+
+## Image and Details Section Testing
+
+1. **Brush Image Display**:
+    - Confirm the brush image is correctly displayed and is responsive.
+    - Check the `alt` attribute for accurate description matching the brush name.
+
+2. **Brush Details Verification**:
+    - Ensure the brush's name, price, rating, and description are displayed accurately.
+    - Verify that all text is clearly legible and formatted consistently with the site's design.
+
+## Rating Functionality Testing
+
+1. **Star Rating Interaction**:
+    - Test the functionality of the star rating system.
+    - Ensure each star can be selected and corresponds correctly to the rating value.
+
+2. **Rating Submission Process**:
+    - Verify the rating submission via the form.
+    - Check if the form correctly posts data to the specified action URL.
+
+## Add/Remove from Cart Testing
+
+1. **Add to Cart Functionality**:
+    - Test the 'Add to Cart' button when the brush is not in the user's cart.
+    - Confirm the brush gets added to the cart and the user receives appropriate feedback.
+
+2. **Remove from Cart Functionality**:
+    - Test the 'Remove' button functionality when the brush is in the user's cart.
+    - Ensure the brush is removed from the cart upon submission and appropriate feedback is displayed.
+
+## Navigation Testing
+
+1. **Back to Brushes Button**:
+    - Verify that the 'Back to Brushes' button redirects to the brushes listing page.
+    - Ensure the button is accessible and clearly labeled.
+
+---
+
+# Brushes Page
+
+## Sort Brushes Dropdown Testing
+
+1. **Sort Dropdown Functionality**:
+    - Verify the dropdown opens and closes correctly when clicked.
+    - Check each sort option to ensure it correctly sorts the brushes (e.g., Price Low to High, Rating High to Low).
+
+2. **Sort Option Links**:
+    - Test the links for each sort option to confirm they redirect to the correctly sorted brush list.
+
+## Brushes Display and Interaction Testing
+
+1. **Brushes Listing**:
+    - Ensure all brushes are displayed when no sort is applied.
+    - Check the presentation of brushes, verifying that each brush's name, image, rating, and price are correctly displayed.
+
+2. **Default and Placeholder Images**:
+    - Verify that brushes with images display their own image.
+    - Check that brushes without images display a placeholder image.
+
+3. **Edit and Delete Options**:
+    - Confirm the presence of 'Edit Brush' and 'Delete Brush' links for each brush (if applicable).
+    - Test these links to ensure they lead to the correct editing and deletion processes.
+
+4. **Save/Unsave Brush Functionality**:
+    - For authenticated users, test the save/unsave brush feature.
+    - Verify that the bookmark icon changes state based on saved status.
+
+5. **Brush Rating and Price Display**:
+    - Check that the rating and price of each brush are accurately displayed.
+
+6. **Add to Cart/Remove from Cart/Purchased Button**:
+    - Test 'Add to Cart' functionality for brushes not in the user's cart.
+    - Verify 'Remove' button functionality for brushes in the cart.
+    - Ensure the 'Purchased' button is displayed for brushes already purchased and is disabled.
+
+7. **No Brushes Found Scenario**:
+    - Confirm the message "No brushes found for your search criteria." is displayed when no brushes match the filters or search criteria.
+
+---
+
+
