@@ -207,6 +207,21 @@ Here the admin has recieved their message and then can take action.
 
 ## Epic 2: Secondary features (Nice to haves)
 
+| id  |  Content | Label |
+| ------ | ------ | ------ |
+| [1](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176141) | As a user, I can test Procreate brushes on a simulated canvas so that I can get a feel for how they work before making a purchase. | Nice to have |
+| [2](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176221) | As a user, I can select different brushes from the collection to experiment with different styles and effects. | Nice to have |
+| [3](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176281) | As a user, I can choose different colors for my brushstrokes to create colorful and expressive digital art. | Nice to have |
+| [4](https://github.com/users/Stuartpkd/projects/3?pane=issue&itemId=42176336) | As a user, I can undo and redo my actions to correct mistakes and experiment with different ideas. | Nice to have |
+\
+&nbsp;
+
+In the initial stages of this project, I envisioned implementing a canvas feature that would allow users to test Procreate brushes on a simulated canvas. This feature, detailed in our user stories, was aimed at providing users with a hands-on experience to evaluate brushes before purchasing. They could have selected different brushes, experimented with various colors, and had the flexibility to undo and redo actions, fostering a space for creativity and exploration. However, after careful consideration and evaluation, I decided against implementing this feature within the current scope. The primary reasons were the challenges in achieving the desired quality of the canvas simulation and the constraints of time. Ensuring a high-quality user experience is paramount, and the canvas, in its proposed form, did not meet my standards. This decision, though difficult, was made to maintain the overall integrity and quality of the project. As I move forward, I am open to revisiting this concept in future iterations, possibly with enhanced technology and resources to realize this ambitious feature.
+
+[Link to the canvas](https://leimao.github.io/blog/HTML-Canvas-Mouse-Touch-Drawing/) 
+
+Here is a link to a canvas I was looking to emulate.
+
 # Base template
 
 ## Navbar Testing
