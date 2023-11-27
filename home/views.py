@@ -6,7 +6,7 @@ import random
 def index(request):
     """ A view to return the home index page with featured brushes """
 
-    all_brushes = list(Brush.objects.all())  
+    all_brushes = list(Brush.objects.all())
     featured_brushes = random.sample(all_brushes, min(len(all_brushes), 12))
 
     context = {

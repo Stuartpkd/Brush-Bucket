@@ -48,7 +48,7 @@ class StripeWH_Handler:
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
-        save_info = intent.metadata.save_info # NOQA - Needed for caching checkout data
+        save_info = intent.metadata.save_info  # NOQA - Needed for caching checkout data
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(

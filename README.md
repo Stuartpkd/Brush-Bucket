@@ -448,47 +448,52 @@ You can view the mockups and outlines of these marketing strategies in the corre
 
 ## Manual testing
 
-![Home Page](docs/pages/Home-page.png)
+* [Manual testing link](https://github.com/Stuartpkd/Brush-Bucket/blob/main/MANUAL_TEST.md)
 
+## Code Validation
+
+All HTML code passed easily when it came to testing at the end of the project. I was sure to validate frequently during the creating of the templates.
+
+![Home Page](docs/html-testing/home-html.png)
 
 ## Profile Page
 
-![Profile Page](docs/pages/Profile.png)
+![Profile Page](docs/html-testing/profile-html.png)
 
 
 ## Brushes Page
 
-![Brushes Page](docs/pages/Brushes.png)
+![Brushes Page](docs/html-testing/brushes-html.png)
 
 
 ## Brush Detail Page
 
-![Brush Detail Page](docs/pages/Brush-detail.png)
+![Brush Detail Page](docs/html-testing/brush-detail-html.png)
 
 
 ## Admin Product Management Page
 
-![Admin Product Management Page](docs/pages/Admin-product-management.png)
+![Admin Product Management Page](docs/html-testing/brush-manage-html.png)
 
 
 ## Checkout Page
 
-![Checkout Page](docs/pages/Checkout.png)
+![Checkout Page](docs/html-testing/checkout.png)
 
 
 ## Checkout Success Page
 
-![Checkout Success Page](docs/pages/Checkout-success.png)
+![Checkout Success Page](docs/html-testing/checkout-html.png)
 
 
 ## Bag Page
 
-![Bag Page](docs/pages/Bag.png)
+![Bag Page](docs/html-testing/bag-html.png)
 
 
 ## Contact Page
 
-![Contact Page](docs/pages/Contact.png)
+![Contact Page](docs/html-testing/contact-html.png)
 
 
 ## Error 404 Page
