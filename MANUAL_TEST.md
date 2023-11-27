@@ -267,3 +267,12 @@ Here is a link to a canvas I was looking to emulate.
 2. **Responsive Design Check**:
     - Resize the browser across different screen sizes to ensure the layout adjusts appropriately for a responsive design.
 
+---
+
+## Main Content Testing
+
+1. **Content Rendering**:  
+    - Ensure that the main content renders correctly between `{% block content %}` and `{% endblock content %}`.
+    - This will depend on what the content should be for each specific page.
+
+---
