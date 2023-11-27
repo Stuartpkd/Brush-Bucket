@@ -306,3 +306,13 @@ Here is a link to a canvas I was looking to emulate.
 
 3. **CSRF Token**
     - Ensure that the CSRF token is generated for each session to protect against CSRF attacks.
+
+---
+
+### Unauthenticated User View
+
+1. **Sign-in Warning**
+    - Verify that an unauthenticated user sees a warning message: "Please create an account or login to view this content."
+
+2. **Sign Up Button**
+    - Verify that the "Sign Up" button is visible and redirects to the Sign Up page when clicked.
