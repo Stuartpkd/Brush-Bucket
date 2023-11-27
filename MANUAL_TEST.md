@@ -439,4 +439,74 @@ Here is a link to a canvas I was looking to emulate.
 
 ---
 
+# Edit Brush Page
+
+## Edit Brush Form Testing
+
+1. **Form Layout and Display**:
+    - Ensure the form for editing a brush is centered and properly displayed.
+    - Check the responsiveness of the layout on different screen sizes.
+
+2. **Form Fields and Functionality**:
+    - Verify each field in the form (rendered by `{{ form | crispy }}`) for correct rendering and alignment.
+    - Test all form fields to ensure they accept and validate inputs as expected, including any file upload fields for brush images.
+
+3. **CSRF Token Integration**:
+    - Confirm the presence and functionality of the CSRF token in the form for security.
+
+4. **Form Submission Process**:
+    - Test submitting the form with various inputs to check for appropriate data handling and validation.
+    - Ensure the form data is correctly sent to the specified action URL (`{% url 'edit_brush' brush.id %}`).
+
+5. **Cancel and Update Button Functionality**:
+    - Verify that the "Cancel" button redirects back to the brushes page without making changes.
+    - Test the "Update Brush" button to ensure it properly submits the form and updates the brush details.
+
+6. **Error Handling and Feedback**:
+    - Introduce deliberate errors to check if the form correctly handles and displays validation errors.
+    - Confirm that appropriate success or error messages are displayed after form submission.
+
+---
+
+# Brush Bag Page
+
+## Authentication and Bag Content Display Testing
+
+1. **User Authentication Check**:
+    - Confirm that the bag content is only displayed to authenticated users.
+    - For unauthenticated users, verify the prompt to sign in is shown.
+
+2. **Empty Bag Scenario**:
+    - Test the display message "Your bag is empty." when there are no items in the bag.
+    - Verify the functionality of the 'Keep Shopping' button which should redirect to the brushes page.
+
+## Bag Items Table Testing
+
+1. **Table Display for Bag Items**:
+    - Ensure that the table correctly displays all items in the user's bag when present.
+    - Verify each column: Image, Title, Category, Price, and Actions are correctly populated.
+
+2. **Image and Details Verification**:
+    - Confirm that each brush in the bag has the correct image, title, category, and price displayed.
+    - Check the responsiveness and layout of images and text in the table.
+
+3. **Remove from Bag Functionality**:
+    - Test the 'Remove' button for each bag item to ensure it correctly removes the item from the bag.
+    - Verify that the user receives appropriate feedback upon removing an item.
+
+## Grand Total and Action Buttons Testing
+
+1. **Grand Total Calculation**:
+    - Check that the grand total is accurately calculated and displayed.
+    - Confirm that the total updates correctly when items are added or removed from the bag.
+
+2. **Continue Shopping and Checkout Buttons**:
+    - Verify that the 'Continue Shopping' button redirects to the home page or brushes page.
+    - Test the 'Proceed to Checkout' button to ensure it leads to the checkout process.
+
+---
+
+
+
+
 
