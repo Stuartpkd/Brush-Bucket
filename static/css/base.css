@@ -507,6 +507,16 @@ span {
     color: #f89e4c !important;
 }
 
+/* -------------------------------- Bag styling */
+
+.brush-image-bag {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
 /* -------------------------------- Toast styling */
 
 .custom-toast {
@@ -674,5 +684,10 @@ span {
 
     .hero-section {
         background: url(/media/hero_image/hero-image-vertical.svg) center center no-repeat;
+    }
+
+    .brush-image-bag {
+        width: 100px;
+        height: 100px;
     }
 }
