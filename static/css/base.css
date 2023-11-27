@@ -671,4 +671,8 @@ span {
     .table tr {
         border-bottom: 1px solid #ccc;
     }
+
+    .hero-section {
+        background: url(/media/hero_image/hero-image-vertical.svg) center center no-repeat;
+    }
 }
