@@ -497,7 +497,8 @@ span {
 }
 
 .star-rating label {
-    color: #ccc;
+    color: #ccc !important;
+    /* Default state */
     cursor: pointer;
 }
 
@@ -505,6 +506,7 @@ span {
 .star-rating label:hover~label,
 .star-rating input[type="radio"]:checked~label {
     color: #f89e4c !important;
+    /* Hover and checked state */
 }
 
 /* -------------------------------- Bag styling */
