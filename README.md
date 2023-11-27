@@ -552,7 +552,7 @@ I checked all of my python files with the Code Institute python checker and reci
 
 ### Lighthouse
 
-![Lighthouse](docs/code-testing/lighthouse.png)
+![Lighthouse](docs/lighthouse/lighthouse.png)
 
 The website performed very well when it came to the lighthouse review.
 
