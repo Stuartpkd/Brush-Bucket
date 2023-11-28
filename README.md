@@ -643,6 +643,21 @@ No issues arose, due to the simple layout of the site.
 **Description**: On the profile page, both saved brushes and purchases sections were displaying at the same time, whereas the saved brushes section was not supposed to show on load.
 **Resolution**: Added a 'hide' CSS class to the saved brushes section to ensure it remains hidden on initial page load and only appears when intended.
 
+## Known Bugs
+
+```markdown
+### Bug 1: Purchase Status Not Displaying Correctly on Brush Detail Page
+**Description**: The button on the brush detail page does not correctly show 'Purchased' even if the product has been bought by the user.
+**Status**: Unresolved
+
+### Bug 2: Missing Links in Saved Brushes
+**Description**: The saved brushes section is missing hyperlinks (`href`) to the brush detail pages. Users cannot click on a saved brush to view its details.
+**Status**: Unresolved
+
+### Bug 3: Navigation Overlap on Small Screens
+**Description**: The navigation bar experiences an overlap of elements when viewed on smaller screen sizes, impacting usability and aesthetics.
+**Status**: Unresolved
+
 
 # Deployment
 
