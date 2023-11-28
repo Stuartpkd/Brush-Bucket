@@ -42,10 +42,10 @@
             {% for order in orders %}
             {% for lineitem in order.lineitems.all %}
             <div class="mb-4">
-                <div class="brush-container padding-bottom">
+                <div class="brush-container">
                     <a href="{% url 'brush_detail' lineitem.product.id %}">
                         <h2 class="brush-title">{{ lineitem.product.name }}</h2>
-                        <div class="brush">
+                        <div class="brush padding-bottom">
                             {% if lineitem.product.image %}
                             <img src="{{ lineitem.product.image.url }}" alt="{{ lineitem.product.name }} Image"
                                 class="brush-image">
