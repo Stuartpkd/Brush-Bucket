@@ -331,7 +331,7 @@ The website's construction will commence with a focus on a compact 350px-width m
 
 ### Index Page
 
-![Index Page](docs/images/index-page.png)
+![Index Page](docs/pages/home.png)
 
 The Index Page serves as the main landing page for users, showcasing featured digital brushes and providing direct access to brush categories and other key areas of the site.
 
@@ -339,7 +339,7 @@ The Index Page serves as the main landing page for users, showcasing featured di
 
 ### Profile Page
 
-![Profile Page](docs/images/profile-page.png)
+![Profile Page](docs/pages/profile.png)
 
 The Profile Page acts as a personal hub for users, displaying their purchase history, saved brushes, and offering access to account settings.
 
@@ -347,7 +347,7 @@ The Profile Page acts as a personal hub for users, displaying their purchase his
 
 ### Brushes Page
 
-![Brushes Page](docs/images/brushes-page.png)
+![Brushes Page](docs/pages/brushes.png)
 
 The Brushes Page presents a comprehensive collection of digital brushes available for purchase, complete with filtering options by category.
 
@@ -355,7 +355,7 @@ The Brushes Page presents a comprehensive collection of digital brushes availabl
 
 ### Brush Detail Page
 
-![Brush Detail Page](docs/images/brush-detail-page.png)
+![Brush Detail Page](docs/pages/brush-detail.png)
 
 This page provides detailed information on individual brushes, including descriptions, pricing, user ratings, and the ability to add them to the shopping bag or wishlist.
 
@@ -363,7 +363,7 @@ This page provides detailed information on individual brushes, including descrip
 
 ### Admin Product Management Page
 
-![Admin Management](docs/images/admin-management-page.png)
+![Admin Management](docs/pages/brush-add.png)
 
 An administrative interface that allows for the management of digital brushes inventory, crucial for site maintenance and product updates.
 
@@ -371,7 +371,7 @@ An administrative interface that allows for the management of digital brushes in
 
 ### Checkout Page
 
-![Checkout Page](docs/images/checkout-page.png)
+![Checkout Page](docs/pages/checkout.png)
 
 A secure checkout interface where users can complete their purchases, input billing information, and review their order summary.
 
@@ -379,7 +379,7 @@ A secure checkout interface where users can complete their purchases, input bill
 
 ### Checkout Success Page
 
-![Checkout Success](docs/images/checkout-success-page.png)
+![Checkout Success](docs/pages/success.png)
 
 A confirmation page post-purchase that summarizes the order details and provides download links for purchased brushes.
 
@@ -387,7 +387,7 @@ A confirmation page post-purchase that summarizes the order details and provides
 
 ### Bag Page
 
-![Bag Page](docs/images/bag-page.png)
+![Bag Page](docs/pages/bag.png)
 
 Allows users to view and manage their selected digital brushes in their shopping bag, with options to adjust quantities or proceed to checkout.
 
@@ -395,7 +395,7 @@ Allows users to view and manage their selected digital brushes in their shopping
 
 ### Contact Page
 
-![Contact Page](docs/images/contact-page.png)
+![Contact Page](docs/pages/contact.png)
 
 Dedicated for user inquiries and feedback, featuring a contact form for direct communication with the site administrators.
 
@@ -403,19 +403,11 @@ Dedicated for user inquiries and feedback, featuring a contact form for direct c
 
 ### Error 404 Page
 
-![Error 404](docs/images/error-404-page.png)
+![Error 404](docs/pages/404.png)
 
 A user-friendly 'Page Not Found' error page, guiding users back to the main website smoothly.
 
 ---
-
-### Error 500 Page
-
-![Error 500](docs/images/error-500-page.png)
-
-Handles server errors by providing an informative notification and easy navigation back to the operational parts of the site.
-\
-&nbsp;
 
 # SEO and Marketing
 
