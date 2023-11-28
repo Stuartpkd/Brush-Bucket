@@ -659,6 +659,46 @@ No issues arose, due to the simple layout of the site.
 **Status**: Unresolved
 
 
+## Detailed Bug Report
+
+### Bug: Email Confirmations Sent to Terminal Instead of User Inbox
+**Description**: 
+When a user makes a purchase, the system is designed to send an email confirmation to their inbox. Currently, there is a bug where the confirmation email is not sent to the user's actual email address. Instead, it's being output to the terminal when the server is running locally. This issue affects both the local development environment and the deployed site, hindering the user experience by not providing timely purchase confirmations. At least the user is still able to get their purchases from the profile page.
+
+**Impact**: 
+- Users do not receive email confirmations for their purchases.
+- Reduced trust and satisfaction from users due to lack of communication.
+- Potential for increased customer service inquiries.
+
+**Possible Causes**:
+- Email backend configuration is set to console output in settings (common in development environments).
+- Misconfiguration in the production environment's email settings.
+- Environmental variables not properly set or utilized for email functionality in production.
+
+![Bug image 1](docs/html-testing/bug1.png)
+
+![Bug image 1](docs/html-testing/bug2.png)
+
+![Bug image 1](docs/html-testing/bug3.png)
+
+**Action Plan**:
+1. **Verify Email Backend Settings**: Check the `settings.py` file to confirm if the email backend is set to output to the console. This setting should be `EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'` for sending real emails. Ensure this is correctly set in the production settings.
+
+2. **Environment Variables in Production**: Ensure that all necessary environment variables related to email (like email host, port, user, and password) are correctly set in the production environment.
+
+3. **Testing in Staging Environment**: Before deploying the changes to production, set up a staging environment that closely mirrors the production settings. Test the email functionality in this environment to ensure emails are sent correctly.
+
+4. **Check Email Service Configuration**: Verify the configuration with your email service provider. Ensure that the credentials and other settings are correct and that the email service is properly set up to send emails from your application.
+
+5. **Logging and Error Tracking**: Implement logging for the email sending process to capture any errors or issues that occur when attempting to send emails. This can provide insights into any failures or configuration issues.
+
+6. **Review Documentation**: Review the documentation of the email service provider and Django's email sending features to ensure all configurations are aligned with the recommended practices.
+
+7. **Community and Support Channels**: If the issue persists, consider reaching out to Django community forums or support channels for additional assistance.
+
+**Status**: Unresolved
+
+
 # Deployment
 
 ## Create Application
