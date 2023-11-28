@@ -49,7 +49,7 @@ This is my coding repository dedicated to the BrushBucket website. It is an e-co
 
 [Link to the projects board](https://github.com/users/Stuartpkd/projects/3)
 
-![Image of site on different platforms]()
+![Image of site on different platforms](/docs/mockups/site-mockup.png)
 
 # User experience
 
