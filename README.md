@@ -663,7 +663,7 @@ No issues arose, due to the simple layout of the site.
 
 ### Bug: Email Confirmations Sent to Terminal Instead of User Inbox
 **Description**: 
-When a user makes a purchase, the system is designed to send an email confirmation to their inbox. Currently, there is a bug where the confirmation email is not sent to the user's actual email address. Instead, it's being output to the terminal when the server is running locally. This issue affects both the local development environment and the deployed site, hindering the user experience by not providing timely purchase confirmations. At least the user is still able to get their purchases from the profile page.
+When a user makes a purchase, the system is designed to send an email confirmation to their inbox. Currently, there is a bug where the confirmation email is not sent to the user's actual email address. Instead, it's being output to the terminal when the server is running locally. This issue affects both the local development environment and the deployed site, hindering the user experience by not providing timely purchase confirmations. At least the user is still able to get their purchases from the profile page. I have kept the env file in the directory to keep the emails working in the terminal.
 
 **Impact**: 
 - Users do not receive email confirmations for their purchases.
