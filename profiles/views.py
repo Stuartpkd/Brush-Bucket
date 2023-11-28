@@ -25,8 +25,6 @@ def profile(request):
     user_profile = get_object_or_404(UserProfile, user=request.user)
     orders = Order.objects.filter(user_profile=user_profile).order_by('-date')
 
-    orders = Order.objects.all()
-
     saved_brushes = SavedBrush.objects.filter(user=request.user)
 
     template = 'profiles/profile.html'
