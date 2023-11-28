@@ -33,8 +33,8 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-        print(send_mail)
-
+        print('SENT!')
+        
     def handle_event(self, event):
         """
         Handle a generic/unknown/unexpected webhook event
