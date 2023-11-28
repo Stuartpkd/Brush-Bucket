@@ -455,7 +455,7 @@ You can view the mockups and outlines of these marketing strategies in the corre
 
 ![Business Page Mockup decktop](docs/mockups/mockup_desktop.png)
 
-![Business Page Mockup mobile](docs/mockups/site-mockup.png)
+![Business Page Mockup mobile](docs/mockups/mockup_mobile.pngp.png)
 
 # Technologies Used
 
