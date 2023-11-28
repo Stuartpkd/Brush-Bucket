@@ -427,6 +427,10 @@ The `sitemap.xml` is essential for search engine optimization. It lists the URLs
 
 ## Marketing
 
+![Business Page Mockup decktop](docs/mockups/mockup_desktop.png)
+
+![Business Page Mockup mobile](docs/mockups/site-mockup.png)
+
 ### Social Media Presence
 
 My marketing strategy heavily involves a strong social media presence. We have created a Facebook page to engage with our community, share updates, and showcase our digital brushes. Our Facebook mockup outlines how we present our brand and interact with users.
