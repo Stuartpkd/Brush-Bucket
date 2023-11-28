@@ -519,7 +519,7 @@ All HTML code passed easily when it came to testing at the end of the project. I
 
 ## Brush Detail Page
 
-![Brush Detail Page](docs/html-testing/brush-detail-html.png)
+![Brush Detail Page](docs/html-testing/Brush%20detail.png)
 
 
 ## Admin Product Management Page
@@ -545,19 +545,6 @@ All HTML code passed easily when it came to testing at the end of the project. I
 ## Contact Page
 
 ![Contact Page](docs/html-testing/contact-html.png)
-
-
-## Error 404 Page
-
-![Error 404 Page](docs/pages/Error-404.png)
-
-
-## Error 500 Page
-
-
-![Error 500 Page](docs/pages/Error-500.png)
-\
-&nbsp;
 
 ### W3C CSS Validator
 
