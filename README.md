@@ -795,6 +795,20 @@ Your application is now successfully deployed!
 * [W3 schools always has very helpful threads on anything to do with coding.](https://www.w3schools.com/)
 * [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
 * [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
+* [Stack Overflow - General Coding Questions and Answers](https://stackoverflow.com/)
+* [MDN Web Docs - Web Development Documentation](https://developer.mozilla.org/en-US/)
+* [GitHub - Code Repositories and Open Source Projects](https://github.com/)
+* [Codecademy - Interactive Coding Lessons](https://www.codecademy.com/)
+* [freeCodeCamp - Free Coding Bootcamp and Certifications](https://www.freecodecamp.org/)
+* [CSS Tricks - CSS Tips, Tricks, and Techniques](https://css-tricks.com/)
+* [Python Official Documentation - Python Programming Language](https://www.python.org/doc/)
+* [JavaScript Info - JavaScript Tutorials and Guides](https://javascript.info/)
+* [Django Documentation - Django Web Framework](https://docs.djangoproject.com/en/stable/)
+* [React - Documentation for React.js](https://reactjs.org/docs/getting-started.html)
+* [Frontend Mentor - Frontend Challenges and Projects](https://www.frontendmentor.io/)
+* [LeetCode - Coding Interview Prep and Practice](https://leetcode.com/)
+* [Dev.to - Developer Community and Blogging Platform](https://dev.to/)
+
 
 
 ## For Content and Code
@@ -805,6 +819,8 @@ Your application is now successfully deployed!
 * [Best practice for data models.](https://cloud.google.com/appengine/docs/legacy/standard/python/datastore/datamodeling)
 * [How to use django tags.](https://www.w3schools.com/django/django_template_tags.php#:~:text=In%20Django%20templates%2C%20you%20can,them%20in%20%7B%25%20%25%7D%20brackets.)
 * [Checking file types with.](https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file)
+* [Frontend Paathshala](https://www.youtube.com/watch?v=YGTNhLsF-_Q&ab_channel=FrontendPaathshala)
+* [Removing baked in form styling](https://stackoverflow.com/questions/4276754/is-it-possible-to-remove-the-focus-from-a-text-input-when-a-page-loads)
 
 &nbsp;
 [Back to Top](#table-of-contents)
