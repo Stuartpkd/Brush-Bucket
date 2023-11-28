@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['8000-stuartpkd-brushbucket-8f8zn1pn4qq.ws-eu106.gitpod.io',
                  'localhost', 'brush-bucket-2ba4b4f41791.herokuapp.com']
 
@@ -216,6 +216,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'brushbucket@example.com'
+    print('IN DEV MODE')
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
@@ -224,3 +225,4 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    print('IN PROD MODE')
