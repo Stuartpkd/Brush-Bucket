@@ -645,7 +645,7 @@ No issues arose, due to the simple layout of the site.
 
 ## Known Bugs
 
-```markdown
+
 ### Bug 1: Purchase Status Not Displaying Correctly on Brush Detail Page
 **Description**: The button on the brush detail page does not correctly show 'Purchased' even if the product has been bought by the user.
 **Status**: Unresolved
