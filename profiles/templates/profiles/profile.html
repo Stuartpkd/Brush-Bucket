@@ -72,16 +72,19 @@
         <h3 class="logo-font mb-3 text-center">Favorite Brushes</h3>
         <div class="row justify-content-center align-items-end">
             {% for saved_brush in saved_brushes %}
-            <div class=" mb-4">
-                <div class="brush-container padding-faves">
-                    <p>{{ saved_brush.brush.name }}</p>
-                    {% if saved_brush.brush.image %}
-                    <img src="{{ saved_brush.brush.image.url }}" alt="{{ saved_brush.brush.name }}" class="brush-image">
-                    {% else %}
-                    <img src="{% static 'path/to/default/image.png' %}" alt="Default Image" class="brush-image">
-                    {% endif %}
+            <a href="{% url 'brush_detail' saved_brush.brush.id %}">
+                <div class="mb-4">
+                    <div class="brush-container padding-faves">
+                        <p>{{ saved_brush.brush.name }}</p>
+                        {% if saved_brush.brush.image %}
+                        <img src="{{ saved_brush.brush.image.url }}" alt="{{ saved_brush.brush.name }}"
+                            class="brush-image">
+                        {% else %}
+                        <img src="{% static 'path/to/default/image.png' %}" alt="Default Image" class="brush-image">
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
+            </a>
             {% empty %}
             <div class="col-12 text-center">
                 <p>You have no favorite brushes.</p>
