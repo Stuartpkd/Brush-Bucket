@@ -28,4 +28,10 @@ class OrderAdmin(admin.ModelAdmin):
     total_sales.short_description = 'Total Sales'
 
 
+class OrderLineItemAdmin(admin.ModelAdmin):
+    list_display = ('order', 'product', 'quantity', 'lineitem_total')
+    search_fields = ('order__order_number', 'product__name')
+
+
 admin.site.register(Order, OrderAdmin)
+admin.site.register(OrderLineItem, OrderLineItemAdmin)
