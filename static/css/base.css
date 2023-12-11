@@ -637,6 +637,26 @@ span {
     text-align: center;
 }
 
+#mc_embed_signup {
+    background: #582841;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center the form */
+    padding: 15px;
+    /* Add some padding */
+}
+
+#mc_embed_signup #mce-success-response {
+    color: #f89e4c !important;
+}
+
+.text-white {
+    color: #f89e4c !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -699,5 +719,10 @@ span {
     .brush-image-bag {
         width: 100px;
         height: 100px;
+    }
+
+    #mc_embed_signup {
+        font-size: 12px;
+        padding: 10px;
     }
 }
