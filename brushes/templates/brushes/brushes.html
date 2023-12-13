@@ -44,12 +44,14 @@
                     </div>
                 </a>
                 <!-- edit and delete brushes -->
+                {% if request.user.is_superuser %}
                 <div class="row">
                     <a class="brush-content-spacing brush-content" href="{% url 'edit_brush' brush_id=brush.id %}">Edit
                         Brush</a>
                     <a class="brush-content-spacing brush-content"
                         href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
                 </div>
+                {% endif %}
                 <div class="row">
                     <!-- Saved unsave brush -->
                     {% if user.is_authenticated %}
