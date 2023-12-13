@@ -124,8 +124,7 @@ def rate_brush(request, brush_id):
     Allow authenticated users to rate a brush.
 
     Users can submit a rating for a brush. If a user has already,
-    rated the brush,
-    the existing rating is updated.
+    rated the brush, the existing rating is updated.
 
     Args:
         request: The HTTP request object.
@@ -134,28 +133,31 @@ def rate_brush(request, brush_id):
     Returns:
         HttpResponseRedirect: Redirect to the brush detail view.
     """
+    brush = get_object_or_404(Brush, id=brush_id)
+
     if request.method == 'POST':
-        try:
-            rating_value = int(request.POST.get('rating'))
-            brush = Brush.objects.get(id=brush_id)
+        rating_value = request.POST.get('rating')
 
-            rating, created = Rating.objects.get_or_create(
-                brush=brush,
-                user=request.user,
-                defaults={'rating': rating_value}
-            )
+        if rating_value:
+            try:
+                rating_value = int(rating_value)
+                rating, created = Rating.objects.get_or_create(
+                    brush=brush,
+                    user=request.user,
+                    defaults={'rating': rating_value}
+                )
 
-            if not created:
-                rating.rating = rating_value
-                rating.save()
+                if not created:
+                    rating.rating = rating_value
+                    rating.save()
 
-            brush.update_average_rating()
-            messages.info(request, "Your rating has been submitted.")
+                brush.update_average_rating()
+                messages.info(request, "Your rating has been submitted.")
 
-        except ValueError:
-            messages.error(request, "Invalid rating value.")
-        except Brush.DoesNotExist:
-            messages.error(request, "Brush not found.")
+            except ValueError:
+                messages.error(request, "Invalid rating value.")
+        else:
+            messages.error(request, "You did not select a rating.")
 
     return redirect('brush_detail', brush_id=brush_id)
 
