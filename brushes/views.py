@@ -177,6 +177,11 @@ def add_brush(request):
     Returns:
         HttpResponse: The rendered template for adding a brush.
     """
+    if not request.user.is_superuser:
+        messages.error(request, "You do not have permission "
+                       "to access this page.")
+        return redirect('home')
+
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES)
         brush_file = request.FILES.get('brush_file', None)
@@ -234,6 +239,11 @@ def edit_brush(request, brush_id):
     Returns:
         HttpResponse: The rendered template for editing a brush.
     """
+    if not request.user.is_superuser:
+        messages.error(request, "You do not have permission "
+                       "to access this page.")
+        return redirect('home')
+
     brush = get_object_or_404(Brush, pk=brush_id)
     if request.method == 'POST':
         form = BrushForm(request.POST, request.FILES, instance=brush)
@@ -292,6 +302,11 @@ def delete_brush(request, brush_id):
     Returns:
         HttpResponseRedirect: Redirect to the all brushes view.
     """
+    if not request.user.is_superuser:
+        messages.error(request, "You do not have permission "
+                       "to access this page.")
+        return redirect('home')
+
     brush = get_object_or_404(Brush, pk=brush_id)
     brush.delete()
     messages.info(request, 'Brush deleted!')
