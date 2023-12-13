@@ -48,8 +48,8 @@
                 <div class="row">
                     <a class="brush-content-spacing brush-content" href="{% url 'edit_brush' brush_id=brush.id %}">Edit
                         Brush</a>
-                    <a class="brush-content-spacing brush-content"
-                        href="{% url 'delete_brush' brush_id=brush.id %}">Delete Brush</a>
+                    <a class="brush-content-spacing brush-content" href="{% url 'delete_brush' brush_id=brush.id %}"
+                        onclick="return confirmDelete();">Delete Brush</a>
                 </div>
                 {% endif %}
                 <div class="row">
