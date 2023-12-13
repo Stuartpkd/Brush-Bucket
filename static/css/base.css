@@ -535,14 +535,10 @@ span {
     text-shadow: none !important;
 }
 
-.close:hover {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 .custom-toast {
     border: 2px solid #f89e4c;
     border-radius: 0.25rem !important;
+    box-shadow: 0 4px 30px 0 rgba(28, 9, 19, 0.6);
 }
 
 .bg-success {
