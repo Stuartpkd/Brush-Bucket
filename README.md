@@ -618,28 +618,28 @@ No issues arose, due to the simple layout of the site.
 ## Bug Documentation and Resolutions
 
 ### Bug 1: SVG Glitches in Artwork Export
-**Description**: Parts of artwork exported from Adobe Illustrator were incorrectly colored black unless exported in a very specific manner.
-**Resolution**: Investigated Adobe Illustrator export settings and adjusted them to ensure compatibility and correct color representation in the exported SVG files.
+- **Description**: Parts of artwork exported from Adobe Illustrator were incorrectly colored black unless exported in a very specific manner.
+- **Resolution**: Investigated Adobe Illustrator export settings and adjusted them to ensure compatibility and correct color representation in the exported SVG files.
 
 ### Bug 2: Rating Star System Malfunction
-**Description**: The rating star system was not functioning correctly due to a CSS conflict.
-**Resolution**: Identified and resolved the conflicting CSS rules that were impacting the rating star system's functionality.
+- **Description**: The rating star system was not functioning correctly due to a CSS conflict.
+- **Resolution**: Identified and resolved the conflicting CSS rules that were impacting the rating star system's functionality.
 
 ### Bug 3: Inaccurate Login Message Display
-**Description**: Login messages were not displaying the correct allauth notification texts due to an error in Django template `if` statements.
-**Resolution**: Corrected the Django template `if` statements in the success toast to ensure the proper allauth messages were displayed upon user login and logout.
+- **Description**: Login messages were not displaying the correct allauth notification texts due to an error in Django template `if` statements.
+- **Resolution**: Corrected the Django template `if` statements in the success toast to ensure the proper allauth messages were displayed upon user login and logout.
 
 ### Bug 4: 'Purchased' Button State Error
-**Description**: The button state was not changing to "Purchased" even after the user had bought an item. This was traced back to the order view not assigning purchases to a user profile.
-**Resolution**: Modified the order view logic to correctly assign purchases to the user's profile, enabling the button to accurately reflect the "Purchased" state.
+- **Description**: The button state was not changing to "Purchased" even after the user had bought an item. This was traced back to the order view not assigning purchases to a user profile.
+- **Resolution**: Modified the order view logic to correctly assign purchases to the user's profile, enabling the button to accurately reflect the "Purchased" state.
 
 ### Bug 5: Favicon Display Issue on Deployed Site
-**Description**: The favicon was not displaying properly on the deployed site.
-**Resolution**: Added the necessary media context processor to the `settings.py` to ensure correct loading and display of the favicon in the production environment.
+- **Description**: The favicon was not displaying properly on the deployed site.
+- **Resolution**: Added the necessary media context processor to the `settings.py` to ensure correct loading and display of the favicon in the production environment.
 
 ### Bug 6: Profile Page Displaying Both Saved Brushes and Purchases Simultaneously
-**Description**: On the profile page, both saved brushes and purchases sections were displaying at the same time, whereas the saved brushes section was not supposed to show on load.
-**Resolution**: Added a 'hide' CSS class to the saved brushes section to ensure it remains hidden on initial page load and only appears when intended.
+- **Description**: On the profile page, both saved brushes and purchases sections were displaying at the same time, whereas the saved brushes section was not supposed to show on load.
+- **Resolution**: Added a 'hide' CSS class to the saved brushes section to ensure it remains hidden on initial page load and only appears when intended.
 
 ### Bug 7: Purchase Status Not Displaying Correctly on Brush Detail Page
 - **Description**: The button on the brush detail page did not correctly show 'Purchased' even if the product had been bought by the user.
