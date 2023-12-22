@@ -65,7 +65,7 @@ def save_unsave_brush(request, brush_id):
     else:
 
         saved_brush.delete()
-        messages.success(request, f"You have removed {brush.name} "
-                         " from your favorites.")
+        messages.alert(request, f"You have removed {brush.name} "
+                       " from your favorites.")
 
     return redirect(request.META.get('HTTP_REFERER', 'brush_list'))
